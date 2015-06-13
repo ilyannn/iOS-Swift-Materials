@@ -25,6 +25,8 @@ struct Vector: CustomPlaygroundQuickLookable {
     }
 }
 
+Canvas()
+
 func +(a:Vector, b:Vector) -> Vector {
     return Vector(dx: a.dx + b.dx, dy: a.dy + b.dy)
 }

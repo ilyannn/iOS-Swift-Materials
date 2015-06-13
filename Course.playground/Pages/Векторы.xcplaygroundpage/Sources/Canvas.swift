@@ -6,7 +6,7 @@ import UIKit
 private let maßstab:   CGFloat = 30
 private let lineWidth: CGFloat = 4
 private let canvasSize:CGFloat = 150
-private let hintSize:  CGFloat = 5
+private let hintSize:  CGFloat = 3
 
 private let endSize:   Double  = 0.3
 
@@ -60,20 +60,22 @@ public class Canvas: UIView, Drawable {
         }(CAShapeLayer()))
     }
     
-    init() {
+    public init() {
         halfSize = canvasSize / 2
         originPoint = CGPoint(x: canvasSize / 2, y: canvasSize / 2)
         let frame = CGRectMake(0, 0, canvasSize, canvasSize)
         super.init(frame: frame)
 
         addLayer(color: UIColor.redColor()) { path in
-            // Axis X and Y
+            // X and Y axis
             path.moveToPoint(CGPoint(x: 0, y: -halfSize))
             path.addLineToPoint(CGPoint(x: 0, y: halfSize))
             
             path.moveToPoint(CGPoint(x:-halfSize, y:0))
             path.addLineToPoint(CGPoint(x: halfSize, y: 0))
-            
+        }
+        
+        addLayer(color: UIColor.redColor()) { path in    
             // Hints
             var hint = maßstab
             while (hint < halfSize) {
@@ -148,6 +150,10 @@ public class Canvas: UIView, Drawable {
     
     required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override public var description: String {
+        return "Рисунок"
     }
 }
 
