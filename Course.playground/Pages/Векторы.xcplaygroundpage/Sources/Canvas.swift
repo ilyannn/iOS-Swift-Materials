@@ -5,7 +5,7 @@ import UIKit
 // MARK: Layout constants
 private let maßstab:   CGFloat = 30
 private let lineWidth: CGFloat = 4
-private let canvasSize:CGFloat = 150
+private let canvasSize:CGFloat = 300
 private let hintSize:  CGFloat = 3
 
 private let endSize:   Double  = 0.3
@@ -66,6 +66,11 @@ public class Canvas: UIView, Drawable {
         let frame = CGRectMake(0, 0, canvasSize, canvasSize)
         super.init(frame: frame)
 
+        self.backgroundColor = UIColor.whiteColor()
+        self.layer.borderColor = UIColor.darkGrayColor().CGColor
+        self.layer.borderWidth = CGFloat(2.0)
+        self.layer.cornerRadius = CGFloat(5.0)
+
         addLayer(color: UIColor.redColor()) { path in
             // X and Y axis
             path.moveToPoint(CGPoint(x: 0, y: -halfSize))
@@ -87,7 +92,6 @@ public class Canvas: UIView, Drawable {
             }
         }
 
-        clipsToBounds = true
     }
     
     private func translate(x x:Double, y:Double) -> CGPoint {
@@ -96,7 +100,7 @@ public class Canvas: UIView, Drawable {
     
     public func drawArc(radius radius: Double, centerX: Double, centerY: Double, startAngle: Double, endAngle: Double) {
         
-        addLayer(color: UIColor.greenColor(), lineWidth: lineWidth/2) { path in
+        addLayer(color: UIColor.brownColor(), lineWidth: lineWidth/2) { path in
             let centerT = translate(x: centerX, y: centerY)
             let radiusT = translate(x: radius, y: 0)
             
