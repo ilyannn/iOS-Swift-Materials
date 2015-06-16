@@ -9,6 +9,8 @@
 
 65.5 * 99
 
+
+
 //: Целые и дробные числа компилятор воспринимает по-разному.
 
 33
@@ -24,15 +26,17 @@
 //: Команда `let` устанавливает связь между именем и значением.
 //: Имя можно писать в любом алфавите!
 
-let стоимость_в_€ = 499.99 // Alt + Shift + 2 ⌥⇧2 
+let стоимость€ = 499.99 // Alt + Shift + 2 ⌥⇧2 
 let курс_€к₽ = 65.5
-let стоимость_в_₽ = стоимость_в_€ * курс_€к₽
+let стоимость_в_₽ = стоимость€ * курс_€к₽
 
 
 //: ## Типы в Swift
 //: Массивы определяются с помощью квадратных скобок.
 
 [5, 6, 7]
+
+[6.5, 5.1, 7] + [10.5]
 
 //: У них есть своя операция сложения (но нет вычитания или деления!)
 
@@ -45,7 +49,7 @@ let Целый: Int = 33
 let Дробный: Double = 33.5
 
 //: Массив должен быть однородным 
-let Массив_целых: [Int] = [Целый, 2, Целый]
+let Массив_целых: [Double] = [3, 2, 3]
 let Массив_дробных: [Double] = [Дробный, 2, Дробный]
 
 
@@ -53,69 +57,154 @@ let Массив_дробных: [Double] = [Дробный, 2, Дробный]
 //: Для определения функции используются ключевые слова `func` и `return`.
 //: Надо знать заранее тип.
 
-func удвоить(number: Int) -> Int {
-    return number * 2
+func удвоить(число: Int) -> Int {
+    return число * 2
 }
+
+func удвоить(число: Double) -> Double {
+    return число * 2
+}
+
+func удвоить(число: [Int]) -> Int {
+    return 10
+}
+
+[1, 3, 5]
+
+удвоить([1])
+
 
 func квадрат(number: Int) -> Int {
     return number * number
 }
 
+квадрат(удвоить(2)) + удвоить(100)
 
 //: Можно применять функции: математическая нотация f(x) 
 удвоить(10)
 квадрат(15)
 
+enum Тип {
+    case Число(число: Int)
+    case Строка(строка: String)
+    
+//    init(integerLiteral value: Self.IntegerLiteralType) 
+//    {
+//		self. .Число(число: value)
+//    }
+}
+
+let общий_swift: [Тип] = [Тип.Число(число: 4), Тип.Число(число: 5), Тип.Строка(строка: "строка")]
+
 //: Оператор `import` делается только один раз
 import Foundation
 
+let общий:[NSObject] = [4, 5, "строка"]
+
+cos(M_PI)
+
+let π = M_PI // alt + P
 //: Напомним про тригонометрические функции
-sin(M_PI_2)
-cos(M_PI_2)
+sin(π/3)
+cos(π/3)
+
 
 //: Если повернуть вектор (10, 0) влево на π/4
-let новый_х = 10 * cos(M_PI / 4)
-let новый_y = 10 * sin(M_PI / 4)
+let новый_х = 10 * cos(π / 4)
+let новый_y = 10 * sin(π / 4)
 let Длина_вектора = sqrt(новый_х * новый_х + новый_y * новый_y)
 
 //: Использование объектной нотации
-//: Функция – это глагол в S-V-O 
+//: Функция – это глагол в S-V-O. Также C++.
 numbers.sort()
+
+numbers.sort()
+
 let sorted = numbers.sort()
 
 numbers.maxElement()
 numbers.minElement()
 
-//: ## Использование `map`-`reduce`
+numbers.sort().minElement()
+Array(numbers.sort().reverse())
+
+numbers.first
+numbers.minElement()
+
+[4, 5, 6]
+//: ## Использование `map`
+numbers
+
+numbers.map(удвоить)
 
 numbers.map(удвоить).map(квадрат)
 
 
-let sum = numbers.reduce(0, combine: +)
-numbers.reduce(1, combine: *)
-
-let sorted_sum = sorted.reduce(0, combine: +)
-sorted.reduce(1, combine: *)
-
 //: ## Нечисловые типы
+func остатокПоМодулю3(число: Int) -> Int {
+    return число % 3 // 0, 1 или 2
+}
 
+numbers.map(остатокПоМодулю3)
+
+//: Есть операторы интервала (range) ..<  и ...
+numbers[0...2] // 0, 1, 2
+numbers[0..<2] // 0, 1
+
+let новый1 = 77
+let новый_numbers = [новый1] + numbers[1...3]
 //: Значения `true` и `false`
+
 5 == 6
 7 == 7
 2 + 2 == 4
 
+false
+true
+
 numbers.isEmpty
+
 true == true
 false == false
 true == false
 
+true && false
+true || false
+true == false
+
+5 == 6
+
+let trüe = false
+trüe
 //: Вместе называются тип Bool
 let правда:Bool = 5 * 5 == 25
-let ложь:Bool = numbers.contains(25)
+let ложь:Bool = numbers.contains(1)
 
+let мнения: [Bool] = [true, false]
+Bool(0)
 
 //: Строки определяются с помощью `"`
 
 "Много" + "Букв"
+let пробел = " " 
 
+//: Можно определять объекты как в Java: Тип(параметры)
+пробел != String() // ⇠ Пустая строка
+"Массив \(numbers.map(квадрат)) круто"
+//: Этот формат такой же как в (Objective-)C
+String(format: "Вывод %05d с нулями!", 30)
+
+
+
+//: Использование reduce
+numbers
+
+56 + 22 + 31 + 40
+
+numbers.reduce(0, combine: +)
+
+numbers.reduce(1, combine: *)
+
+//: Массив -> массив (map)
+//: Массив -> конечный (reduce)
 
