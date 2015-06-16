@@ -5,5 +5,6 @@
         <page name='Решето'/>
         <page name='Поисковик'/>
         <page name='Векторы'/>
+        <page name='Классы'/>
     </pages>
 </playground>
