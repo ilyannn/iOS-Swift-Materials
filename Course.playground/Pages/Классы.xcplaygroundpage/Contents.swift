@@ -27,6 +27,7 @@ class Domestic: Animal, CustomPlaygroundQuickLookable {
     }
 
     func numberOfLegs() -> Int {
+        
         return 4
     }
     
