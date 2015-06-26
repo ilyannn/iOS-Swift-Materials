@@ -2,7 +2,7 @@
 
 import UIKit
 
-class Animal {
+public class Animal {
 //    func numberOfLegs() -> Int {
 //        fatalError("Не знаю")
 //    }
@@ -13,29 +13,35 @@ protocol Standable {
     func numberOfLegs() -> Int
 }
 
-class Spider: Animal, Standable {
+class Spider: Animal {
+
+}
+
+
+extension Spider: Standable {
     func numberOfLegs() -> Int {
         return 8
     }
 }
 
-class Domestic: Animal, CustomPlaygroundQuickLookable {
+
+
+public class Domestic: Animal, CustomPlaygroundQuickLookable {
     let animalName: String
     
-    init(name: String) {
+    public init(name: String) {
         animalName = name
     }
 
-    func numberOfLegs() -> Int {
-        
+    final func numberOfLegs() -> Int {
         return 4
     }
     
-    func say() -> String {
+    public func say() -> String {
         return ""
     }
     
-    func customPlaygroundQuickLook() -> PlaygroundQuickLook {
+    public func customPlaygroundQuickLook() -> PlaygroundQuickLook {
         guard let image = UIImage(named: imageName()) else { return PlaygroundQuickLook(reflecting: "") }
         return PlaygroundQuickLook(reflecting: image) 
     }
@@ -43,6 +49,11 @@ class Domestic: Animal, CustomPlaygroundQuickLookable {
     func imageName() -> String {
         return ""
     }
+    
+    private func numberOfEyes() -> Int {
+        return 2
+    }
+    
 }
 
 class Cat: Domestic {
@@ -65,12 +76,23 @@ class Dog: Domestic {
     }
 }
 
+extension Domestic: Standable {
+    
+}
+
 let snowball_II = Cat(name: "Snowball II")
-let objects = [Dog(name: "Шарик"), Dog(name: "Fido"), snowball_II, Spider()]
-let legs = (objects as [Standable]).map { $0.numberOfLegs() } 
+snowball_II.numberOfLegs()
+
+
+let objects:[Standable] = [Dog(name: "Шарик"), Dog(name: "Fido"), snowball_II, Spider()]
+
+let legs = objects.map{ return $0.numberOfLegs() }
+
 legs
 
+////let legs = (objects as [Standable]).map { $0.numberOfLegs() } 
 let total = legs.reduce(0, combine: +)
+
 
 protocol Talkable {
     func say() -> String
@@ -88,7 +110,7 @@ let noises: [Talkable] = [snowball_II, Dog(name: "Santa's Little Helper"), Alarm
 
 snowball_II.say()
 
-let noise = " and ".join(noises.map{$0.say()})
-noise
+let result = " + ".join(noises.map { $0.say() })
+result
 
 //: [Next](@next)
