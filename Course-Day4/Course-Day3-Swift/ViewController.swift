@@ -10,18 +10,20 @@ import UIKit
 
 class AnimalView: UIImageView {
 
+    var victoryBlock: (AnimalView) -> () = {_ in }
+    
     var selected:Bool {
         didSet {
-            layer.borderColor = selected ? UIColor.redColor().CGColor : nil
+            layer.borderColor = selected ? UIColor.yellowColor().CGColor : nil
         }
     }
     
     var tapped:Bool {
         didSet {
-            image = UIImage(named: selected ? "cat.jpg" : "dog.jpg")!
+            image = UIImage(named: tapped ? "cat.jpg" : "dog.jpg")!
         }
     }
-    
+        
     init(border: UIColor) {
         selected = false
         tapped = false
@@ -39,7 +41,7 @@ class AnimalView: UIImageView {
     }
     
     required init(coder aDecoder: NSCoder) {
-        fatalError("Not implement")
+        fatalError("Not implemented")
     }
     
     override func touchesBegan(touches: Set<UITouch>, 
@@ -48,6 +50,8 @@ class AnimalView: UIImageView {
         super.touchesBegan(touches, withEvent: event)
         
         tapped = true
+        
+        victoryBlock(self)
     }
     
     override func touchesEnded(touches: Set<UITouch>, 
@@ -63,13 +67,46 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var firstView: UIView!
     
-    var animals: [AnimalView] = []
+    @IBOutlet weak var victoryLabel: UILabel!
     
-    @IBAction func fire(sender: AnyObject) {
-        let random_number = random() % animals.count
-        animals[random_number].selected = true
+    var animals: [AnimalView] = []
+    var expected: AnimalView?
+    
+    var level = 0 {
+        didSet {
+            victoryLabel.text = "Level: \(level)"
+        }
     }
 
+    @IBAction func fire(sender: AnyObject) {
+            
+        NSTimer.scheduledTimerWithTimeInterval(1.0, 
+            target: self, 
+            selector: "selectRandom:", 
+            userInfo: nil, 
+            repeats: false
+        )
+        
+    }
+
+    func selectRandom(sender:AnyObject?) {
+        let random_number = random() % animals.count
+        expected = animals[random_number]
+        expected?.selected = true
+
+        NSTimer.scheduledTimerWithTimeInterval(0.5 / pow(1.7, Double(level + 1)), 
+            target: self, 
+            selector: "unselectAnimal:", 
+            userInfo: expected, 
+            repeats: false
+        )
+    }
+    
+    func unselectAnimal(sender:NSTimer) {
+        let animal = sender.userInfo as? AnimalView
+        animal?.selected = false
+    }
+    
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
          return .LightContent
     }
@@ -82,7 +119,20 @@ class ViewController: UIViewController {
         animalView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
 
         animalView.layer.cornerRadius = 10
-
+        
+        animalView.victoryBlock = { animal in
+            if (animal == self.expected) {
+                self.level++
+                if (self.level == self.animals.count) {
+                    self.victoryLabel.backgroundColor = .greenColor()
+                    self.level = 0
+                }
+            } else {
+                self.victoryLabel.backgroundColor = .redColor()
+                self.level = 0
+            }
+        }
+        
         UIView.animateWithDuration(1.0, 
             delay: 0, 
             options: UIViewAnimationOptions.AllowUserInteraction, 

@@ -35,15 +35,38 @@
                                     <action selector="fire:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lRR-Zw-cWt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twq-Zo-JiN">
+                                <rect key="frame" x="0.0" y="50" width="768" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="aaM-Vk-Otp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Twq-Zo-JiN" firstAttribute="trailing" secondItem="kzW-nI-rwf" secondAttribute="trailing" id="0bV-mz-ZOW"/>
+                            <constraint firstItem="Twq-Zo-JiN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="LLl-aO-7E2"/>
                             <constraint firstItem="kzW-nI-rwf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pdp-bX-fDE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Twq-Zo-JiN" secondAttribute="bottom" constant="908" id="Qlf-1Y-FcQ"/>
                             <constraint firstItem="kzW-nI-rwf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="h3u-LU-9nq"/>
+                            <constraint firstItem="Twq-Zo-JiN" firstAttribute="leading" secondItem="kzW-nI-rwf" secondAttribute="leading" id="jkh-3p-YeE"/>
                             <constraint firstAttribute="trailing" secondItem="kzW-nI-rwf" secondAttribute="trailing" id="teK-Ri-J9f"/>
+                            <constraint firstItem="Twq-Zo-JiN" firstAttribute="top" secondItem="kzW-nI-rwf" secondAttribute="bottom" id="tnI-qS-yRB"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LLl-aO-7E2"/>
+                                <exclude reference="Qlf-1Y-FcQ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="victoryLabel" destination="Twq-Zo-JiN" id="T0I-Pc-ptU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
