@@ -77,7 +77,7 @@ class ViewController: UIViewController {
     }
     
     func readPoints() -> [CGPoint] {
-        let URL = NSURL(string: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/Course-Day4/coords.txt")!
+        let URL = NSURL(string: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/Course-Day4/coords2.txt")!
         
         let data = try! String(contentsOfURL: URL, encoding: NSUTF8StringEncoding)
 
