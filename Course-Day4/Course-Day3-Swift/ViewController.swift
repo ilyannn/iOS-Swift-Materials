@@ -76,10 +76,15 @@ class ViewController: UIViewController {
         view.addSubview(secondView)
     }
     
+    func readPoints() -> [CGPoint] {
+        let URL = 
+        let data = String(contentsOfURL: URL, encoding: .UTF8)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
-
+        let points = readPoints()
         for point in points {
             addRectange(point)
         }
