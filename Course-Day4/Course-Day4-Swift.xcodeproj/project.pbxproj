@@ -16,6 +16,7 @@
 		BA85B7FE1B3C6271003666D9 /* Course_Day3_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA85B7FD1B3C6271003666D9 /* Course_Day3_SwiftUITests.swift */; };
 		BA85B80C1B3DAFD3003666D9 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA85B80B1B3DAFD3003666D9 /* dog.jpg */; };
 		BA85B80E1B3DB470003666D9 /* coords2.txt in Resources */ = {isa = PBXBuildFile; fileRef = BA85B80D1B3DB470003666D9 /* coords2.txt */; };
+		BA85B8101B3DBB13003666D9 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA85B80F1B3DBB13003666D9 /* cat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BA85B7FF1B3C6271003666D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA85B80B1B3DAFD3003666D9 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dog.jpg; path = ../../dog.jpg; sourceTree = "<group>"; };
 		BA85B80D1B3DB470003666D9 /* coords2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coords2.txt; sourceTree = "<group>"; };
+		BA85B80F1B3DBB13003666D9 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cat.jpg; path = ../../cat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				BA85B7E61B3C6271003666D9 /* LaunchScreen.storyboard */,
 				BA85B7E91B3C6271003666D9 /* Info.plist */,
 				BA85B80B1B3DAFD3003666D9 /* dog.jpg */,
+				BA85B80F1B3DBB13003666D9 /* cat.jpg */,
 			);
 			path = "Course-Day3-Swift";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA85B8101B3DBB13003666D9 /* cat.jpg in Resources */,
 				BA85B80C1B3DAFD3003666D9 /* dog.jpg in Resources */,
 				BA85B7E81B3C6271003666D9 /* LaunchScreen.storyboard in Resources */,
 				BA85B7E51B3C6271003666D9 /* Assets.xcassets in Resources */,
@@ -408,6 +412,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.boloid.Course-Day3-Swift";
 				PRODUCT_NAME = "Course-Day4-Swift";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -419,6 +424,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.boloid.Course-Day3-Swift";
 				PRODUCT_NAME = "Course-Day4-Swift";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

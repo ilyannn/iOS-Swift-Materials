@@ -2,8 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Thin</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,36 +21,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6b-hm-yJa">
-                                <rect key="frame" x="363" y="395" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGb-hL-4wW">
-                                <rect key="frame" x="264" y="220" width="240" height="128"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzW-nI-rwf">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="TAD-Vp-LRK"/>
-                                    <constraint firstAttribute="width" secondItem="KGb-hL-4wW" secondAttribute="height" multiplier="15:8" id="acu-iv-mf3"/>
+                                    <constraint firstAttribute="height" constant="50" id="iYr-5j-fVG"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
+                                <state key="normal" title="огонь">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fire:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lRR-Zw-cWt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KGb-hL-4wW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="5gP-j5-5Se"/>
-                            <constraint firstItem="KGb-hL-4wW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AUt-wg-6vc"/>
-                            <constraint firstItem="Q6b-hm-yJa" firstAttribute="centerX" secondItem="KGb-hL-4wW" secondAttribute="centerX" id="BcY-lU-Te1"/>
-                            <constraint firstItem="Q6b-hm-yJa" firstAttribute="top" secondItem="KGb-hL-4wW" secondAttribute="bottom" constant="47" id="HOD-xh-xaR"/>
+                            <constraint firstItem="kzW-nI-rwf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pdp-bX-fDE"/>
+                            <constraint firstItem="kzW-nI-rwf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="h3u-LU-9nq"/>
+                            <constraint firstAttribute="trailing" secondItem="kzW-nI-rwf" secondAttribute="trailing" id="teK-Ri-J9f"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
-                    <connections>
-                        <outlet property="firstView" destination="KGb-hL-4wW" id="1Pl-ax-Fl0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="152" y="97"/>
         </scene>
     </scenes>
 </document>

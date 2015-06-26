@@ -8,21 +8,30 @@
 
 import UIKit
 
-private class RectangleView: UIImageView {
+class AnimalView: UIImageView {
 
     var selected:Bool {
         didSet {
-            backgroundColor = selected ? .purpleColor() : nil
+            layer.borderColor = selected ? UIColor.redColor().CGColor : nil
+        }
+    }
+    
+    var tapped:Bool {
+        didSet {
+            image = UIImage(named: selected ? "cat.jpg" : "dog.jpg")!
         }
     }
     
     init(border: UIColor) {
         selected = false
+        tapped = false
         
         super.init(frame: CGRectZero)
 
         image = UIImage(named: "dog.jpg")
         contentMode = .ScaleAspectFill
+        userInteractionEnabled = true
+        
         layer.masksToBounds = true
         layer.borderWidth = 3.0   
         layer.shadowOpacity = 0
@@ -33,20 +42,20 @@ private class RectangleView: UIImageView {
         fatalError("Not implement")
     }
     
-    private override func touchesBegan(touches: Set<UITouch>, 
+    override func touchesBegan(touches: Set<UITouch>, 
         withEvent event: UIEvent?) 
     {
         super.touchesBegan(touches, withEvent: event)
         
-        selected = true        
+        tapped = true
     }
     
-    private override func touchesEnded(touches: Set<UITouch>, 
+    override func touchesEnded(touches: Set<UITouch>, 
         withEvent event: UIEvent?) 
     {
         super.touchesEnded(touches, withEvent: event)
         
-        selected = false
+        tapped = false
     }
 }
 
@@ -54,26 +63,39 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var firstView: UIView!
     
+    var animals: [AnimalView] = []
+    
+    @IBAction func fire(sender: AnyObject) {
+        let random_number = random() % animals.count
+        animals[random_number].selected = true
+    }
 
-    func addRectange(center: CGPoint) {
-        let secondView = RectangleView(border: .blackColor() )
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+         return .LightContent
+    }
+    
+    func addAnimal(center: CGPoint) {
+        let animalView = AnimalView(border: .blackColor() )
                 
-        secondView.center = center
-        secondView.bounds = CGRect(x: 0, y: 0, width: 100, height: 60)
+        animalView.center = center
+        animalView.bounds = CGRect(x: 0, y: 0, width: 100, height: 60)
+        animalView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
 
-        secondView.layer.cornerRadius = 10
+        animalView.layer.cornerRadius = 10
 
-        UIView.animateWithDuration(4.0, 
+        UIView.animateWithDuration(1.0, 
             delay: 0, 
             options: UIViewAnimationOptions.AllowUserInteraction, 
             animations: { () -> Void in
 
-                secondView.center = CGPoint(x: center.x + 100, y: center.y + 100 )
-                secondView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+                animalView.center = CGPoint(x: center.x, y: center.y + 100 )
+                animalView.transform = CGAffineTransformMakeRotation(CGFloat(0))
             
             }, completion: {_ in }) 
         
-        view.addSubview(secondView)
+        animals += [animalView]
+        
+        view.addSubview(animalView)
     }
     
     func readPoints() -> [CGPoint] {
@@ -100,7 +122,7 @@ class ViewController: UIViewController {
     
         let points = readPoints()
         for point in points {
-            addRectange(point)
+            addAnimal(point)
         }
     }
 
