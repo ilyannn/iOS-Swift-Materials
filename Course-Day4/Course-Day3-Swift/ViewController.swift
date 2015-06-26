@@ -77,8 +77,22 @@ class ViewController: UIViewController {
     }
     
     func readPoints() -> [CGPoint] {
-        let URL = 
-        let data = String(contentsOfURL: URL, encoding: .UTF8)
+        let URL = NSURL(string: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/Course-Day4/coords.txt")!
+        
+        let data = try! String(contentsOfURL: URL, encoding: NSUTF8StringEncoding)
+
+        let strings = data.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
+        
+        return strings.flatMap { string in 
+            let chunks = string.componentsSeparatedByCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+            let numbers = chunks.flatMap { Int($0) }
+            
+            if (numbers.count != 2) {
+                return nil
+            }
+            
+            return CGPoint(x: numbers[0], y: numbers[1])
+        }
     }
     
     override func viewDidLoad() {
