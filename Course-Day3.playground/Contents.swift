@@ -10,7 +10,7 @@ str = "Goodbye"
 class Animal {
     
     func talk() -> String {
-        return "
+        return ""
     }
     
 }
