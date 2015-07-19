@@ -103,10 +103,25 @@ let результат_весь: [(String, Int)] = [("Василиса", 2), ("�
 
 
 //: ## Поисковый робот
-// let data = "Василиса"
 
+func Робот(search: Character) -> (String -> [(String, Int)]) {
+    
+    return  { (data: String) -> [(String, Int)] in
+        
+        return data
+            .lowercaseString
+            .characters
+            .enumerate()
+            .filter { (index, char) in
+                return char == search
+            }
+            .map{ (index: Int, char:Character) in
+                (data, index + 1)
+            }
+    }
+}
 
-func РоботА(data: String) -> [(String, Int)] {
+/*func РоботА(data: String) -> [(String, Int)] {
     return data
         .lowercaseString
         .characters
@@ -119,10 +134,18 @@ func РоботА(data: String) -> [(String, Int)] {
             (data, index)
         }
 }
+*/
 
-РоботА("Катя")
-РоботА("Тарас")
-РоботА("Аня")
+//РоботА("Катя")
+//
+//РоботА("Тарас")
+//РоботА("Аня")
+//
+//names.map(РоботА).reduce([], combine: +)
+
+names.map(Робот("а")).reduce([], combine: +)
+names.map(Робот("е")).reduce([], combine: +)
+names.map(Робот("и")).reduce([], combine: +)
 
 //: Домашнее задание: робот для поиска "е"
 
