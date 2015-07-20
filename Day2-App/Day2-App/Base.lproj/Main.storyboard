@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day2_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAG-qd-xby">
+                                <rect key="frame" x="253" y="85" width="95" height="21"/>
+                                <color key="backgroundColor" white="0.77788342927631582" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ij6-iq-hoe">
+                                <rect key="frame" x="254" y="275" width="93" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bWx-aQ-kGB"/>
+                                </constraints>
+                                <state key="normal" title="Приветствие"/>
+                                <state key="highlighted" title="Кнопку нажали">
+                                    <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelChange:" destination="BYZ-38-t0r" eventType="touchCancel" id="f7V-kH-Hlb"/>
+                                    <action selector="cancelChange:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="j1w-jf-l3m"/>
+                                    <action selector="cancelChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p4D-b2-a5z"/>
+                                    <action selector="changePicture:" destination="BYZ-38-t0r" eventType="touchDown" id="H0K-M5-Zn6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.jpg" highlightedImage="dog.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="z5S-aa-88V">
+                                <rect key="frame" x="180" y="340" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="z5S-aa-88V" secondAttribute="height" multiplier="1:1" id="Q9K-Vr-xvH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z5S-aa-88V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6JX-o4-hU9"/>
+                            <constraint firstItem="DAG-qd-xby" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="8ny-a0-5lg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="z5S-aa-88V" secondAttribute="bottom" constant="20" id="dII-sr-CX4"/>
+                            <constraint firstItem="Ij6-iq-hoe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gBh-Ng-krb"/>
+                            <constraint firstItem="Ij6-iq-hoe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kct-gT-tJ9"/>
+                            <constraint firstItem="DAG-qd-xby" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zKe-Fe-LGB"/>
+                            <constraint firstItem="z5S-aa-88V" firstAttribute="top" secondItem="Ij6-iq-hoe" secondAttribute="bottom" constant="15" id="zm1-yY-Xj3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animalView" destination="z5S-aa-88V" id="sh5-os-mvp"/>
+                        <outlet property="helloButton" destination="Ij6-iq-hoe" id="35p-xB-9Sb"/>
+                        <outlet property="helloLabel" destination="DAG-qd-xby" id="Bgp-Sm-gRB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="380" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cat.jpg" width="284" height="177"/>
+        <image name="dog.jpg" width="215" height="235"/>
+    </resources>
 </document>

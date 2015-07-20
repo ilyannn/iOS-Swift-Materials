@@ -14,6 +14,8 @@
 		121FAAD01B5BA29F00380B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121FAACE1B5BA29F00380B82 /* LaunchScreen.storyboard */; };
 		121FAADB1B5BA29F00380B82 /* Day2_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121FAADA1B5BA29F00380B82 /* Day2_AppTests.swift */; };
 		121FAAE61B5BA29F00380B82 /* Day2_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121FAAE51B5BA29F00380B82 /* Day2_AppUITests.swift */; };
+		121FAAF41B5BA9D100380B82 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 121FAAF31B5BA9D100380B82 /* cat.jpg */; };
+		121FAAF61B5BAABC00380B82 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 121FAAF51B5BAABC00380B82 /* dog.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		121FAAE11B5BA29F00380B82 /* Day2-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day2-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		121FAAE51B5BA29F00380B82 /* Day2_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2_AppUITests.swift; sourceTree = "<group>"; };
 		121FAAE71B5BA29F00380B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		121FAAF31B5BA9D100380B82 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cat.jpg; path = ../../cat.jpg; sourceTree = "<group>"; };
+		121FAAF51B5BAABC00380B82 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dog.jpg; path = ../../dog.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				121FAAC51B5BA29F00380B82 /* AppDelegate.swift */,
 				121FAAC71B5BA29F00380B82 /* ViewController.swift */,
 				121FAAC91B5BA29F00380B82 /* Main.storyboard */,
+				121FAAF31B5BA9D100380B82 /* cat.jpg */,
+				121FAAF51B5BAABC00380B82 /* dog.jpg */,
 				121FAACC1B5BA29F00380B82 /* Assets.xcassets */,
 				121FAACE1B5BA29F00380B82 /* LaunchScreen.storyboard */,
 				121FAAD11B5BA29F00380B82 /* Info.plist */,
@@ -192,6 +198,7 @@
 				TargetAttributes = {
 					121FAAC11B5BA29F00380B82 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = A8J6S3WP2B;
 					};
 					121FAAD51B5BA29F00380B82 = {
 						CreatedOnToolsVersion = 7.0;
@@ -229,7 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				121FAAD01B5BA29F00380B82 /* LaunchScreen.storyboard in Resources */,
+				121FAAF61B5BAABC00380B82 /* dog.jpg in Resources */,
 				121FAACD1B5BA29F00380B82 /* Assets.xcassets in Resources */,
+				121FAAF41B5BA9D100380B82 /* cat.jpg in Resources */,
 				121FAACB1B5BA29F00380B82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Day2-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Day2-App";
@@ -409,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Day2-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Day2-App";

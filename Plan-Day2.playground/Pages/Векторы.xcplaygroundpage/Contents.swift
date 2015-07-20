@@ -1,6 +1,7 @@
 //: [Предыдущая страница: Поисковик](@previous)
 
 //: # Векторы
+Canvas()
 
 //: *В папочке `Sources` к этой странице лежит файл с логикой создания двуменых картинок. Чтобы увидеть картинку, надо нажать справа, там где подсчитано значение выражения, символ просмотра (глаз) или плюсик.*
 
@@ -18,8 +19,8 @@ Canvas()
 //: Написав `CustomPlaygroundQuickLookable` мы сообщили Xcode что мы хотели бы реализовать специальный метод, который возвращает объект для *Quick Look*.
 
 struct Vector: CustomPlaygroundQuickLookable {
-    let dx: Double
-    let dy: Double
+    var dx: Double
+    var dy: Double
 
 //: Пример создания функции без аргументов:
     
@@ -84,8 +85,12 @@ let π = M_PI
 A
 
 //: Допустим, у нас есть вектор с заданной длиной и мы хотим его повернуть.
-let angle = π / 10
+let angle = π / 4
 let length = 4.0
+
+Vector(dx: length, dy: 0)
+
+Vector(dx: length * cos(angle), dy: length * sin(angle))
 
 //: Поворот вектора, который смотрит направо
 Vector(dx: length * cos(angle), dy: length * sin(angle))
@@ -112,6 +117,18 @@ extension Vector {
         )
     }
 }
+
+//: ## Изменение векторов
+
+var vector1 = Vector(dx: 1.0, dy: 1.0)
+var vector2 = vector1
+
+// vector1 и vector2 - разные
+
+vector1.dx = 2.0
+vector1.dx
+vector2.dx
+
 
 //: ## Оператор `for`
 
