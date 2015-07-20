@@ -48,9 +48,9 @@ falcon.x = 33
 falcon.x
 
 let hanSolosShip = falcon
-let chubakkaPiloted = falcon
+let chewbaccaPiloted = falcon
 
-chubakkaPiloted.x = 100
+chewbaccaPiloted.x = 100
 hanSolosShip.x
 
 
