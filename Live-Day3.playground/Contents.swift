@@ -54,13 +54,45 @@ increase_or_empty("ksjdhf")
 
 //: Вернемся к NSURL
 
-func result(string: String) -> NSString {
-    guard let good_url = NSURL(string: string) else { return "" }
-
-    guard let data = NSData(contentsOfURL: good_url) else { return "" }
+func result(string: String) throws -> AnyObject?  {
+    guard let good_url = NSURL(string: string) else { return nil }
+    guard let data = NSData(contentsOfURL: good_url) else { return nil }
     
-    return NSString(data: data, encoding: NSUTF8StringEncoding) ?? ""
+    let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)
+    
+    return json
 }
 
-result("https://en.wikipedia.org/w/index.php?title=Elliott_Fitch_Shepard&printable=yes")
+
+
+// try result("https://github.com/ilyannn/iOS-Swift-Materials/raw/master/example.json")
+
+//: ## NSString vs String
+
+let string = "😡"
+string.characters.count
+Array(string.utf16)
+
+let nsstring:NSString = "😡"
+nsstring.length
+
+nsstring.characterAtIndex(0)
+nsstring.characterAtIndex(1)
+
+
+let eAcute:NSString = "\u{E9}"                         // é
+eAcute.length
+
+let combinedEAcute:NSString = "\u{65}\u{301}"
+combinedEAcute.length
+combinedEAcute.characterAtIndex(0)
+combinedEAcute.characterAtIndex(1)
+
+eAcute.isEqualToString(combinedEAcute as String)
+
+let eAcute_swift:String = "\u{E9}"                         // é
+let combinedEAcute_swift:String = "\u{65}\u{301}"
+eAcute_swift == combinedEAcute_swift
+eAcute_swift.characters.count
+combinedEAcute_swift.characters.count
 
