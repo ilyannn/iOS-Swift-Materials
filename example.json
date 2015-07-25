@@ -1,10 +1,10 @@
 [{
 name: "Ученый кот",
 badge: ["iOS", "Swift"]
-avatar: "http://cat"
+avatar: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/cat.jpg"
 },
 {
 name: "Собака",
 badge: ["iOS"],
-avatar: "http://cat"
+avatar: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/dog.jpg"
 }]
