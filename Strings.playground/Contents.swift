@@ -1,5 +1,6 @@
 //: Playground - noun: a place where people can play
 
+
 import UIKit
 
 let x:NSString = "😡"
@@ -22,10 +23,18 @@ url?.path
 
 /*
 
+[
 {
-        name: "Ученый кот", 
-        badge: ["iOS", "Swift"]
+name: "Ученый кот",
+badge: ["iOS", "Swift"]
+avatar: "http://cat"
+},
+{
+name: "Собака",
+badge: ["iOS"],
+avatar: "http://cat"
 }
+]
 
 */
 
