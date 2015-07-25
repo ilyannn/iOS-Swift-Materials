@@ -16,6 +16,7 @@
 		12DC1EFC1B639C2B00403462 /* Live_Day4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC1EFB1B639C2B00403462 /* Live_Day4Tests.swift */; };
 		12DC1F071B639C2B00403462 /* Live_Day4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC1F061B639C2B00403462 /* Live_Day4UITests.swift */; };
 		12DC1F151B63A34E00403462 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC1F141B63A34E00403462 /* PersonCell.swift */; };
+		12DC1F181B63B5F900403462 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC1F161B63B3B300403462 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		12DC1F061B639C2B00403462 /* Live_Day4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live_Day4UITests.swift; sourceTree = "<group>"; };
 		12DC1F081B639C2B00403462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12DC1F141B63A34E00403462 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		12DC1F161B63B3B300403462 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				12DC1EED1B639C2B00403462 /* Assets.xcassets */,
 				12DC1EEF1B639C2B00403462 /* LaunchScreen.storyboard */,
 				12DC1EF21B639C2B00403462 /* Info.plist */,
+				12DC1F161B63B3B300403462 /* Person.swift */,
 			);
 			path = "Live-Day4";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12DC1F181B63B5F900403462 /* Person.swift in Sources */,
 				12DC1EE91B639C2B00403462 /* DetailViewController.swift in Sources */,
 				12DC1EE71B639C2B00403462 /* MasterViewController.swift in Sources */,
 				12DC1F151B63A34E00403462 /* PersonCell.swift in Sources */,

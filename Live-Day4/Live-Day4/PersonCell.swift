@@ -19,7 +19,7 @@ class PersonCell: UITableViewCell {
         
         personNameLabel.text = "Что-то"
         personBadgesLabel.text = "Текст"
-        personBadgesLabel.backgroundColor = .redColor()
+        personBadgesLabel.textColor = .whiteColor()
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
