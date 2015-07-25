@@ -65,7 +65,9 @@ func result(string: String) throws -> AnyObject?  {
 
 
 
-// try result("https://github.com/ilyannn/iOS-Swift-Materials/raw/master/example.json")
+let json = try result("https://github.com/ilyannn/iOS-Swift-Materials/raw/master/example.json")
+
+
 
 //: ## NSString vs String
 
