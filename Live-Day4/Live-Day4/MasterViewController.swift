@@ -13,10 +13,16 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var objects: [Person] = []
 
+    func loadPersons() {
+        objects = LoadPersons(from: "https://github.com/ilyannn/iOS-Swift-Materials/raw/master/example.json")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadPersons()
+        
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.leftBarButtonItem = self.editButtonItem()
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
@@ -82,15 +88,20 @@ class MasterViewController: UITableViewController {
         // Настройка клетки
 
         cell.personNameLabel.text = object.name
-        cell.personAvatar.image = object.image
         cell.personBadgesLabel.text = " + ".join(object.badges)
-        
+
+        let avatar = cell.personAvatar
+        avatar.image = object.image
+        avatar.layer.borderColor = UIColor.blackColor().CGColor
+        avatar.layer.cornerRadius = avatar.bounds.size.height / 2
+        avatar.layer.borderWidth = 2
+        avatar.layer.masksToBounds = true
         return cell
     }
 
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
-        return true
+        return false
     }
 
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {

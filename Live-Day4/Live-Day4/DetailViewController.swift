@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var personBigAvatar: UIImageView!
 
 
-    var detailItem: AnyObject? {
+    var detailItem: Person? {
         didSet {
             // Update the view.
             self.configureView()
@@ -22,15 +22,10 @@ class DetailViewController: UIViewController {
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = self.detailItem {
+        guard let person = self.detailItem else { return }
 
-        }
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.configureView()
+        print(self.view)
+        personBigAvatar.image = person.image
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +33,9 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func avatarTapped(sender: AnyObject) {
+        
+    }
 
 }
 
