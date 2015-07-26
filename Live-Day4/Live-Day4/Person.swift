@@ -23,12 +23,12 @@ class Person {
         guard let name = dict["name"] as? String else {
             fatalError("Incorrect key: name")
         }
-        guard let badges = dict["badge"] as? [String] else {
+        guard let badges = dict["badge"] as? String else {
             fatalError("Incorrect key: badge")
         }
         
         self.name = name
-        self.badges = badges
+        self.badges = badges.componentsSeparatedByString(" ")
         
         guard let string = dict["avatar"] as? String else {
             fatalError("Incorrect key: avatar")
