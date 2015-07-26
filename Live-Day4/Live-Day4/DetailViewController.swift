@@ -105,12 +105,24 @@ extension DetailViewController: UIImagePickerControllerDelegate, UINavigationCon
           didFinishPickingImage image: UIImage,
                           editingInfo: [String : AnyObject]?)
     {
+        let beginImage = CIImage(image: image)
+        
+        // 3
+        guard let filter = CIFilter(name: "CISepiaTone") else { return }
+        
+        filter.setValue(beginImage, forKey: kCIInputImageKey)
+        filter.setValue(0.9, forKey: kCIInputIntensityKey)
+        
+        // 4
+        let newImage = UIImage(CIImage: filter.outputImage)
+        
         // что-то сделать
-        personBigAvatar.image = image
+        personBigAvatar.image = newImage
         
         // завершить работу UIImagePickerController
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
 }
 
 
