@@ -68,7 +68,7 @@ class DetailViewController: UIViewController {
         UIView.animateWithDuration(interval, animations: animations)
 */
         badgePressed = sender.titleForState(.Normal)
-        performSegueWithIdentifier("showBadge", sender: sender)
+        performSegueWithIdentifier("showTabView", sender: sender)
     }
     
     override func didReceiveMemoryWarning() {
