@@ -36,11 +36,11 @@
                         <viewControllerLayoutGuide type="bottom" id="GAO-Cl-Wes"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FNf-8y-1Ff">
-                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="204" width="375" height="375"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FNf-8y-1Ff" secondAttribute="height" multiplier="1:1" id="rYL-6y-VNh"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsR-WD-Cw0">
-                                <rect key="frame" x="20" y="672" width="560" height="70"/>
+                                <rect key="frame" x="16" y="587" width="343" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="wuX-Nm-V2Q"/>
                                 </constraints>
@@ -65,6 +65,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="MsR-WD-Cw0" secondAttribute="bottom" constant="10" id="7W2-2u-Ddd"/>
                             <constraint firstItem="FNf-8y-1Ff" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="7iT-Yo-NJ7"/>
                             <constraint firstItem="FNf-8y-1Ff" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" id="Er6-sp-TRa"/>
                             <constraint firstItem="MsR-WD-Cw0" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="JQe-ya-R0Z"/>
@@ -72,6 +73,11 @@
                             <constraint firstAttribute="trailing" secondItem="FNf-8y-1Ff" secondAttribute="trailing" id="cvj-gB-ecy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MsR-WD-Cw0" secondAttribute="trailing" id="e8g-Iy-ULc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Er6-sp-TRa"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
@@ -213,6 +219,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Tll-UG-LXB"/>
+        <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
 </document>

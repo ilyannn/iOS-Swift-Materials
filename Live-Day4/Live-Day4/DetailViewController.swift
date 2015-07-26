@@ -27,8 +27,40 @@ class DetailViewController: UIViewController {
         print(self.view)
         personBigAvatar.image = person.image
         nameLabel.text = person.name
+        
+        for (index, badge) in person.badges.enumerate() {
+            let x = 30 + 100 * index
+            
+            let frame = CGRect(x: x, y: 100, width: 80, height: 30)
+            let button = UIButton(frame: frame)
+            
+            button.setTitle(badge, forState: .Normal)
+            button.setTitleColor(.redColor(), forState: .Normal)
+            
+            button.layer.cornerRadius = 5
+            button.layer.borderColor = UIColor.redColor().CGColor
+            button.layer.borderWidth = 2
+            
+            button.addTarget(self,
+                action: "badgePressed:",
+                forControlEvents: .TouchUpInside)
+            
+            view.addSubview(button)
+        }
+        
     }
 
+    func badgePressed(sender: UIButton) {
+        
+        let interval: NSTimeInterval = 1.0
+        
+        let animations: () -> Void = { () in
+            sender.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+        }
+        
+        UIView.animateWithDuration(interval, animations: animations)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
