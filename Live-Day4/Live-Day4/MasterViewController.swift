@@ -14,7 +14,7 @@ class MasterViewController: UITableViewController {
     var objects: [Person] = []
 
     func loadPersons() {
-        objects = LoadPersons(from: "https://github.com/ilyannn/iOS-Swift-Materials/raw/master/example.json")
+        objects = LoadPersons(from: "http://188.166.102.93:3000/store/person")
     }
     
     override func viewDidLoad() {

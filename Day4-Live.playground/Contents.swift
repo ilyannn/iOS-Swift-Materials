@@ -64,3 +64,23 @@ func decode_for(message: String) -> String {
 decode_for("Hey weather is 77 69 77")
 decode_for(message)
 
+let constant = 100
+
+let url = NSURL(string: "http://google.com")
+let url2 = url
+var url3 = url
+
+class Multiplier {
+    
+    final func multiply_by_2(x:Int) -> Int {
+        return x * 2
+    }
+}
+
+Multiplier().multiply_by_2(constant)
+
+
+
+
+
+

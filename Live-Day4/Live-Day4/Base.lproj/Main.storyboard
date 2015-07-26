@@ -8,6 +8,7 @@
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Thin</string>
+            <string>HelveticaNeue-Thin</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -48,17 +49,30 @@
                                     <outletCollection property="gestureRecognizers" destination="jwL-f4-fIa" appends="YES" id="m7b-2j-heA"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsR-WD-Cw0">
+                                <rect key="frame" x="16" y="447" width="343" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="wuX-Nm-V2Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FNf-8y-1Ff" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="7iT-Yo-NJ7"/>
                             <constraint firstItem="FNf-8y-1Ff" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" id="Er6-sp-TRa"/>
+                            <constraint firstItem="MsR-WD-Cw0" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="JQe-ya-R0Z"/>
+                            <constraint firstItem="MsR-WD-Cw0" firstAttribute="top" secondItem="FNf-8y-1Ff" secondAttribute="bottom" constant="8" id="KAO-2C-LEO"/>
                             <constraint firstAttribute="trailing" secondItem="FNf-8y-1Ff" secondAttribute="trailing" id="cvj-gB-ecy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MsR-WD-Cw0" secondAttribute="trailing" id="e8g-Iy-ULc"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
                     <connections>
+                        <outlet property="nameLabel" destination="MsR-WD-Cw0" id="nhY-BU-4E2"/>
                         <outlet property="personBigAvatar" destination="FNf-8y-1Ff" id="gug-Dh-6pE"/>
                     </connections>
                 </viewController>

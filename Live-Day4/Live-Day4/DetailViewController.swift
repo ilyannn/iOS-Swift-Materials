@@ -11,6 +11,7 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var personBigAvatar: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
 
 
     var detailItem: Person? {
@@ -26,6 +27,7 @@ class DetailViewController: UIViewController {
 
         print(self.view)
         personBigAvatar.image = person.image
+        nameLabel.text = person.name
     }
 
     override func didReceiveMemoryWarning() {
