@@ -39,5 +39,53 @@ class DetailViewController: UIViewController {
         
     }
 
+    @IBOutlet var swipeUp: UISwipeGestureRecognizer!
+    
+    @IBOutlet var swipeDown: UISwipeGestureRecognizer!
+    
+    @IBAction func userSwipedUp(sender: AnyObject) {
+        zoom(2)
+    }
+    
+    @IBAction func userSwipedDown(sender: AnyObject) {
+        zoom(0.5)
+    }
+    
+    @IBOutlet var twoTapper: UITapGestureRecognizer!
+    
+    @IBAction func userTappedTwoFingersTwice(sender: AnyObject) {
+        personBigAvatar.contentMode = .ScaleAspectFill
+    }
+    
+    @IBOutlet var pinchRecognizer: UIPinchGestureRecognizer!
+    
+    func zoom(scale: CGFloat) {
+        let currentScale = self.personBigAvatar.frame.size.width / self.personBigAvatar.bounds.size.width
+        
+        var newScale = currentScale*scale
+        
+        if newScale < 1 {
+            newScale = 1
+        }
+        if newScale > 9 {
+            newScale = 9
+        }
+        
+        let transform = CGAffineTransformMakeScale(newScale, newScale)
+        
+        self.personBigAvatar.transform = transform
+//        sender.scale = 1
+        
+    }
+    
+    @IBAction func userPinched(sender:UIPinchGestureRecognizer) {
+        
+        if sender.state == .Ended || sender.state == .Changed {
+            
+            zoom(sender.scale)
+        }
+        
+    }
+    
 }
 

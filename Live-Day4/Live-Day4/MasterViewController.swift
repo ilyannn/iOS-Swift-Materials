@@ -61,6 +61,7 @@ class MasterViewController: UITableViewController {
                 
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                 
+                controller.title = object.name
                 controller.detailItem = object
                 
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()

@@ -36,21 +36,25 @@
                         <viewControllerLayoutGuide type="bottom" id="GAO-Cl-Wes"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FNf-8y-1Ff">
-                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FNf-8y-1Ff">
+                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FNf-8y-1Ff" secondAttribute="height" multiplier="1:1" id="rYL-6y-VNh"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="jwL-f4-fIa" appends="YES" id="m7b-2j-heA"/>
+                                    <outletCollection property="gestureRecognizers" destination="NKC-1s-Nr4" appends="YES" id="fNe-fd-Dvk"/>
+                                    <outletCollection property="gestureRecognizers" destination="xIR-R5-ldY" appends="YES" id="bNu-QW-g02"/>
+                                    <outletCollection property="gestureRecognizers" destination="czc-1R-3pl" appends="YES" id="rm0-2S-xge"/>
+                                    <outletCollection property="gestureRecognizers" destination="810-Nf-mrd" appends="YES" id="hhw-my-5VG"/>
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsR-WD-Cw0">
-                                <rect key="frame" x="16" y="447" width="343" height="70"/>
+                                <rect key="frame" x="20" y="672" width="560" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="wuX-Nm-V2Q"/>
                                 </constraints>
@@ -74,14 +78,38 @@
                     <connections>
                         <outlet property="nameLabel" destination="MsR-WD-Cw0" id="nhY-BU-4E2"/>
                         <outlet property="personBigAvatar" destination="FNf-8y-1Ff" id="gug-Dh-6pE"/>
+                        <outlet property="pinchRecognizer" destination="810-Nf-mrd" id="dLQ-3b-MDV"/>
+                        <outlet property="swipeDown" destination="xIR-R5-ldY" id="XLj-je-klA"/>
+                        <outlet property="swipeUp" destination="NKC-1s-Nr4" id="1Bd-WN-IHd"/>
+                        <outlet property="twoTapper" destination="czc-1R-3pl" id="Tvq-Of-LGV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="jwL-f4-fIa">
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="jwL-f4-fIa">
                     <connections>
                         <action selector="avatarTapped:" destination="JEX-9P-axG" id="NcE-wm-UYF"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="NKC-1s-Nr4">
+                    <connections>
+                        <action selector="userSwipedUp:" destination="JEX-9P-axG" id="9SG-uf-0qF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="xIR-R5-ldY">
+                    <connections>
+                        <action selector="userSwipedDown:" destination="JEX-9P-axG" id="hM3-on-2fC"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="czc-1R-3pl">
+                    <connections>
+                        <action selector="userTappedTwoFingersTwice:" destination="JEX-9P-axG" id="a7i-67-t4F"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="810-Nf-mrd">
+                    <connections>
+                        <action selector="userPinched:" destination="JEX-9P-axG" id="S2h-xx-Hr7"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="708.5" y="128.5"/>
         </scene>
@@ -185,6 +213,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>
