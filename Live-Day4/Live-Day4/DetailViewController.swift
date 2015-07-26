@@ -50,8 +50,15 @@ class DetailViewController: UIViewController {
         
     }
 
+    var badgePressed: String? = nil
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let viewController = segue.destinationViewController
+        viewController.title = badgePressed
+    }
+    
     func badgePressed(sender: UIButton) {
-        
+/*
         let interval: NSTimeInterval = 1.0
         
         let animations: () -> Void = { () in
@@ -59,6 +66,9 @@ class DetailViewController: UIViewController {
         }
         
         UIView.animateWithDuration(interval, animations: animations)
+*/
+        badgePressed = sender.titleForState(.Normal)
+        performSegueWithIdentifier("showBadge", sender: sender)
     }
     
     override func didReceiveMemoryWarning() {

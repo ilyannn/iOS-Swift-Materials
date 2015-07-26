@@ -88,6 +88,7 @@
                         <outlet property="swipeDown" destination="xIR-R5-ldY" id="XLj-je-klA"/>
                         <outlet property="swipeUp" destination="NKC-1s-Nr4" id="1Bd-WN-IHd"/>
                         <outlet property="twoTapper" destination="czc-1R-3pl" id="Tvq-Of-LGV"/>
+                        <segue destination="EUB-4M-xxn" kind="show" identifier="showBadge" id="gey-qz-K3h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
@@ -117,7 +118,25 @@
                     </connections>
                 </pinchGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="708.5" y="128.5"/>
+            <point key="canvasLocation" x="708.5" y="260.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HuA-W5-d3X">
+            <objects>
+                <viewController id="EUB-4M-xxn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ji1-qJ-9Sa"/>
+                        <viewControllerLayoutGuide type="bottom" id="zMQ-4w-M5R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5ZN-Ha-Rh1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNk-h4-RSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708.5" y="1092.5"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
