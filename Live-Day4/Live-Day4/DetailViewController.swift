@@ -13,7 +13,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var personBigAvatar: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
 
-
     var detailItem: Person? {
         didSet {
             // Update the view.
@@ -33,10 +32,6 @@ class DetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func avatarTapped(sender: AnyObject) {
-        
     }
 
     @IBOutlet var swipeUp: UISwipeGestureRecognizer!
@@ -86,6 +81,36 @@ class DetailViewController: UIViewController {
         }
         
     }
-    
+
+    // MARK: Image picker controller
+
+    let imagePicker = UIImagePickerController()
 }
+
+
+extension DetailViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        imagePicker.delegate = self
+    }
+    
+    @IBAction func avatarTapped(sender: AnyObject) {
+//        imagePicker.sourceType = .Camera
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController,
+          didFinishPickingImage image: UIImage,
+                          editingInfo: [String : AnyObject]?)
+    {
+        // что-то сделать
+        personBigAvatar.image = image
+        
+        // завершить работу UIImagePickerController
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+}
+
 
