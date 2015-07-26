@@ -6,7 +6,7 @@ import UIKit
 //: прибавить 10 к числам и преобразовать в буквы
 
 
-let str = "Hello playground 62 hey 59 i'm 66 great 70"
+let str = "Hello playground 62 hey 59 i'm 66 great 70 Weather is great at coordinates 68 69"
 
 
 
@@ -24,4 +24,25 @@ for part in str.componentsSeparatedByString(" ") {
     let char = Character(UnicodeScalar(integer + 10))
     print(char)
 }
+
+func decode(message: String) -> String {
+    
+    let characters = message
+        .componentsSeparatedByString(" ")
+        .flatMap {
+            Int($0)
+        }.map {
+            $0 + 10
+        }.map {
+            Character(UnicodeScalar($0))
+        }
+    
+    return String(characters)
+}
+
+
+
+
+
+
 
