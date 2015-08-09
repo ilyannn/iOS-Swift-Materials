@@ -129,18 +129,21 @@ View Сontroller создается системой и обязан иметь 
 
 Чтобы правильно сделать это, потребуется некоторый довольно стандартный код создания асинхронных операций, который имеет смысл просто вынести в суперкласс:  
 
-       // Здесь опущен getter
-       override var asynchronous: Bool { return true }
+	class Activity {
+		// Здесь опущен getter
+			override var asynchronous: Bool { return true }
      
 		func start() {
 			executing = true
 			main()
 		}
 	
-	   func weAreDone() {
-	       ...
-	       executing = false
-	       ...
+		func weAreDone() {
+	       		...
+			executing = false
+	      		...
+	   	}
+	   ...
 	   }
 	
 Так что оставшийся код содержит только логику, относящуюся к особенностям PostActivity:
