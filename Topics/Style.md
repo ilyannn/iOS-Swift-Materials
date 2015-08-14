@@ -3,6 +3,7 @@ Style guide
 
 1. [Именование коммитов](http://chris.beams.io/posts/git-commit/#seven-rules): in English, imperative mood, short.
 1. Форматирование кода, желательно с помощью [BBUncrustify](http://chris.beams.io/posts/git-commit/#seven-rules)
+2. Использование `GCC_TREAT_WARNINGS_AS_ERRORS` (в начале работы над задачей не должно быть предупреждений)
 
 
 Архитектура:
