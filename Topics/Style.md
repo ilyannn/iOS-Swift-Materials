@@ -1,4 +1,4 @@
-Style guide
+Guide
 -----
 
 [About style guides](http://faq.sealedabstract.com/styleguides/)
@@ -14,5 +14,5 @@ Style guide
 1. Не использовать синглетоны (но можно `static` переменные если они неизменяемые и в `@implementation`)
 1. Подключать библиотеки с CocoaPods
 2. В Objective-C нужен префикс проекта
-
+3. [git submodules](http://faq.sealedabstract.com/git_submodules/)
 
