@@ -1,8 +1,9 @@
 Style guide
 -----
 
-1. [Именование коммитов](http://chris.beams.io/posts/git-commit/#seven-rules)
+1. [Именование коммитов](http://chris.beams.io/posts/git-commit/#seven-rules): in English, imperative mood, short.
 1. Форматирование кода, желательно с помощью [BBUncrustify](http://chris.beams.io/posts/git-commit/#seven-rules)
+
 
 Архитектура:
 
