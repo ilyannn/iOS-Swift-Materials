@@ -4,7 +4,7 @@ Guide
 [About style guides](http://faq.sealedabstract.com/styleguides/)
 
 1. [Именование коммитов](http://chris.beams.io/posts/git-commit/#seven-rules): in English, imperative mood, short. [И еще тут](http://faq.sealedabstract.com/commit%20messages/)
-1. Форматирование кода, желательно с помощью [BBUncrustify](http://chris.beams.io/posts/git-commit/#seven-rules)
+1. Форматирование кода, желательно с помощью [BBUncrustify](https://github.com/benoitsan/BBUncrustifyPlugin-Xcode)
 2. Использование `GCC_TREAT_WARNINGS_AS_ERRORS`и [большого файла с warnings](https://github.com/boredzo/Warnings-xcconfig).
 Мотивация: в начале работы над задачей не должно быть предупреждений от прошлых задач.
 
