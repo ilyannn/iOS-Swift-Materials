@@ -1,19 +1,20 @@
-Guide
+Архитектура 
 -----
 
-[About style guides](http://faq.sealedabstract.com/styleguides/)
+git:
 
+1. Ветки `master`, `dev`. Для каждой задачи создаем ветку `feature-...` и сливаем потом с `dev`. После тестирования ветка `dev` сливается с `master`.
 1. [Именование коммитов](http://chris.beams.io/posts/git-commit/#seven-rules): in English, imperative mood, short. [И еще тут](http://faq.sealedabstract.com/commit%20messages/)
-1. Форматирование кода, желательно с помощью [BBUncrustify](https://github.com/benoitsan/BBUncrustifyPlugin-Xcode)
-2. **Hard Mode:** Использование `GCC_TREAT_WARNINGS_AS_ERRORS`и [большого файла с warnings](https://github.com/boredzo/Warnings-xcconfig).
-Мотивация: в начале работы над задачей не должно быть предупреждений от прошлых задач.
 
+Код:
+
+1. Мы не используем [style guides](http://faq.sealedabstract.com/styleguides/). Но надо настроить форматирование кода с помощью [BBUncrustify](https://github.com/benoitsan/BBUncrustifyPlugin-Xcode)
+1. **Hard Mode:** Использование `GCC_TREAT_WARNINGS_AS_ERRORS`и [большого файла с warnings](https://github.com/boredzo/Warnings-xcconfig).
+Мотивация: в начале работы над задачей не должно быть предупреждений от прошлых задач.
 
 Архитектура:
 
 1. Подключать библиотеки с CocoaPods
-2. В Objective-C нужен префикс проекта
-3. [git submodules](http://faq.sealedabstract.com/git_submodules/)
 
 Общие концепции 
 
