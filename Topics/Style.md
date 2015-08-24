@@ -9,7 +9,7 @@ git:
 Код:
 
 1. Мы не используем [style guides](http://faq.sealedabstract.com/styleguides/). Но надо настроить форматирование кода с помощью [BBUncrustify](https://github.com/benoitsan/BBUncrustifyPlugin-Xcode)
-1. **Hard Mode:** Использование `GCC_TREAT_WARNINGS_AS_ERRORS`и [большого файла с warnings](https://github.com/boredzo/Warnings-xcconfig).
+1. **Hard Mode:** Использование `GCC_TREAT_WARNINGS_AS_ERRORS`и [большого файла с warnings](Warnings.xcconfig).
 Мотивация: в начале работы над задачей не должно быть предупреждений от прошлых задач.
 
 Архитектура:
