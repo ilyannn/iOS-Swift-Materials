@@ -245,8 +245,12 @@ cos(π/3)
 
 //: ## Объектная нотации
 //: Функция – это глагол в S-V-O. В большинстве индоевропейских языков сначала идет субъект, потом глагол. Вообще в мире так говорит большее число людей чем с другими порядками.
-numbers.sort()
+// let numbers = [45, 345, 67]
 
+numbers
+numbers.sort()
+numbers.sort()
+numbers
 //: В C++ 17 сейчас тоже будет чаще применяться объектная нотация.
 //: Для интересующихся – [статья Bjarne Stroustrup на ту тему](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4174.pdf).
 
@@ -254,6 +258,23 @@ numbers.sort()
 numbers
 
 let sorted = numbers.sort()
+
+
+numbers.minElement()
+numbers.maxElement()
+
+numbers.sort().maxElement()
+
+numbers.last
+
+numbers.sort().sort().sort().reverse().sort()
+
+let numbersSorted = numbers.sort()
+let numbersSortedTwice = numbersSorted.sort()
+let sortedAndReversed = numbersSortedTwice.reverse()
+let sortedAndReversedArray = Array(sortedAndReversed)
+let finalResult = sortedAndReversed.sort()
+
 
 //: Примеры функций – `.maxElement()`
 numbers.maxElement()
@@ -273,6 +294,8 @@ reverse.count
 Array(reverse)
 
 Array(numbers.sort().reverse())
+
+
 //: На самом деле `first` это тоже функция, но определенная без скобок. Почему и как – мы узнаем потом.
 numbers.first
 numbers.minElement()
@@ -285,29 +308,44 @@ numbers.minElement()
 
 numbers
 
+numbers[0]
 numbers[1]
+numbers[2]
+numbers[3]
+
+
+numbers.map(квадрат)
+
+numbers.map(квадрат).map(удвоить)
+
+
 numbers.map(удвоить).map(утроить)[1]
 
 numbers.map(удвоить).map(квадрат)
 
-
-func modulo3(число: Int) -> Int {
-    return число % 3 // 0, 1 или 2
+//: Извлечение квадратного корня – всегда называют sqrt ("square root")
+func sqrt(x: Int) -> Double {
+    return pow(Double(x), 0.5)
 }
 
-modulo3(10)
+let roots = numbers.map(sqrt)
 
-numbers.map(modulo3)
-let remainders = numbers.map(modulo3)
+roots.map(квадрат)
+
+
 
 0...5
 Array(0..<4)
-
 //: Есть операторы интервала (range) ..<  и ... Например, интервал `0...2` это три числа 0, 1, 2, а  `0..<2` это два числа `0, 1`
 numbers[1]
 
+
 numbers[0...2]
-numbers[0..<2]
+
+
+numbers[0..<2] + numbers[3...3]
+
+
 
 //: Как определить новый массив из элементов старого.
 
@@ -319,6 +357,26 @@ let numbers1 = numbers[0...0]
 
 let numbers2 = Array(numbers[1...3])
 numbers1 + numbers2
+
+//: Пример: сложение массивов
+
+func addElements(of left: [Int], to right:[Int]) -> [Int] {
+    
+    func result(index:Int) -> Int {
+        return left[index] + right[index]
+    }
+    
+    let length = min(left.count, right.count)
+    
+    return (0..<length).map(result)
+}
+
+addElements(of: numbers, to: [20, 30, 40])
+
+let length = 2
+
+Array(0..<length)
+
 
 //: ## Нечисловые типы
 //: Значения `true` и `false` – результаты выражений типа ` A == B`
@@ -339,7 +397,13 @@ empty_ints.count
 empty_ints.isEmpty
 
 //: Есть функции, которые возвращают значения `true` или `false`.
-numbers.isEmpty
+func missionAccomplished(remainingTasks: [Int], success: Bool) -> Bool {
+    return remainingTasks.isEmpty && success
+}
+
+missionAccomplished([1], success: true)
+missionAccomplished([], success: false)
+missionAccomplished([], success: true)
 
 //: Еще с ними можно производить разные логические операции.
 false != true
@@ -347,6 +411,8 @@ false != true
 true == true
 false == false
 true == false
+
+// Булева алгебра 
 
 //: Операции and и or (в математике и языке Python)
 
@@ -380,25 +446,38 @@ Int(true)
 //: Строки определяются с помощью символа `"`
 "Строка"
 
-let string = "Много" + "Букв"
+let string1 = "Много"
+let string2 = "Букв"
+
+let string = string1 + string2
+
+Array(string1.characters) + Array(string2.characters)
+
 let пробел = " "
 
 пробел != ""
 
+"".characters.count
+пробел.characters.count
+
 //: Можно определять объекты как в Java: `Тип(параметры)`
 //: Например, String() это пустая строка
+
+String()
 String(5.765754)
+
+NSNumberFormatter().numberFromString("237.6")
 
 "" == String()
 
 //: Можно вставить в строку что-то, даже если это что-то является выражением.
-"В массиве \( numbers.count ) элемента"
+let endOfLine = "\n"
+
+"В массиве \( numbers ) есть \( numbers.count ) элемента" + endOfLine + "Другая строка"
 
 "Массив \(numbers.map(квадрат)) круто"
 "..."
 //: Но также есть строки формата, знакомые из (Objective-)C
-String(format: "Вывод %05d с нулями!", 30)
-
 
 //: ## Использование reduce
 
@@ -408,6 +487,8 @@ numbers
 
 //: Как получить сумму?
 56 + 22 + 31 + 40
+
+numbers.reduce(1, combine: *)
 
 //: `reduce` начинает с начального значения (например, 0) и применяет операцию (например, +)
 numbers.reduce(1, combine: *) == 56 * 22 * 31 * 40
@@ -425,19 +506,36 @@ numbers.reduce(1, combine: *)
 
 //: ## filter
 
+// 55 по модулю 2
+56 % 2
+
+// 55 по модулю 3
+56 % 3
+
+
 // Написать функцию определения того, что число нечетное
 
 func isEven(x: Int) -> Bool {
     return x % 2 == 0 // <- четное
 }
 
+isEven(10)
+
+// Определение с помощью оператора "противоположно" в Булевой алгебре
+
 func isOdd(x: Int) -> Bool {
     //    return x % 2 != 0 // <- нечетное
     return !isEven(x)
 }
 
-
+numbers.filter(isEven)
 numbers.filter(isOdd)
 
 
-//: [Следующая страница: Решето](@next)
+func iLike(x:Int) -> Bool {
+    return x > 20 && x < 50
+}
+
+numbers.filter(iLike)
+
+//: [Следующая страница: Поисковик](@next)
