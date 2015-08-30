@@ -10,6 +10,24 @@ import UIKit
 
 let π = CGFloat(M_PI)
 
+class Purchase {
+    let name: String
+    let price: Double
+    let amount: Double
+    let color: UIColor
+    
+    let description: String
+
+    init() {
+        name = "Покупка"
+        price = Double(rand() % 10000)
+        amount = Double(rand() % 4) + 1
+        color = .blackColor()
+        description = "\(amount) \(name) за \(price)"
+    }
+}
+
+
 class DetailViewController: UIViewController {
 
     var greeting:String = "Привет, кто-то!"
@@ -18,7 +36,7 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var anotherButton: UIButton!
     
-    var detailItem: AnyObject? {
+    var detailItem: Purchase? {
         didSet {
             // Update the view.
             self.configureView()
@@ -65,9 +83,12 @@ class DetailViewController: UIViewController {
     
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = self.detailItem {
-            if let label = self.detailDescriptionLabel {
+        
+        if let detail = detailItem {
+            if let label = detailDescriptionLabel {
+                
                 label.text = detail.description
+                
             }
         }
     }
