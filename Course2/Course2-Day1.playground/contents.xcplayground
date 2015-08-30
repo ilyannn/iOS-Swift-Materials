@@ -3,5 +3,6 @@
     <pages>
         <page name='Начало'/>
         <page name='Поисковик'/>
+        <page name='Домашнее Задание 1'/>
     </pages>
 </playground>
