@@ -12,18 +12,18 @@ class Purchase {
     
     let name: String
     let price: Double
-    let quantity: Double
+    let quantity: Int
     let color: UIColor
     
     init() {
-        name = "Покупка"
-        price = Double(rand() % 10000)
-        quantity = Double(rand() % 4) + 1
+        name = ["Специи", "Еда", "Мясо", "Пироги", "Бургеры"][Int(rand() % 5)]
+        price = Double(rand() % 10000) / 100
+        quantity = Int(rand() % 40) + 1
         color = .blackColor()
     }
     
     var totalAmount: Double {
-        return price * quantity
+        return price * Double(quantity)
     }
     
     var description: String {
