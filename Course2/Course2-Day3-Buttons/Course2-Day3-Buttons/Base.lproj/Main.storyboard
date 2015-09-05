@@ -39,6 +39,13 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rti-yw-JZ6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjs-3y-D5u">
+                                <rect key="frame" x="40" y="357" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" highlightedImage="dog" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-5D-x6q">
                                 <rect key="frame" x="20" y="337" width="243" height="243"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,20 +63,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOa-yG-c9A">
+                                <rect key="frame" x="102" y="285" width="27" height="27"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MOa-yG-c9A" secondAttribute="height" multiplier="1:1" id="Ys3-iK-hZN"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="brownButtonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="ICQ-lA-70c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2c9-5D-x6q" firstAttribute="leading" secondItem="Pjs-3y-D5u" secondAttribute="leading" constant="-20" id="2bD-yl-5ac"/>
                             <constraint firstAttribute="leadingMargin" secondItem="65H-Jl-hLY" secondAttribute="leading" id="FSi-Rg-u4Q"/>
+                            <constraint firstItem="2c9-5D-x6q" firstAttribute="top" secondItem="Pjs-3y-D5u" secondAttribute="top" constant="-20" id="Ijk-mS-rQ7"/>
                             <constraint firstItem="65H-Jl-hLY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Rq5-Km-fls"/>
+                            <constraint firstItem="cwC-Lo-5YD" firstAttribute="leading" secondItem="MOa-yG-c9A" secondAttribute="trailing" constant="46" id="SMd-Kf-ghc"/>
                             <constraint firstItem="cwC-Lo-5YD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wmw-pV-ZQi"/>
                             <constraint firstAttribute="leadingMargin" secondItem="2c9-5D-x6q" secondAttribute="leading" id="aOF-d2-PPM"/>
                             <constraint firstItem="cwC-Lo-5YD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="due-na-FGB"/>
+                            <constraint firstItem="MOa-yG-c9A" firstAttribute="bottom" secondItem="cwC-Lo-5YD" secondAttribute="bottom" id="sdL-rK-kXg"/>
+                            <constraint firstItem="MOa-yG-c9A" firstAttribute="top" secondItem="cwC-Lo-5YD" secondAttribute="top" id="unU-aq-KdC"/>
                             <constraint firstItem="2c9-5D-x6q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cwC-Lo-5YD" secondAttribute="bottom" constant="20" id="ybd-l6-7fE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2c9-5D-x6q" secondAttribute="bottom" constant="20" id="zbV-5R-eBy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="animalsView" destination="2c9-5D-x6q" id="0NY-hP-Jh7"/>
+                        <outlet property="semihiddenButton" destination="MOa-yG-c9A" id="Alg-kT-j3b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

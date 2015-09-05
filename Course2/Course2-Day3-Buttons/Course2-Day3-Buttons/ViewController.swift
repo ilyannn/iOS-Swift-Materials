@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import QuartzCore
+
+let π = CGFloat(M_PI)
 
 class ViewController: UIViewController {
 
@@ -16,6 +19,7 @@ class ViewController: UIViewController {
 
     // То, что просходит при создании экрана
     
+    @IBOutlet weak var semihiddenButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,23 +32,43 @@ class ViewController: UIViewController {
         button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         
         button.backgroundColor = UIColor.blueColor()
-        button.layer.cornerRadius = 15
         button.alpha = 0.3
-        button.transform = CGAffineTransformMakeRotation(0.1)
+        
+        // Только в коде
+        button.layer.cornerRadius = 15
+        button.transform = CGAffineTransformMakeRotation(0.2)
         
         view.addSubview(button)
         view.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.9)
         
         animalsView.clipsToBounds = true
+
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        animalsView.layer.cornerRadius = animalsView.bounds.size.height/2
+
+        semihiddenButton.layer.transform = CATransform3DMakeTranslation(0, 0, 40)
+    }
+    
+    
     // При нажатии кнопки
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
         animalsView.highlighted = !animalsView.highlighted
-        animalsView.layer.cornerRadius = animalsView.highlighted ? animalsView.bounds.size.height/2 : 0
+        
     }
     
+    @IBAction func brownButtonTapped(sender: AnyObject) {
+
+        self.animalsView.layer.transform = CATransform3DIdentity
+
+        UIView.animateWithDuration(3) {
+        self.animalsView.layer.transform = CATransform3DMakeRotation(π, 1, 0, 0)
+        }
+    }
 }
 
