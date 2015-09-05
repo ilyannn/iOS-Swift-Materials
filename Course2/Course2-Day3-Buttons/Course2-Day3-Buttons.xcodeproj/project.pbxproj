@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12D83B251B9AF61E00DFB005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D83B241B9AF61E00DFB005 /* AppDelegate.swift */; };
+		12D83B271B9AF61E00DFB005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D83B261B9AF61E00DFB005 /* ViewController.swift */; };
+		12D83B2A1B9AF61E00DFB005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D83B281B9AF61E00DFB005 /* Main.storyboard */; };
+		12D83B2C1B9AF61E00DFB005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D83B2B1B9AF61E00DFB005 /* Assets.xcassets */; };
+		12D83B2F1B9AF61E00DFB005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D83B2D1B9AF61E00DFB005 /* LaunchScreen.storyboard */; };
+		12D83B3A1B9AF61E00DFB005 /* Course2_Day3_ButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D83B391B9AF61E00DFB005 /* Course2_Day3_ButtonsTests.swift */; };
+		12D83B451B9AF61E00DFB005 /* Course2_Day3_ButtonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D83B441B9AF61E00DFB005 /* Course2_Day3_ButtonsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12D83B361B9AF61E00DFB005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12D83B191B9AF61E00DFB005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12D83B201B9AF61E00DFB005;
+			remoteInfo = "Course2-Day3-Buttons";
+		};
+		12D83B411B9AF61E00DFB005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12D83B191B9AF61E00DFB005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12D83B201B9AF61E00DFB005;
+			remoteInfo = "Course2-Day3-Buttons";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12D83B211B9AF61E00DFB005 /* Course2-Day3-Buttons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Course2-Day3-Buttons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D83B241B9AF61E00DFB005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12D83B261B9AF61E00DFB005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12D83B291B9AF61E00DFB005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12D83B2B1B9AF61E00DFB005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12D83B2E1B9AF61E00DFB005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12D83B301B9AF61E00DFB005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12D83B351B9AF61E00DFB005 /* Course2-Day3-ButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Course2-Day3-ButtonsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D83B391B9AF61E00DFB005 /* Course2_Day3_ButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course2_Day3_ButtonsTests.swift; sourceTree = "<group>"; };
+		12D83B3B1B9AF61E00DFB005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12D83B401B9AF61E00DFB005 /* Course2-Day3-ButtonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Course2-Day3-ButtonsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D83B441B9AF61E00DFB005 /* Course2_Day3_ButtonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course2_Day3_ButtonsUITests.swift; sourceTree = "<group>"; };
+		12D83B461B9AF61E00DFB005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12D83B1E1B9AF61E00DFB005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D83B321B9AF61E00DFB005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D83B3D1B9AF61E00DFB005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12D83B181B9AF61E00DFB005 = {
+			isa = PBXGroup;
+			children = (
+				12D83B231B9AF61E00DFB005 /* Course2-Day3-Buttons */,
+				12D83B381B9AF61E00DFB005 /* Course2-Day3-ButtonsTests */,
+				12D83B431B9AF61E00DFB005 /* Course2-Day3-ButtonsUITests */,
+				12D83B221B9AF61E00DFB005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12D83B221B9AF61E00DFB005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12D83B211B9AF61E00DFB005 /* Course2-Day3-Buttons.app */,
+				12D83B351B9AF61E00DFB005 /* Course2-Day3-ButtonsTests.xctest */,
+				12D83B401B9AF61E00DFB005 /* Course2-Day3-ButtonsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12D83B231B9AF61E00DFB005 /* Course2-Day3-Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				12D83B241B9AF61E00DFB005 /* AppDelegate.swift */,
+				12D83B261B9AF61E00DFB005 /* ViewController.swift */,
+				12D83B281B9AF61E00DFB005 /* Main.storyboard */,
+				12D83B2B1B9AF61E00DFB005 /* Assets.xcassets */,
+				12D83B2D1B9AF61E00DFB005 /* LaunchScreen.storyboard */,
+				12D83B301B9AF61E00DFB005 /* Info.plist */,
+			);
+			path = "Course2-Day3-Buttons";
+			sourceTree = "<group>";
+		};
+		12D83B381B9AF61E00DFB005 /* Course2-Day3-ButtonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				12D83B391B9AF61E00DFB005 /* Course2_Day3_ButtonsTests.swift */,
+				12D83B3B1B9AF61E00DFB005 /* Info.plist */,
+			);
+			path = "Course2-Day3-ButtonsTests";
+			sourceTree = "<group>";
+		};
+		12D83B431B9AF61E00DFB005 /* Course2-Day3-ButtonsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12D83B441B9AF61E00DFB005 /* Course2_Day3_ButtonsUITests.swift */,
+				12D83B461B9AF61E00DFB005 /* Info.plist */,
+			);
+			path = "Course2-Day3-ButtonsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12D83B201B9AF61E00DFB005 /* Course2-Day3-Buttons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D83B491B9AF61E00DFB005 /* Build configuration list for PBXNativeTarget "Course2-Day3-Buttons" */;
+			buildPhases = (
+				12D83B1D1B9AF61E00DFB005 /* Sources */,
+				12D83B1E1B9AF61E00DFB005 /* Frameworks */,
+				12D83B1F1B9AF61E00DFB005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Course2-Day3-Buttons";
+			productName = "Course2-Day3-Buttons";
+			productReference = 12D83B211B9AF61E00DFB005 /* Course2-Day3-Buttons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12D83B341B9AF61E00DFB005 /* Course2-Day3-ButtonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D83B4C1B9AF61E00DFB005 /* Build configuration list for PBXNativeTarget "Course2-Day3-ButtonsTests" */;
+			buildPhases = (
+				12D83B311B9AF61E00DFB005 /* Sources */,
+				12D83B321B9AF61E00DFB005 /* Frameworks */,
+				12D83B331B9AF61E00DFB005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12D83B371B9AF61E00DFB005 /* PBXTargetDependency */,
+			);
+			name = "Course2-Day3-ButtonsTests";
+			productName = "Course2-Day3-ButtonsTests";
+			productReference = 12D83B351B9AF61E00DFB005 /* Course2-Day3-ButtonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12D83B3F1B9AF61E00DFB005 /* Course2-Day3-ButtonsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D83B4F1B9AF61E00DFB005 /* Build configuration list for PBXNativeTarget "Course2-Day3-ButtonsUITests" */;
+			buildPhases = (
+				12D83B3C1B9AF61E00DFB005 /* Sources */,
+				12D83B3D1B9AF61E00DFB005 /* Frameworks */,
+				12D83B3E1B9AF61E00DFB005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12D83B421B9AF61E00DFB005 /* PBXTargetDependency */,
+			);
+			name = "Course2-Day3-ButtonsUITests";
+			productName = "Course2-Day3-ButtonsUITests";
+			productReference = 12D83B401B9AF61E00DFB005 /* Course2-Day3-ButtonsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12D83B191B9AF61E00DFB005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					Video,
+				);
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "iOS Swift Course";
+				TargetAttributes = {
+					12D83B201B9AF61E00DFB005 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = A8J6S3WP2B;
+					};
+					12D83B341B9AF61E00DFB005 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = A8J6S3WP2B;
+						TestTargetID = 12D83B201B9AF61E00DFB005;
+					};
+					12D83B3F1B9AF61E00DFB005 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = A8J6S3WP2B;
+						TestTargetID = 12D83B201B9AF61E00DFB005;
+					};
+				};
+			};
+			buildConfigurationList = 12D83B1C1B9AF61E00DFB005 /* Build configuration list for PBXProject "Course2-Day3-Buttons" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12D83B181B9AF61E00DFB005;
+			productRefGroup = 12D83B221B9AF61E00DFB005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12D83B201B9AF61E00DFB005 /* Course2-Day3-Buttons */,
+				12D83B341B9AF61E00DFB005 /* Course2-Day3-ButtonsTests */,
+				12D83B3F1B9AF61E00DFB005 /* Course2-Day3-ButtonsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12D83B1F1B9AF61E00DFB005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D83B2F1B9AF61E00DFB005 /* LaunchScreen.storyboard in Resources */,
+				12D83B2C1B9AF61E00DFB005 /* Assets.xcassets in Resources */,
+				12D83B2A1B9AF61E00DFB005 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D83B331B9AF61E00DFB005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D83B3E1B9AF61E00DFB005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12D83B1D1B9AF61E00DFB005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D83B271B9AF61E00DFB005 /* ViewController.swift in Sources */,
+				12D83B251B9AF61E00DFB005 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D83B311B9AF61E00DFB005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D83B3A1B9AF61E00DFB005 /* Course2_Day3_ButtonsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D83B3C1B9AF61E00DFB005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D83B451B9AF61E00DFB005 /* Course2_Day3_ButtonsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12D83B371B9AF61E00DFB005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12D83B201B9AF61E00DFB005 /* Course2-Day3-Buttons */;
+			targetProxy = 12D83B361B9AF61E00DFB005 /* PBXContainerItemProxy */;
+		};
+		12D83B421B9AF61E00DFB005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12D83B201B9AF61E00DFB005 /* Course2-Day3-Buttons */;
+			targetProxy = 12D83B411B9AF61E00DFB005 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12D83B281B9AF61E00DFB005 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D83B291B9AF61E00DFB005 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12D83B2D1B9AF61E00DFB005 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D83B2E1B9AF61E00DFB005 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12D83B471B9AF61E00DFB005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12D83B481B9AF61E00DFB005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12D83B4A1B9AF61E00DFB005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Course2-Day3-Buttons/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course2-Day3-Buttons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		12D83B4B1B9AF61E00DFB005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Course2-Day3-Buttons/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course2-Day3-Buttons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		12D83B4D1B9AF61E00DFB005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Course2-Day3-ButtonsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course2-Day3-ButtonsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Course2-Day3-Buttons.app/Course2-Day3-Buttons";
+			};
+			name = Debug;
+		};
+		12D83B4E1B9AF61E00DFB005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Course2-Day3-ButtonsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course2-Day3-ButtonsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Course2-Day3-Buttons.app/Course2-Day3-Buttons";
+			};
+			name = Release;
+		};
+		12D83B501B9AF61E00DFB005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Course2-Day3-ButtonsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course2-Day3-ButtonsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Course2-Day3-Buttons";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		12D83B511B9AF61E00DFB005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Course2-Day3-ButtonsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course2-Day3-ButtonsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Course2-Day3-Buttons";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D83B1C1B9AF61E00DFB005 /* Build configuration list for PBXProject "Course2-Day3-Buttons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D83B471B9AF61E00DFB005 /* Debug */,
+				12D83B481B9AF61E00DFB005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12D83B491B9AF61E00DFB005 /* Build configuration list for PBXNativeTarget "Course2-Day3-Buttons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D83B4A1B9AF61E00DFB005 /* Debug */,
+				12D83B4B1B9AF61E00DFB005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12D83B4C1B9AF61E00DFB005 /* Build configuration list for PBXNativeTarget "Course2-Day3-ButtonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D83B4D1B9AF61E00DFB005 /* Debug */,
+				12D83B4E1B9AF61E00DFB005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12D83B4F1B9AF61E00DFB005 /* Build configuration list for PBXNativeTarget "Course2-Day3-ButtonsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D83B501B9AF61E00DFB005 /* Debug */,
+				12D83B511B9AF61E00DFB005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12D83B191B9AF61E00DFB005 /* Project object */;
+}

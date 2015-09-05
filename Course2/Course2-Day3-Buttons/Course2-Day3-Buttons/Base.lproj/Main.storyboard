@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Course2_Day3_Buttons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwC-Lo-5YD">
+                                <rect key="frame" x="175" y="283" width="250" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2XI-fe-eRg"/>
+                                    <constraint firstAttribute="width" constant="250" id="8ID-ce-tY1"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Кнопка"/>
+                                <state key="highlighted" title="Нажата">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2XI-fe-eRg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rti-yw-JZ6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" highlightedImage="dog" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-5D-x6q">
+                                <rect key="frame" x="20" y="337" width="243" height="243"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2c9-5D-x6q" secondAttribute="height" multiplier="1:1" id="Dcb-mh-JpD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65H-Jl-hLY">
+                                <rect key="frame" x="20" y="20" width="284" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="CSp-kl-h9i"/>
+                                    <constraint firstAttribute="width" constant="284" id="mUX-qv-834"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="65H-Jl-hLY" secondAttribute="leading" id="FSi-Rg-u4Q"/>
+                            <constraint firstItem="65H-Jl-hLY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Rq5-Km-fls"/>
+                            <constraint firstItem="cwC-Lo-5YD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wmw-pV-ZQi"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="2c9-5D-x6q" secondAttribute="leading" id="aOF-d2-PPM"/>
+                            <constraint firstItem="cwC-Lo-5YD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="due-na-FGB"/>
+                            <constraint firstItem="2c9-5D-x6q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cwC-Lo-5YD" secondAttribute="bottom" constant="20" id="ybd-l6-7fE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2c9-5D-x6q" secondAttribute="bottom" constant="20" id="zbV-5R-eBy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animalsView" destination="2c9-5D-x6q" id="0NY-hP-Jh7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="299"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat" width="284" height="177"/>
+        <image name="dog" width="215" height="235"/>
+    </resources>
+</document>
