@@ -66,6 +66,8 @@ class DetailViewController: UIViewController {
         rotate(detailDescriptionLabel)
         
         detailDescriptionLabel.backgroundColor = UIColor(hue: 0.5, saturation: 0.5, brightness: 0.5, alpha: 1)
+        
+        detailDescriptionLabel.font = UIFont(name: "HelveticaNeue-Thin", size: 20)
     }
     
     @IBAction func swipeLeft(sender: AnyObject) {
