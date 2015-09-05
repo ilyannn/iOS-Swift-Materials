@@ -19,7 +19,7 @@ class Purchase {
         name = ["Специи", "Еда", "Мясо", "Пироги", "Бургеры"][Int(rand() % 5)]
         price = Double(rand() % 10000) / 100
         quantity = Int(rand() % 40) + 1
-        color = .blackColor()
+        color = UIColor(hue: CGFloat(rand() % 10) / 10, saturation: 0.3, brightness: 0.3, alpha: 1)
     }
     
     var totalAmount: Double {

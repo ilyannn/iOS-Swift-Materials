@@ -10,12 +10,14 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var productLabel: UILabel!
 
-
+    @IBOutlet weak var productImageView: UIImageView!
+    
+    @IBOutlet weak var priceLabel: UILabel!
     var detailItem: Purchase? {
         didSet {
-            // Update the view.
+            let _ = self.view
             self.configureView()
         }
     }
@@ -23,16 +25,11 @@ class DetailViewController: UIViewController {
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
-            }
+            productLabel.text = detail.name
+            view.backgroundColor = detail.color
+            priceLabel.text = detail.price.description
+            productImageView.image = UIImage(named: detail.name)
         }
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.configureView()
     }
 
     override func didReceiveMemoryWarning() {
