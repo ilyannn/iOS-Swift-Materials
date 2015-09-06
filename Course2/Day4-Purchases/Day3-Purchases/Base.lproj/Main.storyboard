@@ -147,7 +147,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-t5-Mo5">
                                 <rect key="frame" x="20" y="50" width="560" height="328"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Создание покупки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msk-iS-n6a">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Создание покупки" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msk-iS-n6a">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="48"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
                                         <nil key="highlightedColor"/>
@@ -206,6 +206,9 @@
                                             <constraint firstAttribute="height" constant="50" id="ph1-84-tGL"/>
                                         </constraints>
                                         <state key="normal" title="Добавить покупку"/>
+                                        <connections>
+                                            <segue destination="3mc-15-sxt" kind="unwind" unwindAction="unwindToAddingPurchases:" id="tRe-ju-gxr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -227,12 +230,14 @@
                     </view>
                     <connections>
                         <outlet property="addButton" destination="0XA-PO-DEP" id="HyL-0G-kNa"/>
-                        <outlet property="purchaseNameField" destination="HKY-fM-Ufg" id="Ywh-3K-IMX"/>
+                        <outlet property="purchaseNameField" destination="HKY-fM-Ufg" id="drZ-L7-X86"/>
+                        <outlet property="purchasePriceField" destination="Ufv-3f-4dl" id="s3a-fi-NkA"/>
                         <outlet property="quantityLabel" destination="kMd-Je-MPp" id="bYA-5K-XVH"/>
                         <outlet property="quantitySelector" destination="d7T-6N-Lev" id="2pO-A7-kTj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATG-Am-907" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3mc-15-sxt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1468" y="-630"/>
         </scene>

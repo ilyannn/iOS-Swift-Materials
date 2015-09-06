@@ -17,6 +17,7 @@
 		124DEF651B9B28F70042AA13 /* Day3_PurchasesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124DEF641B9B28F70042AA13 /* Day3_PurchasesUITests.swift */; };
 		124DEF731B9B29640042AA13 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124DEF721B9B29640042AA13 /* Purchase.swift */; settings = {ASSET_TAGS = (); }; };
 		12D22EC51B9C48C700C31761 /* Adding Purchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D22EC41B9C48C700C31761 /* Adding Purchases.swift */; settings = {ASSET_TAGS = (); }; };
+		12D22EC91B9C545D00C31761 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D22EC81B9C545D00C31761 /* AnotherViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		124DEF661B9B28F70042AA13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		124DEF721B9B29640042AA13 /* Purchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
 		12D22EC41B9C48C700C31761 /* Adding Purchases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Adding Purchases.swift"; sourceTree = "<group>"; };
+		12D22EC61B9C545C00C31761 /* Day4-Purchases-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Day4-Purchases-Bridging-Header.h"; sourceTree = "<group>"; };
+		12D22EC71B9C545D00C31761 /* AnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherViewController.h; sourceTree = "<group>"; };
+		12D22EC81B9C545D00C31761 /* AnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				124DEF421B9B28F70042AA13 /* AppDelegate.swift */,
+				12D22EC71B9C545D00C31761 /* AnotherViewController.h */,
+				12D22EC81B9C545D00C31761 /* AnotherViewController.m */,
 				124DEF441B9B28F70042AA13 /* MasterViewController.swift */,
 				124DEF461B9B28F70042AA13 /* DetailViewController.swift */,
 				124DEF721B9B29640042AA13 /* Purchase.swift */,
@@ -112,6 +118,7 @@
 				124DEF4D1B9B28F70042AA13 /* LaunchScreen.storyboard */,
 				124DEF501B9B28F70042AA13 /* Info.plist */,
 				12D22EC41B9C48C700C31761 /* Adding Purchases.swift */,
+				12D22EC61B9C545C00C31761 /* Day4-Purchases-Bridging-Header.h */,
 			);
 			name = Purchases;
 			path = "Day3-Purchases";
@@ -197,6 +204,7 @@
 		124DEF371B9B28F70042AA13 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "iOS Swift Course";
 				TargetAttributes = {
@@ -272,6 +280,7 @@
 				124DEF731B9B29640042AA13 /* Purchase.swift in Sources */,
 				124DEF471B9B28F70042AA13 /* DetailViewController.swift in Sources */,
 				124DEF451B9B28F70042AA13 /* MasterViewController.swift in Sources */,
+				12D22EC91B9C545D00C31761 /* AnotherViewController.m in Sources */,
 				124DEF431B9B28F70042AA13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,10 +423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Day3-Purchases/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Day4-Purchases";
 				PRODUCT_NAME = "Day4-Purchases";
+				SWIFT_OBJC_BRIDGING_HEADER = "Day3-Purchases/Day4-Purchases-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -425,10 +437,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Day3-Purchases/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Day4-Purchases";
 				PRODUCT_NAME = "Day4-Purchases";
+				SWIFT_OBJC_BRIDGING_HEADER = "Day3-Purchases/Day4-Purchases-Bridging-Header.h";
 			};
 			name = Release;
 		};

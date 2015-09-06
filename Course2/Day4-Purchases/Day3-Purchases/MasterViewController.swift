@@ -95,6 +95,28 @@ class MasterViewController: UITableViewController {
         }
     }
 
+    @IBAction func unwindToAddingPurchases(segue: UIStoryboardSegue) {
+        
+        guard let addViewController = segue.sourceViewController as? AddViewController else {
+            return
+        }
+        
+        // guard let ... = ... else { return ... }
+        
+        let name = addViewController.purchaseNameField.text ?? ""
+        let quantity = addViewController.selectedQuantity
+        
+        let formatter = NSNumberFormatter()
+        
+        guard let price = formatter.numberFromString( addViewController.purchasePriceField.text ?? "") else { return }
+        
+        let purchase = Purchase(name_: name, quantity_: quantity, price_: price.doubleValue)
 
+        objects.insert(purchase, atIndex: 0)
+        
+        let indexPath = NSIndexPath(forRow: 0, inSection: 0)
+        
+        tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Right)
+    }
 }
 

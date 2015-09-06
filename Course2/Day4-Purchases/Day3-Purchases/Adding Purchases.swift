@@ -15,9 +15,20 @@ class AddViewController: UIViewController {
     @IBOutlet weak var quantitySelector: UIStepper!
     
     @IBOutlet weak var purchaseNameField: UITextField!
+
+    @IBOutlet weak var purchasePriceField: UITextField!
+    
+    var selectedQuantity: Int {
+        return Int(quantitySelector.value)
+    }
     
     @IBAction func quantityChanged(sender: AnyObject) {
-        let quantity = Int(quantitySelector.value)
-        quantityLabel.text = "\(quantity)"
+        quantityLabel.text = "\(selectedQuantity)"
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        addButton.layer.cornerRadius = 10
     }
 }
