@@ -10,6 +10,8 @@ import UIKit
 
 class AddViewController: UIViewController {
 
+    weak var delegate: MasterViewController?
+    
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var quantityLabel: UILabel!
     @IBOutlet weak var quantitySelector: UIStepper!
@@ -44,6 +46,20 @@ class AddViewController: UIViewController {
         
         addButton.layer.cornerRadius = 10
         updateButtonState()
+    }
+    
+    @IBAction func addPurchase(sender: AnyObject) {
+        let alertView = UIAlertController(title:  "Добавить покупку?", message: nil, preferredStyle: .Alert)
+        
+        alertView.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:
+        { _ in
+            delegate?.addPurchase(source: self)
+        }))
+
+        alertView.addAction(UIAlertAction(title: "Oтмена", style: .Default, handler: nil))
+        
+        presentViewController(alertView, animated: true, completion: {})
+
     }
     
     func updateButtonState() {

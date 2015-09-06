@@ -65,6 +65,10 @@ class MasterViewController: UITableViewController {
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
+        
+        if let addViewController = segue.destinationViewController as? AddViewController {
+            addViewController.delegate = self
+        }
     }
 
     // MARK: - Table View
@@ -103,11 +107,7 @@ class MasterViewController: UITableViewController {
         }
     }
     
-    @IBAction func unwindToAddingPurchases(segue: UIStoryboardSegue) {
-        
-        guard let addViewController = segue.sourceViewController as? AddViewController else {
-            return
-        }
+    func addPurchase(source addViewController: AddViewController) {
         
         // guard let ... = ... else { return ... }
         
@@ -130,15 +130,8 @@ class MasterViewController: UITableViewController {
         
         tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Right)
         
-        let alertView = UIAlertController(title:  "Добавлена покупка", message: purchase.description, preferredStyle: .Alert)
+        dismissViewControllerAnimated(true, completion: {})
         
-        alertView.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-        
-//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1000000000), dispatch_get_main_queue(), {
-        
-        addViewController.presentViewController(alertView, animated: true, completion: {})
-        
-//        })
     }
 }
 
