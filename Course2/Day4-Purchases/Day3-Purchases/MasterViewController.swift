@@ -29,6 +29,14 @@ class MasterViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
         super.viewWillAppear(animated)
+
+        if let font = UIFont(name: "HelveticaNeue-Thin", size: 22) {
+            
+            navigationController?.navigationBar.barTintColor = UIColor.greenColor()
+            
+            navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName : font]
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -94,7 +102,7 @@ class MasterViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
-
+    
     @IBAction func unwindToAddingPurchases(segue: UIStoryboardSegue) {
         
         guard let addViewController = segue.sourceViewController as? AddViewController else {
@@ -110,13 +118,27 @@ class MasterViewController: UITableViewController {
         
         guard let price = formatter.numberFromString( addViewController.purchasePriceField.text ?? "") else { return }
         
-        let purchase = Purchase(name_: name, quantity_: quantity, price_: price.doubleValue)
+        guard name != "" && price != 0 && quantity != 0 else {
+            return
+        }
 
+        let purchase = Purchase(name_: name, quantity_: quantity, price_: price.doubleValue)
+        
         objects.insert(purchase, atIndex: 0)
         
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         
         tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Right)
+        
+        let alertView = UIAlertController(title:  "Добавлена покупка", message: purchase.description, preferredStyle: .Alert)
+        
+        alertView.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1000000000), dispatch_get_main_queue(), {
+        
+        addViewController.presentViewController(alertView, animated: true, completion: {})
+        
+//        })
     }
 }
 

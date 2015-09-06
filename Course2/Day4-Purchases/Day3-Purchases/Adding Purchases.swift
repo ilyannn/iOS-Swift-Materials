@@ -28,13 +28,35 @@ class AddViewController: UIViewController {
     
     @IBAction func quantityChanged(sender: AnyObject) {
         quantityLabel.text = "\(selectedQuantity)"
+        updateButtonState()
+    }
+    
+    @IBAction func nameChanged(sender: AnyObject) {
+        updateButtonState()
+    }
+    
+    @IBAction func priceChanged(sender: AnyObject) {
+        updateButtonState()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addButton.layer.cornerRadius = 10
-
+        updateButtonState()
+    }
+    
+    func updateButtonState() {
+        let name = purchaseNameField.text ?? ""
+        let quantity = selectedQuantity
+        
+        let formatter = NSNumberFormatter()
+        
+        let price = formatter.numberFromString(purchasePriceField.text ?? "") ?? 0
+        
+        let enabled = name != "" && price != 0 && quantity != 0
+        
+        addButton.enabled = enabled
     }
     
     override func viewDidAppear(animated: Bool) {
