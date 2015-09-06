@@ -18,6 +18,7 @@
 		124DEF731B9B29640042AA13 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124DEF721B9B29640042AA13 /* Purchase.swift */; settings = {ASSET_TAGS = (); }; };
 		12D22EC51B9C48C700C31761 /* Adding Purchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D22EC41B9C48C700C31761 /* Adding Purchases.swift */; settings = {ASSET_TAGS = (); }; };
 		12D22EC91B9C545D00C31761 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D22EC81B9C545D00C31761 /* AnotherViewController.m */; settings = {ASSET_TAGS = (); }; };
+		12D22FBB1B9C695C00C31761 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D22FBA1B9C695C00C31761 /* GradientView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		12D22EC61B9C545C00C31761 /* Day4-Purchases-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Day4-Purchases-Bridging-Header.h"; sourceTree = "<group>"; };
 		12D22EC71B9C545D00C31761 /* AnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherViewController.h; sourceTree = "<group>"; };
 		12D22EC81B9C545D00C31761 /* AnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherViewController.m; sourceTree = "<group>"; };
+		12D22FBA1B9C695C00C31761 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				124DEF501B9B28F70042AA13 /* Info.plist */,
 				12D22EC41B9C48C700C31761 /* Adding Purchases.swift */,
 				12D22EC61B9C545C00C31761 /* Day4-Purchases-Bridging-Header.h */,
+				12D22FBA1B9C695C00C31761 /* GradientView.swift */,
 			);
 			name = Purchases;
 			path = "Day3-Purchases";
@@ -280,6 +283,7 @@
 				124DEF731B9B29640042AA13 /* Purchase.swift in Sources */,
 				124DEF471B9B28F70042AA13 /* DetailViewController.swift in Sources */,
 				124DEF451B9B28F70042AA13 /* MasterViewController.swift in Sources */,
+				12D22FBB1B9C695C00C31761 /* GradientView.swift in Sources */,
 				12D22EC91B9C545D00C31761 /* AnotherViewController.m in Sources */,
 				124DEF431B9B28F70042AA13 /* AppDelegate.swift in Sources */,
 			);

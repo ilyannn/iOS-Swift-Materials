@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -212,12 +213,39 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tm2-g7-7E1" customClass="GradientView" customModule="Day4_Purchases" customModuleProvider="target">
+                                <rect key="frame" x="20" y="452" width="128" height="128"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="O6S-gi-cRj"/>
+                                    <constraint firstAttribute="width" secondItem="tm2-g7-7E1" secondAttribute="height" multiplier="1:1" id="bFu-2z-0nO"/>
+                                    <constraint firstAttribute="width" constant="240" id="rdZ-F9-scE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="centerColor">
+                                        <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rdZ-F9-scE"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1NH-t5-Mo5" firstAttribute="top" secondItem="xdV-B4-kVC" secondAttribute="bottom" constant="30" id="0xD-pB-Pq3"/>
                             <constraint firstItem="unQ-qB-9zU" firstAttribute="top" secondItem="1NH-t5-Mo5" secondAttribute="bottom" id="Bcy-jQ-ZO9"/>
+                            <constraint firstItem="unQ-qB-9zU" firstAttribute="top" secondItem="tm2-g7-7E1" secondAttribute="bottom" constant="20" id="Chh-eD-0wN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1NH-t5-Mo5" secondAttribute="trailing" id="KAI-Mt-V7s"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tm2-g7-7E1" secondAttribute="leading" id="PY2-84-Lxa"/>
                             <constraint firstItem="1NH-t5-Mo5" firstAttribute="top" secondItem="xdV-B4-kVC" secondAttribute="bottom" id="VeI-xN-VcZ"/>
                             <constraint firstItem="1NH-t5-Mo5" firstAttribute="leading" secondItem="23P-sf-CPK" secondAttribute="leadingMargin" id="zMe-5u-qlm"/>
                         </constraints>
@@ -230,6 +258,7 @@
                     </view>
                     <connections>
                         <outlet property="addButton" destination="0XA-PO-DEP" id="HyL-0G-kNa"/>
+                        <outlet property="gradientView" destination="tm2-g7-7E1" id="6Fc-2y-Mfp"/>
                         <outlet property="purchaseNameField" destination="HKY-fM-Ufg" id="drZ-L7-X86"/>
                         <outlet property="purchasePriceField" destination="Ufv-3f-4dl" id="s3a-fi-NkA"/>
                         <outlet property="quantityLabel" destination="kMd-Je-MPp" id="bYA-5K-XVH"/>

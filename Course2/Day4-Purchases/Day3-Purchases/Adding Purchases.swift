@@ -18,6 +18,8 @@ class AddViewController: UIViewController {
 
     @IBOutlet weak var purchasePriceField: UITextField!
     
+    @IBOutlet weak var gradientView: GradientView!
+    
     var selectedQuantity: Int {
         return Int(quantitySelector.value)
     }
@@ -30,5 +32,11 @@ class AddViewController: UIViewController {
         super.viewDidLoad()
         
         addButton.layer.cornerRadius = 10
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        gradientView.reverseColors()
     }
 }
