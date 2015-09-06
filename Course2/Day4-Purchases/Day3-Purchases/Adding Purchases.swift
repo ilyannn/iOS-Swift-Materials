@@ -49,17 +49,19 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func addPurchase(sender: AnyObject) {
+        
         let alertView = UIAlertController(title:  "Добавить покупку?", message: nil, preferredStyle: .Alert)
         
-        alertView.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:
-        { _ in
+        let okAction = UIAlertAction(title: "OK", style: .Default) { _ in
             delegate?.addPurchase(source: self)
-        }))
-
-        alertView.addAction(UIAlertAction(title: "Oтмена", style: .Default, handler: nil))
+        }
         
-        presentViewController(alertView, animated: true, completion: {})
+        let cancelAction = UIAlertAction(title: "Oтмена", style: .Default, handler: nil)
 
+        alertView.addAction(okAction)
+        alertView.addAction(cancelAction)
+        
+        presentViewController(alertView, animated: true) {}
     }
     
     func updateButtonState() {
