@@ -171,6 +171,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="nameChanged:" destination="RhB-gg-HBd" eventType="editingDidEnd" id="MvE-1o-EFA"/>
+                                            <action selector="userChangedName:" destination="RhB-gg-HBd" eventType="editingChanged" id="Rfl-e5-Exa"/>
                                         </connections>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nCP-XQ-Zec">

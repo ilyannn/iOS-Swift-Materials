@@ -98,4 +98,8 @@ class AddViewController: UIViewController {
         }
 
     }
+    
+    @IBAction func userChangedName(sender: UITextField) {
+//        sender.text = sender.text! + "олоко"
+    }
 }
