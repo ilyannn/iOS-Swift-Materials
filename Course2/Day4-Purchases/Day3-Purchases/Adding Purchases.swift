@@ -16,6 +16,8 @@ class AddViewController: UIViewController {
     
     @IBOutlet weak var purchaseNameField: UITextField!
 
+    @IBOutlet weak var imageView: UIImageView!
+    
     @IBOutlet weak var purchasePriceField: UITextField!
     
     @IBOutlet weak var gradientView: GradientView!
@@ -32,11 +34,28 @@ class AddViewController: UIViewController {
         super.viewDidLoad()
         
         addButton.layer.cornerRadius = 10
+
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         gradientView.reverseColors()
+        
+        let address = "http://www.wpclipart.com/signs_symbol/BW/BW_4/ticket_purchase.png"
+        
+        if let url = NSURL(string: address) {
+            
+            if let imageData = NSData(contentsOfURL: url) {
+                let image = UIImage(data: imageData)
+                imageView.image = image
+            }
+            
+        } else {
+            
+            print("Не получилось, плохой URL")
+            
+        }
+
     }
 }
