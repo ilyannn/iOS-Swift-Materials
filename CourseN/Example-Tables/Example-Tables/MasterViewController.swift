@@ -40,7 +40,7 @@ class MasterViewController: UITableViewController {
     func insertNewObject(sender: AnyObject) {
         objects.insert(NSDate(), atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        self.tableView.reloadData()
     }
 
     // MARK: - Segues
@@ -68,11 +68,26 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let row = indexPath.row
+
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-        let object = objects[indexPath.row] as! NSDate
+        let object = objects[row] as! NSDate
         cell.textLabel!.text = object.description
-        cell.backgroundColor = UIColor.yellowColor()
+        
+        switch (row % 3) {
+        case 0:
+            cell.backgroundColor = UIColor.yellowColor().colorWithAlphaComponent(0.1)
+        
+        case 1:
+            cell.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.1)
+        
+        case 2:
+            cell.backgroundColor = UIColor.clearColor()
+
+        default: break;
+        }
+        
         return cell
     }
 
@@ -84,7 +99,7 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             objects.removeAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            tableView.reloadData()
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
