@@ -33,6 +33,9 @@
                                 <state key="normal" title="Большая красная кнопка">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dXl-ZA-iIb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -45,6 +48,9 @@
                             <constraint firstItem="DAP-VG-aeC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="noQ-3q-sfV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bigRedButton" destination="Ghe-Ll-f2Y" id="WiY-uA-F7R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
