@@ -18,7 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="V0A-6e-cll">
+                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e2e-WY-tLm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="V0A-6e-cll">
                                 <rect key="frame" x="20" y="286" width="560" height="29"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,11 +33,11 @@
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мелкий текст набранный с помощью стандартного стиля Footnote, одной из фич, появишихся в версии 8 операционной системы iOS " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aq-Cz-Tqr">
-                                <rect key="frame" x="20" y="500" width="560" height="100"/>
+                                <rect key="frame" x="20" y="570" width="560" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="HjZ-4v-CUz"/>
+                                    <constraint firstAttribute="height" constant="30" id="HjZ-4v-CUz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -46,25 +50,37 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Стиль текста Subhead" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww0-5V-3Ux">
-                                <rect key="frame" x="172" y="76" width="149" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стиль текста Subhead" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww0-5V-3Ux">
+                                <rect key="frame" x="226" y="76" width="149" height="17"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.jpg" highlightedImage="dog.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="guf-yP-5Vd">
+                                <rect key="frame" x="40" y="334" width="520" height="216"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="guf-yP-5Vd" firstAttribute="top" secondItem="V0A-6e-cll" secondAttribute="bottom" constant="20" id="5EG-fs-DgT"/>
+                            <constraint firstItem="0aq-Cz-Tqr" firstAttribute="top" secondItem="guf-yP-5Vd" secondAttribute="bottom" constant="20" id="68u-Am-7aL"/>
                             <constraint firstItem="Y1n-98-yVF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CRd-sH-T5V"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0aq-Cz-Tqr" secondAttribute="bottom" id="F5V-mD-3ew"/>
+                            <constraint firstItem="e2e-WY-tLm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IkS-Fh-AEm"/>
+                            <constraint firstAttribute="trailing" secondItem="e2e-WY-tLm" secondAttribute="trailing" id="M3M-Nr-3Du"/>
                             <constraint firstItem="0aq-Cz-Tqr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N5z-tU-M0W"/>
                             <constraint firstItem="Y1n-98-yVF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="QjG-K6-mR9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e2e-WY-tLm" secondAttribute="bottom" id="SCm-eM-UhU"/>
                             <constraint firstItem="V0A-6e-cll" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vgf-gh-E1g"/>
+                            <constraint firstItem="guf-yP-5Vd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="XPH-6k-QAd"/>
                             <constraint firstItem="ww0-5V-3Ux" firstAttribute="top" secondItem="Y1n-98-yVF" secondAttribute="bottom" constant="10" id="Xf6-bh-HU3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="guf-yP-5Vd" secondAttribute="trailing" constant="20" id="cMA-zC-arg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="V0A-6e-cll" secondAttribute="trailing" id="eYO-2z-4aW"/>
                             <constraint firstItem="0aq-Cz-Tqr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="i9F-OX-biW"/>
+                            <constraint firstItem="e2e-WY-tLm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qSZ-e4-ONJ"/>
                             <constraint firstItem="ww0-5V-3Ux" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rbf-J3-umu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0aq-Cz-Tqr" secondAttribute="trailing" id="rso-R4-ufK"/>
                             <constraint firstItem="V0A-6e-cll" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xwc-St-4Cf"/>
@@ -76,4 +92,8 @@
             <point key="canvasLocation" x="515" y="465"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cat.jpg" width="284" height="177"/>
+        <image name="dog.jpg" width="215" height="235"/>
+    </resources>
 </document>

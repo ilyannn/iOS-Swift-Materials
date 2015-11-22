@@ -14,6 +14,8 @@
 		128532B71C01E8DD007BC2B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128532B51C01E8DD007BC2B4 /* LaunchScreen.storyboard */; };
 		128532C21C01E8DD007BC2B4 /* Course3_Day2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128532C11C01E8DD007BC2B4 /* Course3_Day2Tests.swift */; };
 		128532CD1C01E8DD007BC2B4 /* Course3_Day2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128532CC1C01E8DD007BC2B4 /* Course3_Day2UITests.swift */; };
+		128532DB1C01FB94007BC2B4 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 128532DA1C01FB94007BC2B4 /* cat.jpg */; };
+		128532DD1C01FBAE007BC2B4 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 128532DC1C01FBAE007BC2B4 /* dog.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		128532C81C01E8DD007BC2B4 /* Course3-Day2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Course3-Day2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		128532CC1C01E8DD007BC2B4 /* Course3_Day2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course3_Day2UITests.swift; sourceTree = "<group>"; };
 		128532CE1C01E8DD007BC2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		128532DA1C01FB94007BC2B4 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		128532DC1C01FBAE007BC2B4 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				128532B31C01E8DD007BC2B4 /* Assets.xcassets */,
 				128532B51C01E8DD007BC2B4 /* LaunchScreen.storyboard */,
 				128532B81C01E8DD007BC2B4 /* Info.plist */,
+				128532DA1C01FB94007BC2B4 /* cat.jpg */,
+				128532DC1C01FBAE007BC2B4 /* dog.jpg */,
 			);
 			path = "Course3-Day2";
 			sourceTree = "<group>";
@@ -233,7 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				128532B71C01E8DD007BC2B4 /* LaunchScreen.storyboard in Resources */,
+				128532DD1C01FBAE007BC2B4 /* dog.jpg in Resources */,
 				128532B41C01E8DD007BC2B4 /* Assets.xcassets in Resources */,
+				128532DB1C01FB94007BC2B4 /* cat.jpg in Resources */,
 				128532B21C01E8DD007BC2B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +495,7 @@
 				128532D31C01E8DD007BC2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		128532D41C01E8DD007BC2B4 /* Build configuration list for PBXNativeTarget "Course3-Day2Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +504,7 @@
 				128532D61C01E8DD007BC2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		128532D71C01E8DD007BC2B4 /* Build configuration list for PBXNativeTarget "Course3-Day2UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +513,7 @@
 				128532D91C01E8DD007BC2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
