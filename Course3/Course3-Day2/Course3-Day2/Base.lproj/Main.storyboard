@@ -93,6 +93,11 @@
                             <constraint firstItem="V0A-6e-cll" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xwc-St-4Cf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="catPicture" destination="guf-yP-5Vd" id="GAL-PH-rHe"/>
+                        <outlet property="screenSubtitle" destination="ww0-5V-3Ux" id="0Pd-W9-har"/>
+                        <outlet property="screenTitle" destination="Y1n-98-yVF" id="hVm-6v-0lm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
