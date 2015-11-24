@@ -19,9 +19,11 @@
 **Подробнее о типах**
 * Особенности системы типов в Swift
 * Итераторы и lazy computation
-*  `nil` и алгебраические типы
+* Алгебраические типы
 
-**Интеграция с Objective-C**
+**Важные типы**
+* `Optional<T>`
+* Обсуждение: nullability в других языках
 * Objective-C bridging и аудит SDK
 * Настоящий Unicode для строк
 * Материал: https://www.mikeash.com/pyblog/friday-qa-2015-11-06-why-is-swifts-string-api-so-hard.html
@@ -49,16 +51,18 @@
 ## День 4
 
 **Погружение в generics**
- Протоколы и их имплементация
- Generics в Objective-C
+* Протоколы и их имплементация
+* Generics в Objective-C
 
 **Операторы всякие важны**
- `guard` как решение проблемы pyramid of doom
- Новые возможности `switch`
- Обработка ошибок: `guard` vs `throws`
- Обсуждение: создавать свой язык – хорошо или плохо
- Примеры: SQLModel, Cartography
- Материал: Core Data best practices by example
+* `guard` как решение проблемы pyramid of doom
+* Новые возможности `switch`
+* Обработка ошибок: `guard` vs `throws`
+* Обсуждение: создавать свой язык – хорошо или плохо
+* Примеры: SQLModel, Cartography
+* Материал: Core Data best practices by example
+
+
 
 ## День 5
 
