@@ -25,6 +25,7 @@
 * Алгебраические типы
 
 **`Optional<T>`**
+* Типы `T?`, `T??`, `T!`
 * Обсуждение: nullability в других языках
 * Objective-C bridging и аудит SDK
 
