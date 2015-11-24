@@ -24,7 +24,7 @@
 * Итераторы и lazy computation
 * Алгебраические типы
 
-**`Optional<T>**
+**`Optional<T>`**
 * Обсуждение: nullability в других языках
 * Objective-C bridging и аудит SDK
 
