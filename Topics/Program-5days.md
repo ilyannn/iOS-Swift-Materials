@@ -13,6 +13,9 @@
 * Пример: WWDC Video
 * Обсуждение: коллекции в других языках
 
+**Строки**
+* Настоящий Unicode для строк
+* Материал: https://www.mikeash.com/pyblog/friday-qa-2015-11-06-why-is-swifts-string-api-so-hard.html
 
 ## День 2
 
@@ -21,13 +24,18 @@
 * Итераторы и lazy computation
 * Алгебраические типы
 
-**Важные типы**
-* `Optional<T>`
+**`Optional<T>**
 * Обсуждение: nullability в других языках
 * Objective-C bridging и аудит SDK
-* Настоящий Unicode для строк
-* Материал: https://www.mikeash.com/pyblog/friday-qa-2015-11-06-why-is-swifts-string-api-so-hard.html
 
+**Новые возможности классов**
+
+* Область видимости и отступление об оптимизаторе
+* Static dispatch и чем private лучше inline
+* (Co/contra)variance 
+* Свойства vs методы
+* Обсуждение: нужен ли `NS_DESIGNATED_INITIALIZER`
+ 
 
 ## День 3
 
@@ -39,14 +47,10 @@
 * Пример: MapReduce
 * Материал: Functional Programming in Swift
 
-**Новые возможности классов**
+**Реактивный стиль разработки**
+* Пример: RxSwift
+* Материалы: https://www.objc.io/issues/13-architecture/viper/
 
-* Область видимости и отступление об оптимизаторе
-* Static dispatch и чем private лучше inline
-* (Co/contra)variance 
-* Свойства vs методы
-* Обсуждение: нужен ли `NS_DESIGNATED_INITIALIZER`
- 
 
 ## День 4
 
@@ -60,23 +64,20 @@
 * Обработка ошибок: `guard` vs `throws`
 * Обсуждение: создавать свой язык – хорошо или плохо
 * Примеры: SQLModel, Cartography
-* Материал: Core Data best practices by example
-
 
 
 ## День 5
 
 **Новые средства разработки**
 
-* Наконец-то namespacing!
+* Создание frameworks
 * Designable views
+* Материал: Core Data best practices by example
 
 **Архитектура разработки**
 
 * Hard Mode: On
 * Локальные имена и encapsulation
 * Dependency Injection и синглетоны
-* Реактивный стиль, пример: RxSwift
 * Обсуждение: who controls View Controllers
-* Материалы: https://www.objc.io/issues/13-architecture/viper/
 
