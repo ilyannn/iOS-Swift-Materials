@@ -15,17 +15,20 @@
 * Обсуждение: коллекции в других языках
 
 **Строки**
+
 * Настоящий Unicode для строк
 * Материал: https://www.mikeash.com/pyblog/friday-qa-2015-11-06-why-is-swifts-string-api-so-hard.html
 
 ## День 2
 
 **Подробнее о типах**
+
 * Особенности системы типов в Swift
 * Итераторы и lazy computation
 * Алгебраические типы
 
 **`Optional<T>`**
+
 * Типы `T?`, `T??`, `T!`
 * Обсуждение: nullability в других языках
 * Objective-C bridging и аудит SDK
