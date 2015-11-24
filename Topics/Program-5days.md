@@ -42,6 +42,7 @@
 ## День 3
 
 **Функциональный стиль разработки**
+
 * First-class functions, `@noescape` etc
 * Существительные и глаголы в S-V-O
 * Closures: синтаксис, семантика, внутреннее устройство
@@ -50,6 +51,7 @@
 * Материал: Functional Programming in Swift
 
 **Реактивный стиль разработки**
+
 * Пример: RxSwift
 * Материалы: https://www.objc.io/issues/13-architecture/viper/
 
@@ -57,10 +59,12 @@
 ## День 4
 
 **Погружение в generics**
+
 * Протоколы и их имплементация
 * Generics в Objective-C
 
 **Операторы всякие важны**
+
 * `guard` как решение проблемы pyramid of doom
 * Новые возможности `switch`
 * Обработка ошибок: `guard` vs `throws`
