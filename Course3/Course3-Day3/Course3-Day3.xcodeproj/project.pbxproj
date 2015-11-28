@@ -15,6 +15,8 @@
 		127B3ABA1C09FED100FD6E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127B3AB81C09FED100FD6E9F /* LaunchScreen.storyboard */; };
 		127B3AC51C09FED100FD6E9F /* Course3_Day3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B3AC41C09FED100FD6E9F /* Course3_Day3Tests.swift */; };
 		127B3AD01C09FED100FD6E9F /* Course3_Day3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B3ACF1C09FED100FD6E9F /* Course3_Day3UITests.swift */; };
+		127B3ADE1C0A01E200FD6E9F /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 127B3ADD1C0A01E200FD6E9F /* dog.jpg */; };
+		127B3AE01C0A0DDD00FD6E9F /* VoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B3ADF1C0A0DDD00FD6E9F /* VoteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		127B3ACB1C09FED100FD6E9F /* Course3-Day3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Course3-Day3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		127B3ACF1C09FED100FD6E9F /* Course3_Day3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course3_Day3UITests.swift; sourceTree = "<group>"; };
 		127B3AD11C09FED100FD6E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		127B3ADD1C0A01E200FD6E9F /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		127B3ADF1C0A0DDD00FD6E9F /* VoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				127B3AAF1C09FED100FD6E9F /* MasterViewController.swift */,
 				127B3AB11C09FED100FD6E9F /* DetailViewController.swift */,
 				127B3AB31C09FED100FD6E9F /* Main.storyboard */,
+				127B3ADF1C0A0DDD00FD6E9F /* VoteCell.swift */,
+				127B3ADD1C0A01E200FD6E9F /* dog.jpg */,
 				127B3AB61C09FED100FD6E9F /* Assets.xcassets */,
 				127B3AB81C09FED100FD6E9F /* LaunchScreen.storyboard */,
 				127B3ABB1C09FED100FD6E9F /* Info.plist */,
@@ -235,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				127B3ADE1C0A01E200FD6E9F /* dog.jpg in Resources */,
 				127B3ABA1C09FED100FD6E9F /* LaunchScreen.storyboard in Resources */,
 				127B3AB71C09FED100FD6E9F /* Assets.xcassets in Resources */,
 				127B3AB51C09FED100FD6E9F /* Main.storyboard in Resources */,
@@ -265,6 +272,7 @@
 				127B3AB21C09FED100FD6E9F /* DetailViewController.swift in Sources */,
 				127B3AB01C09FED100FD6E9F /* MasterViewController.swift in Sources */,
 				127B3AAE1C09FED100FD6E9F /* AppDelegate.swift in Sources */,
+				127B3AE01C0A0DDD00FD6E9F /* VoteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
