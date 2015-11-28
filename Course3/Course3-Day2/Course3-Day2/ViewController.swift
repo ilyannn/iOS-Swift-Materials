@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     let titleColor = UIColor(red: 0, green: 1, blue: 0.1, alpha: 1)
+
     var animals = ["Кошка", "Собака"]
     
     @IBOutlet weak var screenTitle: UILabel!
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
+        screenSubtitle.text = "catPicture.center = \(catPicture.center)"
         catPicture.highlighted = !catPicture.highlighted
         UIView.animateWithDuration(1, animations: animate)
     }
