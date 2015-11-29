@@ -11,7 +11,7 @@ import UIKit
 class Trip {
     let hitResult: Double // 0 to 1
     let tripSegments: [String]
-    let pictureName: String?
+    let pictureURL: NSURL?
     
     var hitPercent: Int {
         return Int(hitResult * 100)
@@ -21,18 +21,16 @@ class Trip {
         return tripSegments.joinWithSeparator(" + ")
     }
 
-    var pictureImage: UIImage? {
-        if let name = pictureName {
-            return UIImage(named: name)
-        }
-        
-        return nil
-    }
     
-    init(hit: Double, segments: [String], pictureName name: String? = nil) {
+    init(hit: Double, segments: [String], pictureString string: String? = nil) {
         hitResult = hit
         tripSegments = segments
-        pictureName = name
+
+        if let pictureURLString = string {
+            pictureURL = NSURL(string: pictureURLString)
+        } else {
+            pictureURL = nil
+        }
     }
 }
 
@@ -42,12 +40,25 @@ class ViewController: UIViewController {
     // MARK: - Модель
     
     let tripCollection = [
-        Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureName: "mountains.jpg"),
-        Trip(hit: 0.95, segments: ["Кавказ", "Каспий"], pictureName: "mountains.jpg"),
-        Trip(hit: 0.75, segments: ["Альпы", "Швейцария", "Часы"], pictureName: "alps.jpg"),
-        Trip(hit: 0.70, segments: ["Коралловый Риф", "Пляж"], pictureName: "beach"),
+        Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
+        
+        Trip(hit: 0.95, segments: ["Кавказ", "Каспий"]),
+        
+        Trip(hit: 0.75, segments: ["Альпы", "Швейцария", "Часы"]),
+        
+        Trip(hit: 0.70, segments: ["Коралловый Риф", "Пляж"]),
+        
         Trip(hit: 0.66, segments: ["Полет Дедала", "Солнце"]),
         Trip(hit: 0.30, segments: ["Смотреть Телевизор", "Дома"]),        
+
+        Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
+        
+        Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
+        
+        Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
+        
+        Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
+        
     ]
 
     let monthNames = ["ноябре 2015", "декабре 2015", "январе 2016", "феврале 2016"]

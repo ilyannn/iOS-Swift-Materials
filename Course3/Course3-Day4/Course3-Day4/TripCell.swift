@@ -17,7 +17,18 @@ class TripCell: UITableViewCell {
     func configureWithTrip(trip: Trip) {
         descriptionLabel.text = trip.tripDescription
         percentLabel.text = "\(trip.hitPercent) %"
-        tripPicture.image = trip.pictureImage
+        
+        tripPicture.image = nil
+
+        guard let URL = trip.pictureURL else {
+            return
+        }
+ 
+        guard let data = NSData(contentsOfURL: URL) else {
+            return
+        }
+        
+        tripPicture.image = UIImage(data: data)
     }
     
     override func awakeFromNib() {
