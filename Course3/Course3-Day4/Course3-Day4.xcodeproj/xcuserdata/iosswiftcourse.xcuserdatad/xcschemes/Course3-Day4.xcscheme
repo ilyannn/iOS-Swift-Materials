@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "127B3B251C0B28C500FD6E9F"
+               BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
                BuildableName = "Course3-Day4.app"
                BlueprintName = "Course3-Day4"
                ReferencedContainer = "container:Course3-Day4.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "127B3B3B1C0B28C500FD6E9F"
+               BlueprintIdentifier = "127B3B751C0B2A4100FD6E9F"
                BuildableName = "Course3-Day4Tests.xctest"
                BlueprintName = "Course3-Day4Tests"
                ReferencedContainer = "container:Course3-Day4.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "127B3B461C0B28C500FD6E9F"
+               BlueprintIdentifier = "127B3B801C0B2A4100FD6E9F"
                BuildableName = "Course3-Day4UITests.xctest"
                BlueprintName = "Course3-Day4UITests"
                ReferencedContainer = "container:Course3-Day4.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "127B3B251C0B28C500FD6E9F"
+            BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
             BuildableName = "Course3-Day4.app"
             BlueprintName = "Course3-Day4"
             ReferencedContainer = "container:Course3-Day4.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "127B3B251C0B28C500FD6E9F"
+            BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
             BuildableName = "Course3-Day4.app"
             BlueprintName = "Course3-Day4"
             ReferencedContainer = "container:Course3-Day4.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "127B3B251C0B28C500FD6E9F"
+            BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
             BuildableName = "Course3-Day4.app"
             BlueprintName = "Course3-Day4"
             ReferencedContainer = "container:Course3-Day4.xcodeproj">
