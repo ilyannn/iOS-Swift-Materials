@@ -20,15 +20,24 @@ class TripCell: UITableViewCell {
         
         tripPicture.image = nil
 
-        guard let URL = trip.pictureURL else {
-            return
-        }
- 
-        guard let data = NSData(contentsOfURL: URL) else {
-            return
-        }
+        let operationQueue = NSOperationQueue()
         
-        tripPicture.image = UIImage(data: data)
+        let operation = NSBlockOperation() {
+            
+            guard let URL = trip.pictureURL else {
+                return
+            }
+            
+            guard let data = NSData(contentsOfURL: URL) else {
+                return
+            }
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                self.tripPicture.image = UIImage(data: data)
+            }
+        }
+
+        operationQueue.addOperation(operation)
     }
     
     override func awakeFromNib() {
