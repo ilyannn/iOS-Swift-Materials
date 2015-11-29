@@ -20,86 +20,151 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="obN-b5-T0e">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCO-Ns-unh">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGa-Fb-EbX">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGa-Fb-EbX">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qun-n7-tAR">
+                                                <rect key="frame" x="10" y="5" width="355" height="70"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qun-n7-tAR">
-                                                        <rect key="frame" x="10" y="5" width="355" height="70"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="горы солнце чайхана" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YH4-q6-F9j">
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" red="0.38823529411764707" green="0.0" blue="0.0078431372549019607" alpha="0.89967799831081086" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lqD-gq-Era">
+                                                        <rect key="frame" x="0.0" y="40" width="355" height="30"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="горы солнце чайхана" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YH4-q6-F9j">
-                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="дней" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NB-ME-QjN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
                                                                 <animations/>
-                                                                <color key="backgroundColor" red="0.38823529411764707" green="0.0" blue="0.0078431372549019607" alpha="0.89967799831081086" colorSpace="calibratedRGB"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lqD-gq-Era">
-                                                                <rect key="frame" x="0.0" y="40" width="355" height="30"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="дней" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NB-ME-QjN">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
-                                                                        <animations/>
-                                                                        <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
-                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1X-xn-iaq">
-                                                                        <rect key="frame" x="44" y="0.0" width="18" height="30"/>
-                                                                        <animations/>
-                                                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
-                                                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="1" maximumValue="90" translatesAutoresizingMaskIntoConstraints="NO" id="ymD-ep-5R3">
-                                                                        <rect key="frame" x="72" y="0.0" width="94" height="29"/>
-                                                                        <animations/>
-                                                                    </stepper>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="в" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lk-Qf-fux">
-                                                                        <rect key="frame" x="176" y="0.0" width="8" height="30"/>
-                                                                        <animations/>
-                                                                        <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
-                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E7-R5-pOI">
-                                                                        <rect key="frame" x="194" y="0.0" width="161" height="30"/>
-                                                                        <animations/>
-                                                                        <state key="normal" title="сентябре ⬇">
-                                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        </state>
-                                                                    </button>
-                                                                </subviews>
+                                                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1X-xn-iaq">
+                                                                <rect key="frame" x="44" y="0.0" width="18" height="30"/>
                                                                 <animations/>
-                                                            </stackView>
+                                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="1" maximumValue="90" translatesAutoresizingMaskIntoConstraints="NO" id="ymD-ep-5R3">
+                                                                <rect key="frame" x="72" y="0.0" width="94" height="29"/>
+                                                                <animations/>
+                                                                <connections>
+                                                                    <action selector="daysValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="shZ-80-DJN"/>
+                                                                </connections>
+                                                            </stepper>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="в" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lk-Qf-fux">
+                                                                <rect key="frame" x="176" y="0.0" width="8" height="30"/>
+                                                                <animations/>
+                                                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E7-R5-pOI">
+                                                                <rect key="frame" x="194" y="0.0" width="161" height="30"/>
+                                                                <animations/>
+                                                                <state key="normal" title="⬇">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="selectionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="twU-Ku-4XT"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                         <animations/>
                                                     </stackView>
                                                 </subviews>
                                                 <animations/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="qun-n7-tAR" secondAttribute="trailing" constant="10" id="MN6-IC-nbK"/>
-                                                    <constraint firstAttribute="bottom" secondItem="qun-n7-tAR" secondAttribute="bottom" constant="5" id="WLY-Um-gJL"/>
-                                                    <constraint firstItem="qun-n7-tAR" firstAttribute="top" secondItem="sGa-Fb-EbX" secondAttribute="top" constant="5" id="nhX-dV-cjE"/>
-                                                    <constraint firstItem="qun-n7-tAR" firstAttribute="leading" secondItem="sGa-Fb-EbX" secondAttribute="leading" constant="10" id="pZ0-CM-Q6L"/>
-                                                </constraints>
-                                            </view>
+                                            </stackView>
                                         </subviews>
                                         <animations/>
-                                    </stackView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdd-Cn-iCR">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="qun-n7-tAR" secondAttribute="trailing" constant="10" id="MN6-IC-nbK"/>
+                                            <constraint firstAttribute="bottom" secondItem="qun-n7-tAR" secondAttribute="bottom" constant="5" id="WLY-Um-gJL"/>
+                                            <constraint firstItem="qun-n7-tAR" firstAttribute="top" secondItem="sGa-Fb-EbX" secondAttribute="top" constant="5" id="nhX-dV-cjE"/>
+                                            <constraint firstItem="qun-n7-tAR" firstAttribute="leading" secondItem="sGa-Fb-EbX" secondAttribute="leading" constant="10" id="pZ0-CM-Q6L"/>
+                                        </constraints>
+                                    </view>
+                                    <pickerView contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="bdd-Cn-iCR">
                                         <rect key="frame" x="0.0" y="80" width="375" height="216"/>
                                         <animations/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="QMh-SQ-0eW"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="j6j-w1-Tmv"/>
+                                        </connections>
                                     </pickerView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Vf-cw-nKP">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Vf-cw-nKP">
                                         <rect key="frame" x="0.0" y="296" width="375" height="351"/>
                                         <animations/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.11372549019607843" green="0.32156862745098042" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Trip" id="Zaz-Kt-cvL" customClass="TripCell" customModule="TravelApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zaz-Kt-cvL" id="la8-pK-Hdj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mountains.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XUd-L7-IgU" userLabel="Image View">
+                                                            <rect key="frame" x="20" y="20" width="335" height="79"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="rLs-yd-d3j">
+                                                            <rect key="frame" x="20" y="20" width="335" height="80"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тянь-Шань + Узбекистан" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziI-Pb-qmE">
+                                                                    <rect key="frame" x="122" y="0.0" width="213" height="60"/>
+                                                                    <animations/>
+                                                                    <color key="backgroundColor" white="0.18542873075133876" alpha="0.10599662162162167" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="751" text="99%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PM-z5-R8y">
+                                                                    <rect key="frame" x="300" y="60" width="35" height="20"/>
+                                                                    <animations/>
+                                                                    <color key="backgroundColor" white="0.1854287308" alpha="0.29840582770000001" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <animations/>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="XUd-L7-IgU" secondAttribute="trailing" constant="20" id="PeD-3e-JTK"/>
+                                                        <constraint firstItem="rLs-yd-d3j" firstAttribute="trailing" secondItem="XUd-L7-IgU" secondAttribute="trailing" id="QYF-pu-ir4"/>
+                                                        <constraint firstItem="rLs-yd-d3j" firstAttribute="leading" secondItem="XUd-L7-IgU" secondAttribute="leading" id="WaV-0v-sgd"/>
+                                                        <constraint firstAttribute="bottom" secondItem="XUd-L7-IgU" secondAttribute="bottom" id="Z3v-AG-Dqb"/>
+                                                        <constraint firstItem="XUd-L7-IgU" firstAttribute="top" secondItem="la8-pK-Hdj" secondAttribute="top" constant="20" id="l0A-dw-cw2"/>
+                                                        <constraint firstItem="rLs-yd-d3j" firstAttribute="bottom" secondItem="XUd-L7-IgU" secondAttribute="bottom" id="oxN-XA-oG8"/>
+                                                        <constraint firstItem="XUd-L7-IgU" firstAttribute="leading" secondItem="la8-pK-Hdj" secondAttribute="leading" constant="20" id="rag-62-yv6"/>
+                                                        <constraint firstItem="rLs-yd-d3j" firstAttribute="top" secondItem="XUd-L7-IgU" secondAttribute="top" id="sOa-2x-r1Z"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="descriptionLabel" destination="ziI-Pb-qmE" id="JEe-bg-zE7"/>
+                                                    <outlet property="percentLabel" destination="8PM-z5-R8y" id="aU2-5A-Bk8"/>
+                                                    <outlet property="tripPicture" destination="XUd-L7-IgU" id="7mQ-eg-c6L"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="Apw-5r-Rcp"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                                 <animations/>
@@ -115,10 +180,20 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="desiredDays" destination="t1X-xn-iaq" id="INM-R1-mCY"/>
+                        <outlet property="desiredDaysStepper" destination="ymD-ep-5R3" id="Mdb-jT-rbr"/>
+                        <outlet property="periodPicker" destination="bdd-Cn-iCR" id="hDz-uF-fE4"/>
+                        <outlet property="periodSelectionButton" destination="9E7-R5-pOI" id="cjN-uc-ybV"/>
+                        <outlet property="searchField" destination="YH4-q6-F9j" id="jT3-Gk-ph7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="244.5" y="337.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mountains.jpg" width="1024" height="768"/>
+    </resources>
 </document>
