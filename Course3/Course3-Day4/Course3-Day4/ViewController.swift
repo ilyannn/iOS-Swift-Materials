@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class Trip {
     let hitResult: Double // 0 to 1

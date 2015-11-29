@@ -19,25 +19,12 @@ class TripCell: UITableViewCell {
         percentLabel.text = "\(trip.hitPercent) %"
         
         tripPicture.image = nil
-
-        let operationQueue = NSOperationQueue()
         
-        let operation = NSBlockOperation() {
-            
-            guard let URL = trip.pictureURL else {
-                return
-            }
-            
-            guard let data = NSData(contentsOfURL: URL) else {
-                return
-            }
-            
-            dispatch_async(dispatch_get_main_queue()) {
-                self.tripPicture.image = UIImage(data: data)
-            }
+        guard let URL = trip.pictureURL else {
+            return
         }
-
-        operationQueue.addOperation(operation)
+        
+        tripPicture.sd_setImageWithURL(URL)
     }
     
     override func awakeFromNib() {
