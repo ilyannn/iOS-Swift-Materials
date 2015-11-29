@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		127B3B621C0B2A4100FD6E9F /* Course3-Day4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Course3-Day4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		127B3B621C0B2A4100FD6E9F /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		127B3B651C0B2A4100FD6E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		127B3B671C0B2A4100FD6E9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		127B3B6A1C0B2A4100FD6E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		127B3B631C0B2A4100FD6E9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				127B3B621C0B2A4100FD6E9F /* Course3-Day4.app */,
+				127B3B621C0B2A4100FD6E9F /* TravelApp.app */,
 				127B3B761C0B2A4100FD6E9F /* Course3-Day4Tests.xctest */,
 				127B3B811C0B2A4100FD6E9F /* Course3-Day4UITests.xctest */,
 			);
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		127B3B611C0B2A4100FD6E9F /* Course3-Day4 */ = {
+		127B3B611C0B2A4100FD6E9F /* TravelApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 127B3B8A1C0B2A4100FD6E9F /* Build configuration list for PBXNativeTarget "Course3-Day4" */;
+			buildConfigurationList = 127B3B8A1C0B2A4100FD6E9F /* Build configuration list for PBXNativeTarget "TravelApp" */;
 			buildPhases = (
 				127B3B5E1C0B2A4100FD6E9F /* Sources */,
 				127B3B5F1C0B2A4100FD6E9F /* Frameworks */,
@@ -140,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = "Course3-Day4";
+			name = TravelApp;
 			productName = "Course3-Day4";
-			productReference = 127B3B621C0B2A4100FD6E9F /* Course3-Day4.app */;
+			productReference = 127B3B621C0B2A4100FD6E9F /* TravelApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		127B3B751C0B2A4100FD6E9F /* Course3-Day4Tests */ = {
@@ -220,7 +220,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				127B3B611C0B2A4100FD6E9F /* Course3-Day4 */,
+				127B3B611C0B2A4100FD6E9F /* TravelApp */,
 				127B3B751C0B2A4100FD6E9F /* Course3-Day4Tests */,
 				127B3B801C0B2A4100FD6E9F /* Course3-Day4UITests */,
 			);
@@ -285,12 +285,12 @@
 /* Begin PBXTargetDependency section */
 		127B3B781C0B2A4100FD6E9F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 127B3B611C0B2A4100FD6E9F /* Course3-Day4 */;
+			target = 127B3B611C0B2A4100FD6E9F /* TravelApp */;
 			targetProxy = 127B3B771C0B2A4100FD6E9F /* PBXContainerItemProxy */;
 		};
 		127B3B831C0B2A4100FD6E9F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 127B3B611C0B2A4100FD6E9F /* Course3-Day4 */;
+			target = 127B3B611C0B2A4100FD6E9F /* TravelApp */;
 			targetProxy = 127B3B821C0B2A4100FD6E9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -402,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Course3-Day4/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course3-Day4";
@@ -413,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Course3-Day4/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course3-Day4";
@@ -480,7 +482,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		127B3B8A1C0B2A4100FD6E9F /* Build configuration list for PBXNativeTarget "Course3-Day4" */ = {
+		127B3B8A1C0B2A4100FD6E9F /* Build configuration list for PBXNativeTarget "TravelApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				127B3B8B1C0B2A4100FD6E9F /* Debug */,

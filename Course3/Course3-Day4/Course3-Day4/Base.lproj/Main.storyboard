@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Course3_Day4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,83 +21,83 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCO-Ns-unh">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uL-Cf-ex1">
-                                                <rect key="frame" x="0.0" y="0.0" width="10" height="70"/>
-                                                <animations/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="10" id="X22-Wu-5Cd"/>
-                                                </constraints>
-                                            </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qun-n7-tAR">
-                                                <rect key="frame" x="10" y="0.0" width="355" height="70"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGa-Fb-EbX">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="горы солнце чайхана" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YH4-q6-F9j">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
-                                                        <animations/>
-                                                        <color key="backgroundColor" red="0.38823529411764707" green="0.0" blue="0.0078431372549019607" alpha="0.89967799831081086" colorSpace="calibratedRGB"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lqD-gq-Era">
-                                                        <rect key="frame" x="0.0" y="40" width="355" height="30"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qun-n7-tAR">
+                                                        <rect key="frame" x="10" y="5" width="355" height="70"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="дней" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NB-ME-QjN">
-                                                                <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="горы солнце чайхана" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YH4-q6-F9j">
+                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
                                                                 <animations/>
-                                                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1X-xn-iaq">
-                                                                <rect key="frame" x="44" y="0.0" width="18" height="30"/>
+                                                                <color key="backgroundColor" red="0.38823529411764707" green="0.0" blue="0.0078431372549019607" alpha="0.89967799831081086" colorSpace="calibratedRGB"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lqD-gq-Era">
+                                                                <rect key="frame" x="0.0" y="40" width="355" height="30"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="дней" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NB-ME-QjN">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                                                                        <animations/>
+                                                                        <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1X-xn-iaq">
+                                                                        <rect key="frame" x="44" y="0.0" width="18" height="30"/>
+                                                                        <animations/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="1" maximumValue="90" translatesAutoresizingMaskIntoConstraints="NO" id="ymD-ep-5R3">
+                                                                        <rect key="frame" x="72" y="0.0" width="94" height="29"/>
+                                                                        <animations/>
+                                                                    </stepper>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="в" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lk-Qf-fux">
+                                                                        <rect key="frame" x="176" y="0.0" width="8" height="30"/>
+                                                                        <animations/>
+                                                                        <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E7-R5-pOI">
+                                                                        <rect key="frame" x="194" y="0.0" width="161" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="сентябре ⬇">
+                                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
                                                                 <animations/>
-                                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
-                                                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="1" maximumValue="90" translatesAutoresizingMaskIntoConstraints="NO" id="ymD-ep-5R3">
-                                                                <rect key="frame" x="72" y="0.0" width="94" height="29"/>
-                                                                <animations/>
-                                                            </stepper>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="в" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lk-Qf-fux">
-                                                                <rect key="frame" x="176" y="0.0" width="8" height="30"/>
-                                                                <animations/>
-                                                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E7-R5-pOI">
-                                                                <rect key="frame" x="194" y="0.0" width="161" height="30"/>
-                                                                <animations/>
-                                                                <state key="normal" title="сентябре ⬇"/>
-                                                            </button>
+                                                            </stackView>
                                                         </subviews>
                                                         <animations/>
                                                     </stackView>
                                                 </subviews>
                                                 <animations/>
-                                            </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3W-ov-nBl">
-                                                <rect key="frame" x="365" y="0.0" width="10" height="70"/>
-                                                <animations/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="10" id="Vk4-Z0-mCJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qun-n7-tAR" secondAttribute="trailing" constant="10" id="MN6-IC-nbK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qun-n7-tAR" secondAttribute="bottom" constant="5" id="WLY-Um-gJL"/>
+                                                    <constraint firstItem="qun-n7-tAR" firstAttribute="top" secondItem="sGa-Fb-EbX" secondAttribute="top" constant="5" id="nhX-dV-cjE"/>
+                                                    <constraint firstItem="qun-n7-tAR" firstAttribute="leading" secondItem="sGa-Fb-EbX" secondAttribute="leading" constant="10" id="pZ0-CM-Q6L"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <animations/>
                                     </stackView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdd-Cn-iCR">
-                                        <rect key="frame" x="0.0" y="70" width="375" height="216"/>
+                                        <rect key="frame" x="0.0" y="80" width="375" height="216"/>
                                         <animations/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </pickerView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Vf-cw-nKP">
-                                        <rect key="frame" x="0.0" y="286" width="375" height="361"/>
+                                        <rect key="frame" x="0.0" y="296" width="375" height="351"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableView>
