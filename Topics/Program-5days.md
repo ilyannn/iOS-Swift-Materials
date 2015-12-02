@@ -63,7 +63,6 @@
 **Реактивный стиль разработки**
 
 * Пример: RxSwift
-* Материалы: https://www.objc.io/issues/13-architecture/viper/
 
 
 ## День 4
@@ -96,5 +95,6 @@
 * Hard Mode: On
 * Локальные имена и encapsulation
 * Dependency Injection и синглетоны
+* Материалы: [VIPER](https://www.objc.io/issues/13-architecture/viper/)
 * Обсуждение: who controls View Controllers
 
