@@ -61,7 +61,9 @@
 
 * Правила virtual vs dynamic dispatch
 * Свойства vs методы
+* Automatic currying
 * Инициализаторы, обсуждение: нужен ли `NS_DESIGNATED_INITIALIZER`
+* Особенности `deinit`
 
 **Функциональный стиль разработки**
 
