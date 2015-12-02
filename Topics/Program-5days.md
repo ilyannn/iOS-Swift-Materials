@@ -67,7 +67,8 @@
 
 * Протоколы и их имплементация
 * Generics в Objective-C
-
+* Материал: https://realm.io/news/pragma-chris-eidhof-swift-c/
+* 
 **Операторы всякие важны**
 
 * `guard` как решение проблемы pyramid of doom
