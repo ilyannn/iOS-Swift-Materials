@@ -1,5 +1,7 @@
 # Программа курса *Swift для Obj-C разработчиков*
 
+Материалы: *[Advanced Swift](https://www.objc.io/books/advanced-swift/)*
+
 ## День 1
 
 **Работа со Swift**
@@ -71,7 +73,7 @@
 
 * Протоколы и их имплементация, материал [408](https://developer.apple.com/videos/play/wwdc2015-408/), [414](https://developer.apple.com/videos/play/wwdc2015-414/)
 * Generics в Objective-C
-* Материал: [realm](https://realm.io/news/pragma-chris-eidhof-swift-c/), *[Advanced Swift](https://www.objc.io/books/advanced-swift/)*
+* Материал: [realm](https://realm.io/news/pragma-chris-eidhof-swift-c/)
 
 **Операторы всякие важны**
 
