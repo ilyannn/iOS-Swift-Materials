@@ -73,7 +73,7 @@
 * Протоколы и их имплементация, материал [408](https://developer.apple.com/videos/play/wwdc2015-408/), [414](https://developer.apple.com/videos/play/wwdc2015-414/)
 * Generics в Objective-C
 * Материал: https://realm.io/news/pragma-chris-eidhof-swift-c/
-* 
+
 **Операторы всякие важны**
 
 * `guard` как решение проблемы pyramid of doom
