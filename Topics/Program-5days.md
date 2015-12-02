@@ -41,8 +41,9 @@
 
 * Итераторы и lazy computation
 * Использование протоколов
-* Custom operators
-* `CollectionType`, `Custom(Debug)StringConvertible`, `ArrayLiteralConvertible`
+* `GeneratorType`, `SequenceType`, `CollectionType`
+* `Custom(Debug)StringConvertible`, `ArrayLiteralConvertible`
+* Custom operators 
 * Ranges, slices & subscription
 
 **Удобство языка Swift**
