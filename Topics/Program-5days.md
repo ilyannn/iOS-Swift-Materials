@@ -49,8 +49,10 @@
 
 * Область видимости и namespacing
 * Static dispatch и чем private лучше inline
+* Порядок вычисления, `@autoclosure
 * Отступление об оптимизаторе, материал [Chris Lattner](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html)
 * Обсуждение: принципиальные отличия в возможностях компиляторов 
+
 
 ## День 3
 
