@@ -58,7 +58,7 @@
 * Closures: синтаксис, семантика, внутреннее устройство
 * Использование монад, [по-русски](http://habrahabr.ru/post/272115/)
 * Пример: MapReduce
-* Материал: Functional Programming in Swift
+* Материал: [Functional Programming in Swift](https://www.objc.io/books/fpinswift/)
 
 **Реактивный стиль разработки**
 
