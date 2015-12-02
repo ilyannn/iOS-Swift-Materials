@@ -58,7 +58,7 @@
 * Closures: синтаксис, семантика, внутреннее устройство
 * Использование монад, [по-русски](http://habrahabr.ru/post/272115/)
 * Пример: MapReduce
-* Материал: [Functional Programming in Swift](https://www.objc.io/books/fpinswift/)
+* Материал: *[Functional Programming in Swift](https://www.objc.io/books/fpinswift/)*
 
 **Реактивный стиль разработки**
 
@@ -72,7 +72,7 @@
 
 * Протоколы и их имплементация, материал [408](https://developer.apple.com/videos/play/wwdc2015-408/), [414](https://developer.apple.com/videos/play/wwdc2015-414/)
 * Generics в Objective-C
-* Материал: https://realm.io/news/pragma-chris-eidhof-swift-c/
+* Материал: [realm](https://realm.io/news/pragma-chris-eidhof-swift-c/), *[Advanced Swift](https://www.objc.io/books/advanced-swift/)*
 
 **Операторы всякие важны**
 
