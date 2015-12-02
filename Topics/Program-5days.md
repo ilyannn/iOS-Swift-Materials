@@ -56,7 +56,7 @@
 * First-class functions, `@noescape` etc
 * Существительные и глаголы в S-V-O
 * Closures: синтаксис, семантика, внутреннее устройство
-* Использование монад
+* Использование монад, [по-русски](http://habrahabr.ru/post/272115/)
 * Пример: MapReduce
 * Материал: Functional Programming in Swift
 
