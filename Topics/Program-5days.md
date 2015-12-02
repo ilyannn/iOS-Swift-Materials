@@ -27,6 +27,7 @@
 
 * Особенности системы типов в Swift
 * Алгебраические типы
+* Введение в generics 
 * (Co/contra)variance, материал [Tsai](http://mjtsai.com/blog/2015/11/29/covariance-and-contravariance/)
 * Обсуждение: коллекции в других языках
 
@@ -36,22 +37,27 @@
 * Обсуждение: nullability в других языках
 * Objective-C bridging и аудит SDK
 
+** Пример с `Queue`**
+* Итераторы и lazy computation
+* Использование протоколов
+* Custom operators
+* `CollectionType`, `Custom(Debug)StringConvertible`, `ArrayLiteralConvertible`
+* Ranges, slices & subscription
+
 **Удобство языка Swift**
 
-* Итераторы и lazy computation
 * Область видимости и namespacing
 * Static dispatch и чем private лучше inline
 * Отступление об оптимизаторе, материал [Chris Lattner](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html)
 * Обсуждение: принципиальные отличия в возможностях компиляторов 
+
+## День 3
 
 **Продвинутые классы**
 
 * Правила virtual vs dynamic dispatch
 * Свойства vs методы
 * Инициализаторы, обсуждение: нужен ли `NS_DESIGNATED_INITIALIZER`
- 
-
-## День 3
 
 **Функциональный стиль разработки**
 
