@@ -7,14 +7,12 @@
 * Playgrounds как современный REPL-loop, материал: [книга Erica Sadun](https://leanpub.com/playgroundsecretsandpowertips)
 * Основные типы и примеры
 * Материалы: примеры из статей и других языков
-* Обсуждение: принципиальные отличия в возможностях компиляторов 
 
 **Value types**
 
 * `struct` vs `class`
 * Многопоточность и copy-on-write
 * Пример: WWDC Video [405](https://developer.apple.com/videos/play/wwdc2015-405/)
-* Обсуждение: коллекции в других языках
 
 **Строки**
 
@@ -26,8 +24,9 @@
 **Подробнее о типах**
 
 * Особенности системы типов в Swift
-* Итераторы и lazy computation
 * Алгебраические типы
+* (Co/contra)variance, материал [Tsai](http://mjtsai.com/blog/2015/11/29/covariance-and-contravariance/)
+* Обсуждение: коллекции в других языках
 
 **`Optional<T>`**
 
@@ -35,13 +34,19 @@
 * Обсуждение: nullability в других языках
 * Objective-C bridging и аудит SDK
 
-**Новые возможности классов**
+**Удобство языка Swift**
 
-* Область видимости и отступление об оптимизаторе
+* Итераторы и lazy computation
+* Область видимости и namespacing
 * Static dispatch и чем private лучше inline
-* (Co/contra)variance 
+* Отступление об оптимизаторе, материал [Chris Lattner](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html)
+* Обсуждение: принципиальные отличия в возможностях компиляторов 
+
+**Продвинутые классы**
+
+* Правила virtual vs dynamic dispatch
 * Свойства vs методы
-* Обсуждение: нужен ли `NS_DESIGNATED_INITIALIZER`
+* Инициализаторы, обсуждение: нужен ли `NS_DESIGNATED_INITIALIZER`
  
 
 ## День 3
