@@ -13,6 +13,8 @@
 **Value types**
 
 * `struct` vs `class`
+* Неизменяемость
+* Использование `mutating`
 * Многопоточность и copy-on-write
 * Пример: WWDC Video [405](https://developer.apple.com/videos/play/wwdc2015-405/)
 
