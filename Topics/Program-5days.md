@@ -4,7 +4,7 @@
 
 **Работа со Swift**
  
-* Playgrounds как современный REPL-loop, материал: книга Erica Sadun
+* Playgrounds как современный REPL-loop, материал: [книга Erica Sadun](https://leanpub.com/playgroundsecretsandpowertips)
 * Основные типы и примеры
 * Материалы: примеры из статей и других языков
 * Обсуждение: принципиальные отличия в возможностях компиляторов 
@@ -13,13 +13,13 @@
 
 * `struct` vs `class`
 * Многопоточность и copy-on-write
-* Пример: WWDC Video
+* Пример: WWDC Video [405](https://developer.apple.com/videos/play/wwdc2015-405/)
 * Обсуждение: коллекции в других языках
 
 **Строки**
 
 * Настоящий Unicode для строк
-* Материал: https://www.mikeash.com/pyblog/friday-qa-2015-11-06-why-is-swifts-string-api-so-hard.html
+* Материал: [Tsai blog](https://www.mikeash.com/pyblog/friday-qa-2015-11-06-why-is-swifts-string-api-so-hard.html)
 
 ## День 2
 
@@ -65,7 +65,7 @@
 
 **Погружение в generics**
 
-* Протоколы и их имплементация
+* Протоколы и их имплементация, материал [408](https://developer.apple.com/videos/play/wwdc2015-408/), [414](https://developer.apple.com/videos/play/wwdc2015-414/)
 * Generics в Objective-C
 * Материал: https://realm.io/news/pragma-chris-eidhof-swift-c/
 * 
