@@ -37,7 +37,8 @@
 * Обсуждение: nullability в других языках
 * Objective-C bridging и аудит SDK
 
-** Пример с `Queue`**
+**Пример с `Queue`**
+
 * Итераторы и lazy computation
 * Использование протоколов
 * Custom operators
