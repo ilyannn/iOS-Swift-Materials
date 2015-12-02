@@ -6,7 +6,7 @@
 
 **Работа со Swift**
  
-* Playgrounds как современный REPL-loop, материал: [книга Erica Sadun](https://leanpub.com/playgroundsecretsandpowertips)
+* Playgrounds как современный REPL-loop, материалы: [*Playground Secrets and Power Tips* (Erica Sadun)](https://leanpub.com/playgroundsecretsandpowertips)
 * Основные типы и примеры
 * Материалы: примеры из статей и других языков
 
