@@ -2,6 +2,7 @@
 
 Материалы: *[Advanced Swift](https://www.objc.io/books/advanced-swift/)*
 
+
 ## День 1
 
 **Работа со Swift**
@@ -23,6 +24,7 @@
 * Настоящий Unicode для строк
 * Материал: [Tsai blog](https://www.mikeash.com/pyblog/friday-qa-2015-11-06-why-is-swifts-string-api-so-hard.html)
 
+
 ## День 2
 
 **Подробнее о типах**
@@ -42,7 +44,7 @@
 **Пример с `Queue`**
 
 * Итераторы и lazy computation
-* Использование протоколов
+* Использование generic-протоколов
 * `GeneratorType`, `SequenceType`, `CollectionType`
 * `Custom(Debug)StringConvertible`, `ArrayLiteralConvertible`
 * Custom operators 
@@ -50,22 +52,22 @@
 
 **Удобство языка Swift**
 
-* Область видимости и namespacing
-* Static dispatch и чем private лучше inline
 * Порядок вычисления, `@autoclosure`
-* Отступление об оптимизаторе, материал [Chris Lattner](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html)
-* Обсуждение: принципиальные отличия в возможностях компиляторов 
+* Область видимости и namespacing
+* vtable vs message dispatch
+* Automatic currying
 
 
 ## День 3
 
 **Продвинутые классы**
 
-* Правила virtual vs dynamic dispatch
+* Static dispatch и чем private лучше inline
+* Отступление об оптимизаторе, материал [Chris Lattner](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html)
+* Обсуждение: принципиальные отличия в возможностях компиляторов 
 * Свойства vs методы
-* Automatic currying
-* Инициализаторы, обсуждение: нужен ли `NS_DESIGNATED_INITIALIZER`
 * Особенности `deinit`
+* Инициализаторы, обсуждение: нужен ли `NS_DESIGNATED_INITIALIZER`
 
 **Функциональный стиль разработки**
 
@@ -85,7 +87,7 @@
 
 **Погружение в generics**
 
-* Протоколы и их имплементация, материал [408](https://developer.apple.com/videos/play/wwdc2015-408/), [414](https://developer.apple.com/videos/play/wwdc2015-414/)
+* Имплементация протоколов, материал [408](https://developer.apple.com/videos/play/wwdc2015-408/), [414](https://developer.apple.com/videos/play/wwdc2015-414/)
 * Generics в Objective-C
 * Материал: [realm](https://realm.io/news/pragma-chris-eidhof-swift-c/)
 
