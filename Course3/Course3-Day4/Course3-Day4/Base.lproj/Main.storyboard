@@ -287,19 +287,43 @@
                                             <action selector="doDisplayMyself:" destination="Buf-gl-7fi" eventType="touchUpInside" id="7Fh-oD-lkg"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zf-3C-xOm">
+                                        <rect key="frame" x="58" y="451" width="187" height="49"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="185" id="Jbf-XN-se0"/>
+                                            <constraint firstAttribute="height" constant="49" id="f0N-vV-Nbn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="открыть URL"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Jbf-XN-se0"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="doDisplayMyself:" destination="Buf-gl-7fi" eventType="touchUpInside" id="CeW-Wx-S2d"/>
+                                            <action selector="openPhotoURL:" destination="Buf-gl-7fi" eventType="touchUpInside" id="sey-tO-5Hf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="2Zf-3C-xOm" firstAttribute="trailing" secondItem="q0R-Zt-shp" secondAttribute="trailing" id="0LC-yf-N8e"/>
                                     <constraint firstAttribute="bottom" secondItem="gfg-u8-K1p" secondAttribute="bottom" id="2F4-BT-337"/>
                                     <constraint firstItem="FOL-3b-Z4b" firstAttribute="leading" secondItem="te9-fW-XmS" secondAttribute="leading" constant="10" id="39r-yH-hci"/>
                                     <constraint firstItem="gfg-u8-K1p" firstAttribute="top" secondItem="te9-fW-XmS" secondAttribute="top" id="6jw-fB-Xx3"/>
+                                    <constraint firstItem="2Zf-3C-xOm" firstAttribute="leading" secondItem="q0R-Zt-shp" secondAttribute="leading" id="8Xn-9Q-fsa"/>
                                     <constraint firstItem="aVb-hU-41j" firstAttribute="centerY" secondItem="te9-fW-XmS" secondAttribute="centerY" id="Jmb-rU-njt"/>
+                                    <constraint firstItem="2Zf-3C-xOm" firstAttribute="top" secondItem="q0R-Zt-shp" secondAttribute="bottom" id="KsF-Wq-fpI"/>
                                     <constraint firstAttribute="trailing" secondItem="FOL-3b-Z4b" secondAttribute="trailing" constant="10" id="L9r-Rd-mtz"/>
+                                    <constraint firstItem="2Zf-3C-xOm" firstAttribute="width" secondItem="q0R-Zt-shp" secondAttribute="width" id="MYE-kf-liN"/>
                                     <constraint firstItem="q0R-Zt-shp" firstAttribute="top" secondItem="WDq-7L-DHG" secondAttribute="bottom" constant="8" id="Mfo-3o-Vbx"/>
                                     <constraint firstItem="q0R-Zt-shp" firstAttribute="width" secondItem="WDq-7L-DHG" secondAttribute="width" id="NN4-wm-2uW"/>
                                     <constraint firstItem="aVb-hU-41j" firstAttribute="leading" secondItem="te9-fW-XmS" secondAttribute="leading" id="OMs-E1-E4T"/>
                                     <constraint firstAttribute="bottom" secondItem="FOL-3b-Z4b" secondAttribute="bottom" constant="89" id="OnO-Wx-3On"/>
+                                    <constraint firstItem="2Zf-3C-xOm" firstAttribute="height" secondItem="q0R-Zt-shp" secondAttribute="height" id="Vx9-p4-Hin"/>
                                     <constraint firstAttribute="trailing" secondItem="gfg-u8-K1p" secondAttribute="trailing" id="XgN-pM-MbY"/>
                                     <constraint firstItem="gfg-u8-K1p" firstAttribute="leading" secondItem="te9-fW-XmS" secondAttribute="leading" id="bOU-5W-cGL"/>
                                     <constraint firstItem="Qzn-zg-hZk" firstAttribute="top" secondItem="te9-fW-XmS" secondAttribute="top" constant="50" id="gRa-0X-9by"/>

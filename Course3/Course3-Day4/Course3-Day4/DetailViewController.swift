@@ -131,6 +131,12 @@ class DetailViewController: UIViewController {
         }
     }
 
+    @IBAction func openPhotoURL(sender: AnyObject) {
+        
+        if let url = currentTrip?.pictureURL {
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
 }
 
 extension DetailViewController:
