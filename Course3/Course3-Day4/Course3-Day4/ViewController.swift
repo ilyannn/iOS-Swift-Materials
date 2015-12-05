@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     // MARK: - Элементы UI
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var periodPicker: UIPickerView!
     @IBOutlet weak var desiredDays: UILabel!
@@ -119,10 +120,16 @@ extension ViewController {
             let trip   = source.cellTrip
         {
             dest.configureWithTrip(trip)
-            
-            dest.percentLabel.layer.cornerRadius = dest.percentLabel.bounds.size.height / 2
-            
-            dest.contentView.layer.cornerRadius = 40
+            dest.delegate = self
         }
+    }
+}
+
+extension ViewController: DetailViewControllerDelegate {
+    
+    func detailController(detail: DetailViewController, changePhotoTo image: UIImage, inTrip trip: Trip)
+    {
+        trip.localImage = image
+        tableView.reloadData()
     }
 }

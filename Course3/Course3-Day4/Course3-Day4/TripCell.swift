@@ -17,19 +17,16 @@ class TripCell: UITableViewCell {
     var cellTrip: Trip?
     
     func configureWithTrip(trip: Trip) {
+        
         cellTrip = trip
         
         descriptionLabel.text = trip.tripDescription
         percentLabel.text = "\(trip.hitPercent) %"
         
+        tripPicture.layer.cornerRadius = 20
         tripPicture.image = nil
         
-        guard let URL = trip.pictureURL else {
-            return
-        }
-        
-        tripPicture.sd_setImageWithURL(URL)
-        tripPicture.layer.cornerRadius = 20
+        trip.configureImageView(tripPicture)
     }
     
     override func awakeFromNib() {

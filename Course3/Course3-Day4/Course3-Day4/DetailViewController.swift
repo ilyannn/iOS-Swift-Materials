@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol DetailViewControllerDelegate: NSObjectProtocol {
+    func detailController(detail:DetailViewController,
+        changePhotoTo:UIImage, inTrip trip:Trip)
+}
+
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
@@ -17,10 +22,17 @@ class DetailViewController: UIViewController {
     
     @IBOutlet var tapRecognizer: UITapGestureRecognizer!
     
+    weak var delegate: DetailViewControllerDelegate?
+    var currentTrip: Trip?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        percentLabel.layer.cornerRadius =
+        percentLabel.bounds.size.height / 2
+        
+        contentView.layer.cornerRadius = 40
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,16 +56,12 @@ class DetailViewController: UIViewController {
 
         loadViewIfNeeded()
         
+        currentTrip = trip
+        
         descriptionLabel.text = trip.tripDescription
         percentLabel.text = " \(trip.hitPercent) % "
         
-        pictureView.image = nil
-        
-        guard let URL = trip.pictureURL else {
-            return
-        }
-        
-        pictureView.sd_setImageWithURL(URL)
+        trip.configureImageView(pictureView)
     }
 
     func moveIfNecessary(touches: Set<UITouch>) {
@@ -101,14 +109,49 @@ class DetailViewController: UIViewController {
         descriptionLabel.text = sender.titleForState(.Normal)
     }
     
-    /*
-    // MARK: - Navigation
+    @IBAction func changePhoto(sender: AnyObject) {
+        
+        let vc = UIImagePickerController()
+        vc.delegate = self
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        presentViewController(vc, animated: true) {}
     }
-    */
+    
+    @IBOutlet weak var displayMyself: UIButton!
+    
+    @IBAction func doDisplayMyself(sender: AnyObject) {
 
+        let instatiated = storyboard?.instantiateViewControllerWithIdentifier("detail")
+        
+        if  let vc   = instatiated as? DetailViewController,
+            let trip = currentTrip
+        {
+            vc.configureWithTrip(trip)
+            presentViewController(vc, animated: true) {}
+        }
+    }
+
+}
+
+extension DetailViewController:
+    UIImagePickerControllerDelegate,
+    UINavigationControllerDelegate
+{
+    func imagePickerController(   picker: UIImagePickerController,
+         didFinishPickingImage     image: UIImage,
+         editingInfo                    : [String : AnyObject]?
+    ) {
+        dismissViewControllerAnimated(true) {}
+        
+        if let trip = currentTrip {
+            delegate?.detailController(self, changePhotoTo: image, inTrip: trip)
+        }
+
+        pictureView.image = image
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController
+    ) {
+        dismissViewControllerAnimated(true) {}
+    }
 }

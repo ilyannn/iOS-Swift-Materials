@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit.UIImage
 
 
 class Trip {
@@ -18,6 +19,7 @@ class Trip {
     let hitResult: Double // 0 to 1
     let tripSegments: [String]
     let pictureURL: NSURL?
+    var localImage: UIImage?
     
     var hitPercent: Int {
         return Int(hitResult * 100)
@@ -26,7 +28,6 @@ class Trip {
     var tripDescription:String {
         return tripSegments.joinWithSeparator(" + ")
     }
-    
     
     init(hit: Double, segments: [String], pictureString string: String? = nil) {
         hitResult = hit
@@ -37,6 +38,20 @@ class Trip {
         } else {
             pictureURL = nil
         }
+    }
+    
+    func configureImageView(imageView: UIImageView) {
+        
+        if let local = localImage {
+            imageView.image = local
+            return
+        }
+        
+        guard let URL = pictureURL else {
+            return
+        }
+        
+        imageView.sd_setImageWithURL(URL)
     }
 }
 

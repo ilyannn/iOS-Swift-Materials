@@ -189,6 +189,7 @@
                         <outlet property="periodPicker" destination="bdd-Cn-iCR" id="hDz-uF-fE4"/>
                         <outlet property="periodSelectionButton" destination="9E7-R5-pOI" id="cjN-uc-ybV"/>
                         <outlet property="searchField" destination="YH4-q6-F9j" id="jT3-Gk-ph7"/>
+                        <outlet property="tableView" destination="9Vf-cw-nKP" id="yoF-Aa-1tt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -198,7 +199,7 @@
         <!--Detail View Controller-->
         <scene sceneID="tvI-qg-MSz">
             <objects>
-                <viewController id="Buf-gl-7fi" customClass="DetailViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detail" id="Buf-gl-7fi" customClass="DetailViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D1s-le-UQP"/>
                         <viewControllerLayoutGuide type="bottom" id="LfW-S0-o4I"/>
@@ -214,8 +215,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="607"/>
                                         <animations/>
                                     </imageView>
-                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Нажмите три раза в любой точке экрана или свайп вниз на любой метке или потрясите устройство для того чтобы закрыть экран" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOL-3b-Z4b">
-                                        <rect key="frame" x="-481" y="509" width="774" height="78"/>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажмите три раза в любой точке экрана или свайп вниз на любой метке или потрясите устройство для того чтобы закрыть экран" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOL-3b-Z4b">
+                                        <rect key="frame" x="10" y="540" width="283" height="47"/>
                                         <animations/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
@@ -250,6 +251,42 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDq-7L-DHG">
+                                        <rect key="frame" x="58" y="345" width="187" height="49"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="GLE-Of-vhj"/>
+                                            <constraint firstAttribute="width" constant="185" id="aLS-Wc-5Sr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="изменить фото"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="aLS-Wc-5Sr"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="changePhoto:" destination="Buf-gl-7fi" eventType="touchUpInside" id="MXF-RI-lXg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0R-Zt-shp">
+                                        <rect key="frame" x="58" y="402" width="187" height="49"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="185" id="8bK-Zr-KeV"/>
+                                            <constraint firstAttribute="height" constant="49" id="sdT-AB-YhM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="вызвать себя"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="8bK-Zr-KeV"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="doDisplayMyself:" destination="Buf-gl-7fi" eventType="touchUpInside" id="7Fh-oD-lkg"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -259,6 +296,8 @@
                                     <constraint firstItem="gfg-u8-K1p" firstAttribute="top" secondItem="te9-fW-XmS" secondAttribute="top" id="6jw-fB-Xx3"/>
                                     <constraint firstItem="aVb-hU-41j" firstAttribute="centerY" secondItem="te9-fW-XmS" secondAttribute="centerY" id="Jmb-rU-njt"/>
                                     <constraint firstAttribute="trailing" secondItem="FOL-3b-Z4b" secondAttribute="trailing" constant="10" id="L9r-Rd-mtz"/>
+                                    <constraint firstItem="q0R-Zt-shp" firstAttribute="top" secondItem="WDq-7L-DHG" secondAttribute="bottom" constant="8" id="Mfo-3o-Vbx"/>
+                                    <constraint firstItem="q0R-Zt-shp" firstAttribute="width" secondItem="WDq-7L-DHG" secondAttribute="width" id="NN4-wm-2uW"/>
                                     <constraint firstItem="aVb-hU-41j" firstAttribute="leading" secondItem="te9-fW-XmS" secondAttribute="leading" id="OMs-E1-E4T"/>
                                     <constraint firstAttribute="bottom" secondItem="FOL-3b-Z4b" secondAttribute="bottom" constant="89" id="OnO-Wx-3On"/>
                                     <constraint firstAttribute="trailing" secondItem="gfg-u8-K1p" secondAttribute="trailing" id="XgN-pM-MbY"/>
@@ -266,8 +305,11 @@
                                     <constraint firstItem="Qzn-zg-hZk" firstAttribute="top" secondItem="te9-fW-XmS" secondAttribute="top" constant="50" id="gRa-0X-9by"/>
                                     <constraint firstItem="aVb-hU-41j" firstAttribute="centerX" secondItem="te9-fW-XmS" secondAttribute="centerX" id="gam-Cg-ODe"/>
                                     <constraint firstAttribute="bottom" secondItem="FOL-3b-Z4b" secondAttribute="bottom" constant="20" id="iBE-cZ-e2u"/>
+                                    <constraint firstItem="q0R-Zt-shp" firstAttribute="centerX" secondItem="WDq-7L-DHG" secondAttribute="centerX" id="l3S-p0-U4H"/>
+                                    <constraint firstItem="WDq-7L-DHG" firstAttribute="top" secondItem="aVb-hU-41j" secondAttribute="bottom" constant="1" id="poo-sc-z03"/>
                                     <constraint firstAttribute="trailing" secondItem="aVb-hU-41j" secondAttribute="trailing" id="s1b-h2-cch"/>
                                     <constraint firstItem="Qzn-zg-hZk" firstAttribute="centerX" secondItem="te9-fW-XmS" secondAttribute="centerX" id="sUy-K3-NW5"/>
+                                    <constraint firstItem="WDq-7L-DHG" firstAttribute="centerX" secondItem="aVb-hU-41j" secondAttribute="centerX" id="v3z-wP-ptF"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -281,6 +323,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.50366870777027029" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="te9-fW-XmS" secondAttribute="trailing" constant="20" id="Jqv-L5-VRL"/>
@@ -295,6 +338,7 @@
                     <connections>
                         <outlet property="contentView" destination="te9-fW-XmS" id="00v-Mi-3qC"/>
                         <outlet property="descriptionLabel" destination="aVb-hU-41j" id="SuB-a0-HBg"/>
+                        <outlet property="displayMyself" destination="q0R-Zt-shp" id="Re9-ve-Cba"/>
                         <outlet property="doubleTap" destination="C4Y-rb-3OJ" id="lEU-h9-GBj"/>
                         <outlet property="percentLabel" destination="Qzn-zg-hZk" id="0gK-qv-BeR"/>
                         <outlet property="pictureView" destination="gfg-u8-K1p" id="EQy-Sf-NNg"/>
