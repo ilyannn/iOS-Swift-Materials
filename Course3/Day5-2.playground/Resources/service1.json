@@ -1,0 +1,12 @@
+[
+ { "hit": 0.99, "segments": ["Тянь-Шань", "Узбекистан", "Озеро" ],
+ "pictureString": "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"
+ },
+ 
+ { "hit": 0.95, "segments": ["Кавказ", "Каспий"]},
+ 
+ { "hit": 0.75, "segments": ["Альпы", "Швейцария", "Часы"]},
+ 
+ { "hit": 0.99, "segments": ["Тянь-Шань", "Узбекистан", "Озеро"], "pictureString": "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"}
+
+ ]

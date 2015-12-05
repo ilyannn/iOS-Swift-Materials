@@ -59,7 +59,6 @@ class ViewController: UIViewController {
         Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
         
         Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
-        
     ]
 
     let monthNames = ["ноябре 2015", "декабре 2015", "январе 2016", "феврале 2016"]
