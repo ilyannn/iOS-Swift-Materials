@@ -14,7 +14,11 @@ class TripCell: UITableViewCell {
     @IBOutlet weak var percentLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    var cellTrip: Trip?
+    
     func configureWithTrip(trip: Trip) {
+        cellTrip = trip
+        
         descriptionLabel.text = trip.tripDescription
         percentLabel.text = "\(trip.hitPercent) %"
         

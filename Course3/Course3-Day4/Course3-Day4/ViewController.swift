@@ -111,3 +111,18 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
+extension ViewController {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if  let dest   = segue.destinationViewController as? DetailViewController,
+            let source = sender as? TripCell,
+            let trip   = source.cellTrip
+        {
+            dest.configureWithTrip(trip)
+            
+            dest.percentLabel.layer.cornerRadius = dest.percentLabel.bounds.size.height / 2
+            
+            dest.contentView.layer.cornerRadius = 40
+        }
+    }
+}
