@@ -29,6 +29,7 @@ class TripCell: UITableViewCell {
         }
         
         tripPicture.sd_setImageWithURL(URL)
+        tripPicture.layer.cornerRadius = 20
     }
     
     override func awakeFromNib() {

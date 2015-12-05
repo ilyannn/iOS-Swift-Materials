@@ -122,7 +122,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="rLs-yd-d3j">
                                                             <rect key="frame" x="20" y="20" width="335" height="80"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тянь-Шань + Узбекистан" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziI-Pb-qmE">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тянь-Шань + Узбекистан" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziI-Pb-qmE">
                                                                     <rect key="frame" x="122" y="0.0" width="213" height="60"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" white="0.18542873075133876" alpha="0.10599662162162167" colorSpace="calibratedWhite"/>
@@ -214,8 +214,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="607"/>
                                         <animations/>
                                     </imageView>
-                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Нажмите два раза в любой точке экрана или свайп вниз на любой метке или потрясите устройство для того чтобы закрыть экран" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOL-3b-Z4b">
-                                        <rect key="frame" x="10" y="509" width="283" height="78"/>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Нажмите три раза в любой точке экрана или свайп вниз на любой метке или потрясите устройство для того чтобы закрыть экран" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOL-3b-Z4b">
+                                        <rect key="frame" x="-481" y="509" width="774" height="78"/>
                                         <animations/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
@@ -274,6 +274,9 @@
                                         <exclude reference="OnO-Wx-3On"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="C4Y-rb-3OJ" appends="YES" id="e6A-9g-kna"/>
+                                </connections>
                             </view>
                         </subviews>
                         <animations/>
@@ -292,6 +295,7 @@
                     <connections>
                         <outlet property="contentView" destination="te9-fW-XmS" id="00v-Mi-3qC"/>
                         <outlet property="descriptionLabel" destination="aVb-hU-41j" id="SuB-a0-HBg"/>
+                        <outlet property="doubleTap" destination="C4Y-rb-3OJ" id="lEU-h9-GBj"/>
                         <outlet property="percentLabel" destination="Qzn-zg-hZk" id="0gK-qv-BeR"/>
                         <outlet property="pictureView" destination="gfg-u8-K1p" id="EQy-Sf-NNg"/>
                         <outlet property="tapRecognizer" destination="pJV-tX-Slm" id="ELO-gf-FfO"/>
@@ -303,9 +307,14 @@
                         <action selector="tapPressed:" destination="Buf-gl-7fi" id="afL-kG-hCe"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <tapGestureRecognizer cancelsTouchesInView="NO" delaysTouchesEnded="NO" numberOfTapsRequired="2" id="pJV-tX-Slm">
+                <tapGestureRecognizer cancelsTouchesInView="NO" delaysTouchesEnded="NO" numberOfTapsRequired="3" id="pJV-tX-Slm" userLabel="Close Screen Tap Recognizer">
                     <connections>
                         <action selector="tapPressed:" destination="Buf-gl-7fi" id="5bf-zs-7K6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer delaysTouchesEnded="NO" numberOfTapsRequired="2" id="C4Y-rb-3OJ" userLabel="Double Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="doubleTapPressed:" destination="Buf-gl-7fi" id="iWw-I2-A0V"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

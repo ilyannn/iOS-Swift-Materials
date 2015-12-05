@@ -56,6 +56,51 @@ class DetailViewController: UIViewController {
         pictureView.sd_setImageWithURL(URL)
     }
 
+    func moveIfNecessary(touches: Set<UITouch>) {
+        if touches.count == 1 {
+            let touch = Array(touches)[0]
+            let loc = touch.locationInView(contentView)
+            
+            percentLabel.center = loc
+        }
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        
+        super.touchesBegan(touches, withEvent: event)
+        moveIfNecessary(touches)
+    }
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?)
+    {
+        super.touchesMoved(touches, withEvent: event)
+        moveIfNecessary(touches)
+    }
+
+    @IBOutlet var doubleTap: UITapGestureRecognizer!
+    
+    @IBAction func doubleTapPressed(sender: UITapGestureRecognizer) {
+        
+        let loc = sender.locationInView(contentView)
+        let size = CGSize(width: 120, height: 30)
+        let frame = CGRect(origin: loc, size: size)
+
+        let new_view = UIButton(type: .Custom)
+        new_view.frame = frame
+        new_view.backgroundColor = UIColor.clearColor()
+        
+        new_view.setTitle("x:\(loc.x) y:\(loc.y)", forState: .Normal)
+        new_view.setTitle("нажата", forState: .Highlighted)
+
+        new_view.addTarget(self, action: "customButtonPressed:", forControlEvents: .TouchUpInside)
+        
+        contentView.addSubview(new_view)
+    }
+    
+    func customButtonPressed(sender: UIButton) {
+        descriptionLabel.text = sender.titleForState(.Normal)
+    }
+    
     /*
     // MARK: - Navigation
 
