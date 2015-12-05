@@ -15,7 +15,7 @@ let str = "Hello playground 62 hey 59 i'm 66 great 70 Weather is great at coordi
 str
     .componentsSeparatedByString(" ")
     .flatMap { Int($0) }
-    .map { $0 + 10 }
+    .map { $0 + 17 }
     .map (UnicodeScalar.init)
     .map (Character.init)
 
