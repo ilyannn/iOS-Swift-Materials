@@ -9,58 +9,13 @@
 import UIKit
 import SDWebImage
 
-class Trip {
-    let hitResult: Double // 0 to 1
-    let tripSegments: [String]
-    let pictureURL: NSURL?
-    
-    var hitPercent: Int {
-        return Int(hitResult * 100)
-    }
-
-    var tripDescription:String {
-        return tripSegments.joinWithSeparator(" + ")
-    }
-
-    
-    init(hit: Double, segments: [String], pictureString string: String? = nil) {
-        hitResult = hit
-        tripSegments = segments
-
-        if let pictureURLString = string {
-            pictureURL = NSURL(string: pictureURLString)
-        } else {
-            pictureURL = nil
-        }
-    }
-}
-
 
 class ViewController: UIViewController {
 
     // MARK: - Модель
     
-    let tripCollection = [
-        Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
-        
-        Trip(hit: 0.95, segments: ["Кавказ", "Каспий"]),
-        
-        Trip(hit: 0.75, segments: ["Альпы", "Швейцария", "Часы"]),
-        
-        Trip(hit: 0.70, segments: ["Коралловый Риф", "Пляж"]),
-        
-        Trip(hit: 0.66, segments: ["Полет Дедала", "Солнце"]),
-        Trip(hit: 0.30, segments: ["Смотреть Телевизор", "Дома"]),        
-
-        Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
-        
-        Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
-        
-        Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
-        
-        Trip(hit: 0.99, segments: ["Тянь-Шань", "Узбекистан", "Озеро"], pictureString: "http://image.tsn.ua/media/images/original/Aug2009/d5398a5e70_147283.jpg"),
-    ]
-
+    let tripCollection = Trip.loadAndParse("https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/Course3/Day5-2.playground/Resources/service1.json")
+    
     let monthNames = ["ноябре 2015", "декабре 2015", "январе 2016", "феврале 2016"]
     
     // MARK: - Элементы UI
