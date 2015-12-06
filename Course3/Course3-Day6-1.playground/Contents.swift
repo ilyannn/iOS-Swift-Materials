@@ -16,6 +16,7 @@ extension NSDate: Comparable {}
 
 today < past
 today >= past
+today > past
 
 let array: Array<Int>
 array = [5, 6, 7, 1]
@@ -52,11 +53,64 @@ qq << [100, 101, 102]
 
 qq
 
+let string = "skdjf"
+string[string.startIndex.successor()]
+
+
 extension Queue: CollectionType {
     
     var startIndex: Int { return -l.count}
-    var endInput: Int { return r.count}
+    var endIndex: Int { return r.count}
     
+    subscript(index: Int) -> Element {
+        return index >= 0 ? r[index] : l[-1 - index]
+    }
 }
+
+func >> <Element>(inout queue:Queue<Element>, inout element: Element?) {
+    
+    if queue.isEmpty {
+        element = nil
+        return
+    }
+    
+    if queue.l.isEmpty {
+        (queue.l, queue.r) = (queue.r.reverse(), [])
+    }
+    
+    element = queue.l.removeLast()
+}
+
+//queue[queue.startIndex] = последний элемент в l = l[l.count - 1]
+//queue[-1] = l[0]
+
+qq[2]
+qq[qq.endIndex.predecessor()]
+qq
+qq.count
+
+qq.last
+qq.first
+
+var e: Int?
+
+qq >> e
+qq
+e
+
+qq >> e
+qq
+e
+
+qq >> e
+qq
+e
+
+qq[qq.startIndex]
+qq.maxElement()
+
+
+// enqueue - O(1)
+// dequeue - среднее O(1)
 
 
