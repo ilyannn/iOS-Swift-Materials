@@ -17,7 +17,7 @@
                BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
                BuildableName = "TravelApp.app"
                BlueprintName = "TravelApp"
-               ReferencedContainer = "container:Course3-Day4.xcodeproj">
+               ReferencedContainer = "container:Course3-Day6.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "127B3B751C0B2A4100FD6E9F"
-               BuildableName = "Course3-Day4Tests.xctest"
-               BlueprintName = "Course3-Day4Tests"
-               ReferencedContainer = "container:Course3-Day4.xcodeproj">
+               BuildableName = "Course3-Day6Tests.xctest"
+               BlueprintName = "Course3-Day6Tests"
+               ReferencedContainer = "container:Course3-Day6.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "127B3B801C0B2A4100FD6E9F"
-               BuildableName = "Course3-Day4UITests.xctest"
-               BlueprintName = "Course3-Day4UITests"
-               ReferencedContainer = "container:Course3-Day4.xcodeproj">
+               BuildableName = "Course3-Day6Tests.xctest"
+               BlueprintName = "Course3-Day6UITests"
+               ReferencedContainer = "container:Course3-Day6.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
             BuildableName = "TravelApp.app"
             BlueprintName = "TravelApp"
-            ReferencedContainer = "container:Course3-Day4.xcodeproj">
+            ReferencedContainer = "container:Course3-Day6.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
             BuildableName = "TravelApp.app"
             BlueprintName = "TravelApp"
-            ReferencedContainer = "container:Course3-Day4.xcodeproj">
+            ReferencedContainer = "container:Course3-Day6.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
             BuildableName = "TravelApp.app"
             BlueprintName = "TravelApp"
-            ReferencedContainer = "container:Course3-Day4.xcodeproj">
+            ReferencedContainer = "container:Course3-Day6.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
