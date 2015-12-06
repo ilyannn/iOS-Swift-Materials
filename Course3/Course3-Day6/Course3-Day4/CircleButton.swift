@@ -25,6 +25,7 @@ let π = CGFloat(M_PI)
     }}
 
     func configure() {
+        
         circle = CAShapeLayer()
         circle?.position = CGPoint(x: bounds.size.width/2, y: bounds.size.height / 2)
         circle?.lineWidth = 2
@@ -43,8 +44,10 @@ let π = CGFloat(M_PI)
         circle?.addAnimation(animation, forKey: "rotate")
 */    }
 
-    var circle: CAShapeLayer? { didSet {
+    weak var circle: CAShapeLayer? { didSet {
+        
         oldValue?.removeFromSuperlayer()
+        
         if let c = circle {
             layer.insertSublayer(c, atIndex: 0)
         }

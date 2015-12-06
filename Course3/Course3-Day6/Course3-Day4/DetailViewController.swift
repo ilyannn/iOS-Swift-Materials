@@ -15,6 +15,8 @@ protocol DetailViewControllerDelegate: NSObjectProtocol {
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet var megaCoordinator: MegaCoordinator!
+    
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var percentLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -107,6 +109,7 @@ class DetailViewController: UIViewController {
     
     func customButtonPressed(sender: UIButton) {
         descriptionLabel.text = sender.titleForState(.Normal)
+        createNotification()
     }
     
     @IBAction func changePhoto(sender: AnyObject) {
@@ -136,6 +139,22 @@ class DetailViewController: UIViewController {
         if let url = currentTrip?.pictureURL {
             UIApplication.sharedApplication().openURL(url)
         }
+    }
+    
+    func createNotification() {
+
+        let settings = UIUserNotificationSettings(forTypes: .Badge, categories: nil)
+        let application = UIApplication.sharedApplication()
+        
+        application.registerUserNotificationSettings(settings)
+        
+        let not = UILocalNotification()
+        not.fireDate = NSDate(timeIntervalSinceNow: 3)
+        
+        not.alertTitle = "Заявка одобрена"
+        not.alertBody = "Тур XXX успешно куплен"
+        
+        application.scheduleLocalNotification(not)
     }
 }
 

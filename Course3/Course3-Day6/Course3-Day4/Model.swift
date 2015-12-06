@@ -15,11 +15,34 @@ class Trip {
     class func loadAndParse(urlString: String) -> [Trip] {
         return parse(urlString)
     }
+    
+    init(dict: [String: AnyObject]) {
+        
+        let hit = dict["hit"] as? Double
+        let segments = dict["segments"] as? [String]
+        let pictureString = dict["pictureString"] as? String
+        
+        hitResult = hit ?? 0
+        tripSegments = segments ?? []
+
+        if let ratingString = dict["rating"] as? String {
+            rating = Double(ratingString)
+        } else {
+            rating = nil
+        }
+    
+        if let pictureURLString = pictureString {
+            pictureURL = NSURL(string: pictureURLString)
+        } else {
+            pictureURL = nil
+        }
+    }
 
     let hitResult: Double // 0 to 1
     let tripSegments: [String]
     let pictureURL: NSURL?
     var localImage: UIImage?
+    let rating: Double?
     
     var hitPercent: Int {
         return Int(hitResult * 100)
@@ -29,16 +52,6 @@ class Trip {
         return tripSegments.joinWithSeparator(" + ")
     }
     
-    init(hit: Double, segments: [String], pictureString string: String? = nil) {
-        hitResult = hit
-        tripSegments = segments
-        
-        if let pictureURLString = string {
-            pictureURL = NSURL(string: pictureURLString)
-        } else {
-            pictureURL = nil
-        }
-    }
     
     func configureImageView(imageView: UIImageView) {
         
@@ -53,18 +66,6 @@ class Trip {
         
         imageView.sd_setImageWithURL(URL)
     }
-}
-
-private func read(dict: [String: AnyObject]) -> Trip {
-    
-    let hit = dict["hit"] as? Double
-    let segments = dict["segments"] as? [String]
-    let pictureString = dict["pictureString"] as? String
-    
-    return Trip(
-        hit: hit ?? 0,
-        segments: segments ?? [],
-        pictureString: pictureString)
 }
 
 private func parse(urlString: String) -> [Trip] {
@@ -82,6 +83,6 @@ private func parse(urlString: String) -> [Trip] {
         return []
     }
     
-    return array.map(read)
+    return array.map(Trip.init)
 }
 
