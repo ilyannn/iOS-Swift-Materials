@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TripTests.swift">
+   </FileRef>
+   <FileRef
       location = "group:/Users/iosswiftcourse/Documents/iOS-Swift-Materials/Course3/Course3-Day6/Course3-Day6.xcodeproj">
    </FileRef>
    <FileRef

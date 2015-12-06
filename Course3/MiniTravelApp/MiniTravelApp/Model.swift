@@ -1,5 +1,15 @@
 //
 //  Model.swift
+//  MiniTravelApp
+//
+//  Created by iOS Swift Course on 12/6/15.
+//  Copyright © 2015 iOS Swift Course. All rights reserved.
+//
+
+import Foundation
+
+//
+//  Model.swift
 //  Course3-Day4
 //
 //  Created by iOS Swift Course on 12/5/15.
@@ -17,29 +27,26 @@ class Trip {
     
     init(dict: [String: AnyObject]) {
         
-        precondition(dict.count > 0)
-        
         let hit = dict["hit"] as? Double
         let segments = dict["segments"] as? [String]
         let pictureString = dict["pictureString"] as? String
         
         hitResult = hit ?? 0
         tripSegments = segments ?? []
-
+        
         if let ratingString = dict["rating"] as? String {
             rating = Double(ratingString)
         } else {
             rating = nil
         }
-    
+        
         if let pictureURLString = pictureString {
             pictureURL = NSURL(string: pictureURLString)
         } else {
             pictureURL = nil
         }
-        
     }
-
+    
     let hitResult: Double // 0 to 1
     let tripSegments: [String]
     let pictureURL: NSURL?
@@ -54,20 +61,6 @@ class Trip {
         return tripSegments.joinWithSeparator(" + ")
     }
     
-    
-    func configureImageView(imageView: UIImageView) {
-        
-        if let local = localImage {
-            imageView.image = local
-            return
-        }
-        
-        guard let URL = pictureURL else {
-            return
-        }
-        
-        imageView.sd_setImageWithURL(URL)
-    }
 }
 
 private func parse(urlString: String) -> [Trip] {

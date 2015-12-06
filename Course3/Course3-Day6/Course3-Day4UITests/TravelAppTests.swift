@@ -1,15 +1,14 @@
 //
-//  Course3_Day4Tests.swift
-//  Course3-Day4Tests
+//  TravelAppTests.swift
+//  Course3-Day6
 //
-//  Created by iOS Swift Course on 11/29/15.
+//  Created by iOS Swift Course on 12/6/15.
 //  Copyright © 2015 iOS Swift Course. All rights reserved.
 //
 
 import XCTest
-@testable import TravelApp
 
-class Course3_Day4Tests: XCTestCase {
+class TravelAppTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

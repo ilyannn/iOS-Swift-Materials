@@ -12,8 +12,6 @@
 		127B3B6B1C0B2A4100FD6E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127B3B691C0B2A4100FD6E9F /* Main.storyboard */; };
 		127B3B6D1C0B2A4100FD6E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 127B3B6C1C0B2A4100FD6E9F /* Assets.xcassets */; };
 		127B3B701C0B2A4100FD6E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127B3B6E1C0B2A4100FD6E9F /* LaunchScreen.storyboard */; };
-		127B3B7B1C0B2A4100FD6E9F /* Course3_Day4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B3B7A1C0B2A4100FD6E9F /* Course3_Day4Tests.swift */; };
-		127B3B861C0B2A4100FD6E9F /* Course3_Day4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B3B851C0B2A4100FD6E9F /* Course3_Day4UITests.swift */; };
 		127B3B941C0B4B7500FD6E9F /* mountains.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 127B3B931C0B4B7500FD6E9F /* mountains.jpg */; };
 		127B3B961C0B508900FD6E9F /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B3B951C0B508900FD6E9F /* TripCell.swift */; };
 		127B3B9A1C0B5A0D00FD6E9F /* alps.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 127B3B991C0B5A0D00FD6E9F /* alps.jpg */; };
@@ -25,23 +23,18 @@
 		12B26F521C146D4F004B2D01 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B26F511C146D4F004B2D01 /* PageViewController.swift */; };
 		12B26F541C146F8F004B2D01 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B26F531C146F8F004B2D01 /* Profile.swift */; };
 		12B26F561C1472E8004B2D01 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B26F551C1472E8004B2D01 /* CircleButton.swift */; };
+		12B26FAC1C149945004B2D01 /* TravelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B26FAB1C149945004B2D01 /* TravelAppTests.swift */; };
+		12B26FB41C14999A004B2D01 /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B26FB31C14999A004B2D01 /* TripTests.swift */; };
 		9450DB0FB8CE7E0FA321D369 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F94BA0D4457022558B59535 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		127B3B771C0B2A4100FD6E9F /* PBXContainerItemProxy */ = {
+		12B26FAE1C149945004B2D01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 127B3B5A1C0B2A4100FD6E9F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 127B3B611C0B2A4100FD6E9F;
-			remoteInfo = "Course3-Day4";
-		};
-		127B3B821C0B2A4100FD6E9F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 127B3B5A1C0B2A4100FD6E9F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 127B3B611C0B2A4100FD6E9F;
-			remoteInfo = "Course3-Day4";
+			remoteInfo = TravelApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,10 +46,8 @@
 		127B3B6C1C0B2A4100FD6E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		127B3B6F1C0B2A4100FD6E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		127B3B711C0B2A4100FD6E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		127B3B761C0B2A4100FD6E9F /* Course3-Day6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Course3-Day6Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		127B3B7A1C0B2A4100FD6E9F /* Course3_Day4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course3_Day4Tests.swift; sourceTree = "<group>"; };
 		127B3B7C1C0B2A4100FD6E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		127B3B811C0B2A4100FD6E9F /* Course3-Day6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Course3-Day6Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		127B3B851C0B2A4100FD6E9F /* Course3_Day4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course3_Day4UITests.swift; sourceTree = "<group>"; };
 		127B3B871C0B2A4100FD6E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		127B3B931C0B4B7500FD6E9F /* mountains.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mountains.jpg; sourceTree = "<group>"; };
@@ -71,6 +62,11 @@
 		12B26F511C146D4F004B2D01 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		12B26F531C146F8F004B2D01 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		12B26F551C1472E8004B2D01 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		12B26F931C1498DF004B2D01 /* TravelAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelAppTests.swift; sourceTree = "<group>"; };
+		12B26FA91C149945004B2D01 /* TravelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12B26FAB1C149945004B2D01 /* TravelAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAppTests.swift; sourceTree = "<group>"; };
+		12B26FAD1C149945004B2D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12B26FB31C14999A004B2D01 /* TripTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTests.swift; sourceTree = "<group>"; };
 		2F94BA0D4457022558B59535 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0914919A7B462609C6B80D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DC9BE57A407B2192586F8E8A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,14 +81,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		127B3B731C0B2A4100FD6E9F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		127B3B7E1C0B2A4100FD6E9F /* Frameworks */ = {
+		12B26FA61C149945004B2D01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -110,6 +99,7 @@
 				127B3B641C0B2A4100FD6E9F /* Course3-Day4 */,
 				127B3B791C0B2A4100FD6E9F /* Course3-Day4Tests */,
 				127B3B841C0B2A4100FD6E9F /* Course3-Day4UITests */,
+				12B26FAA1C149945004B2D01 /* TravelAppTests */,
 				127B3B631C0B2A4100FD6E9F /* Products */,
 				65C5D6B008FAFCEB72D918EE /* Pods */,
 				3D6E32BF08A814B28FD5D5C9 /* Frameworks */,
@@ -120,8 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				127B3B621C0B2A4100FD6E9F /* TravelApp.app */,
-				127B3B761C0B2A4100FD6E9F /* Course3-Day6Tests.xctest */,
-				127B3B811C0B2A4100FD6E9F /* Course3-Day6Tests.xctest */,
+				12B26FA91C149945004B2D01 /* TravelAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +118,7 @@
 		127B3B641C0B2A4100FD6E9F /* Course3-Day4 */ = {
 			isa = PBXGroup;
 			children = (
+				12B26FB31C14999A004B2D01 /* TripTests.swift */,
 				127B3B931C0B4B7500FD6E9F /* mountains.jpg */,
 				127B3B971C0B58A700FD6E9F /* casp.jpeg */,
 				127B3B991C0B5A0D00FD6E9F /* alps.jpg */,
@@ -161,10 +151,20 @@
 		127B3B841C0B2A4100FD6E9F /* Course3-Day4UITests */ = {
 			isa = PBXGroup;
 			children = (
+				12B26F931C1498DF004B2D01 /* TravelAppTests.swift */,
 				127B3B851C0B2A4100FD6E9F /* Course3_Day4UITests.swift */,
 				127B3B871C0B2A4100FD6E9F /* Info.plist */,
 			);
 			path = "Course3-Day4UITests";
+			sourceTree = "<group>";
+		};
+		12B26FAA1C149945004B2D01 /* TravelAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				12B26FAB1C149945004B2D01 /* TravelAppTests.swift */,
+				12B26FAD1C149945004B2D01 /* Info.plist */,
+			);
+			path = TravelAppTests;
 			sourceTree = "<group>";
 		};
 		3D6E32BF08A814B28FD5D5C9 /* Frameworks */ = {
@@ -207,41 +207,23 @@
 			productReference = 127B3B621C0B2A4100FD6E9F /* TravelApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		127B3B751C0B2A4100FD6E9F /* Course3-Day6Tests */ = {
+		12B26FA81C149945004B2D01 /* TravelAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 127B3B8D1C0B2A4100FD6E9F /* Build configuration list for PBXNativeTarget "Course3-Day6Tests" */;
+			buildConfigurationList = 12B26FB01C149945004B2D01 /* Build configuration list for PBXNativeTarget "TravelAppTests" */;
 			buildPhases = (
-				127B3B721C0B2A4100FD6E9F /* Sources */,
-				127B3B731C0B2A4100FD6E9F /* Frameworks */,
-				127B3B741C0B2A4100FD6E9F /* Resources */,
+				12B26FA51C149945004B2D01 /* Sources */,
+				12B26FA61C149945004B2D01 /* Frameworks */,
+				12B26FA71C149945004B2D01 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				127B3B781C0B2A4100FD6E9F /* PBXTargetDependency */,
+				12B26FAF1C149945004B2D01 /* PBXTargetDependency */,
 			);
-			name = "Course3-Day6Tests";
-			productName = "Course3-Day4Tests";
-			productReference = 127B3B761C0B2A4100FD6E9F /* Course3-Day6Tests.xctest */;
+			name = TravelAppTests;
+			productName = TravelAppTests;
+			productReference = 12B26FA91C149945004B2D01 /* TravelAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		127B3B801C0B2A4100FD6E9F /* Course3-Day6UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 127B3B901C0B2A4100FD6E9F /* Build configuration list for PBXNativeTarget "Course3-Day6UITests" */;
-			buildPhases = (
-				127B3B7D1C0B2A4100FD6E9F /* Sources */,
-				127B3B7E1C0B2A4100FD6E9F /* Frameworks */,
-				127B3B7F1C0B2A4100FD6E9F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				127B3B831C0B2A4100FD6E9F /* PBXTargetDependency */,
-			);
-			name = "Course3-Day6UITests";
-			productName = "Course3-Day4UITests";
-			productReference = 127B3B811C0B2A4100FD6E9F /* Course3-Day6Tests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -257,12 +239,7 @@
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = A8J6S3WP2B;
 					};
-					127B3B751C0B2A4100FD6E9F = {
-						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = A8J6S3WP2B;
-						TestTargetID = 127B3B611C0B2A4100FD6E9F;
-					};
-					127B3B801C0B2A4100FD6E9F = {
+					12B26FA81C149945004B2D01 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = A8J6S3WP2B;
 						TestTargetID = 127B3B611C0B2A4100FD6E9F;
@@ -283,8 +260,7 @@
 			projectRoot = "";
 			targets = (
 				127B3B611C0B2A4100FD6E9F /* TravelApp */,
-				127B3B751C0B2A4100FD6E9F /* Course3-Day6Tests */,
-				127B3B801C0B2A4100FD6E9F /* Course3-Day6UITests */,
+				12B26FA81C149945004B2D01 /* TravelAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -305,14 +281,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		127B3B741C0B2A4100FD6E9F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		127B3B7F1C0B2A4100FD6E9F /* Resources */ = {
+		12B26FA71C149945004B2D01 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,34 +354,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		127B3B721C0B2A4100FD6E9F /* Sources */ = {
+		12B26FA51C149945004B2D01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				127B3B7B1C0B2A4100FD6E9F /* Course3_Day4Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		127B3B7D1C0B2A4100FD6E9F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				127B3B861C0B2A4100FD6E9F /* Course3_Day4UITests.swift in Sources */,
+				12B26FB41C14999A004B2D01 /* TripTests.swift in Sources */,
+				12B26FAC1C149945004B2D01 /* TravelAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		127B3B781C0B2A4100FD6E9F /* PBXTargetDependency */ = {
+		12B26FAF1C149945004B2D01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 127B3B611C0B2A4100FD6E9F /* TravelApp */;
-			targetProxy = 127B3B771C0B2A4100FD6E9F /* PBXContainerItemProxy */;
-		};
-		127B3B831C0B2A4100FD6E9F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 127B3B611C0B2A4100FD6E9F /* TravelApp */;
-			targetProxy = 127B3B821C0B2A4100FD6E9F /* PBXContainerItemProxy */;
+			targetProxy = 12B26FAE1C149945004B2D01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -545,51 +502,27 @@
 			};
 			name = Release;
 		};
-		127B3B8E1C0B2A4100FD6E9F /* Debug */ = {
+		12B26FB11C149945004B2D01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Course3-Day4Tests/Info.plist";
+				INFOPLIST_FILE = TravelAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course3-Day4Tests";
-				PRODUCT_NAME = "Course3-Day6Tests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Course3-Day6.app/Course3-Day6";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.TravelAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelApp.app/TravelApp";
 			};
 			name = Debug;
 		};
-		127B3B8F1C0B2A4100FD6E9F /* Release */ = {
+		12B26FB21C149945004B2D01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Course3-Day4Tests/Info.plist";
+				INFOPLIST_FILE = TravelAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course3-Day4Tests";
-				PRODUCT_NAME = "Course3-Day6Tests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Course3-Day6.app/Course3-Day6";
-			};
-			name = Release;
-		};
-		127B3B911C0B2A4100FD6E9F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Course3-Day4UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course3-Day4UITests";
-				PRODUCT_NAME = "Course3-Day6Tests";
-				TEST_TARGET_NAME = "Course3-Day4";
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		127B3B921C0B2A4100FD6E9F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Course3-Day4UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Course3-Day4UITests";
-				PRODUCT_NAME = "Course3-Day6Tests";
-				TEST_TARGET_NAME = "Course3-Day4";
-				USES_XCTRUNNER = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.TravelAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelApp.app/TravelApp";
 			};
 			name = Release;
 		};
@@ -614,23 +547,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		127B3B8D1C0B2A4100FD6E9F /* Build configuration list for PBXNativeTarget "Course3-Day6Tests" */ = {
+		12B26FB01C149945004B2D01 /* Build configuration list for PBXNativeTarget "TravelAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				127B3B8E1C0B2A4100FD6E9F /* Debug */,
-				127B3B8F1C0B2A4100FD6E9F /* Release */,
+				12B26FB11C149945004B2D01 /* Debug */,
+				12B26FB21C149945004B2D01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		127B3B901C0B2A4100FD6E9F /* Build configuration list for PBXNativeTarget "Course3-Day6UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				127B3B911C0B2A4100FD6E9F /* Debug */,
-				127B3B921C0B2A4100FD6E9F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

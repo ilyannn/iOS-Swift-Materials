@@ -1,15 +1,15 @@
 //
-//  Course3_Day4Tests.swift
-//  Course3-Day4Tests
+//  MiniTravelAppTests.swift
+//  MiniTravelAppTests
 //
-//  Created by iOS Swift Course on 11/29/15.
+//  Created by iOS Swift Course on 12/6/15.
 //  Copyright © 2015 iOS Swift Course. All rights reserved.
 //
 
 import XCTest
-@testable import TravelApp
+@testable import MiniTravelApp
 
-class Course3_Day4Tests: XCTestCase {
+class MiniTravelAppTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,11 +21,19 @@ class Course3_Day4Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTripCreation() {
+        let trip = Trip(dict: [ "hit" : 0.9, "segments": ["Alps"]])
+        
+        XCTAssertEqual(trip.tripSegments, ["Alps"], "Testing segments property")
+        XCTAssertEqual(trip.pictureURL, nil, "Testing picture URL property")
     }
-    
+
+    func testTripWithoutSegments() {
+        let trip = Trip(dict: [ "hit" : 0.95 ])
+        
+        XCTAssertEqual(trip.tripSegments, [], "Testing segments property")
+    }
+
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {

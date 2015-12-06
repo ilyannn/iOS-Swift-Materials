@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
-               BuildableName = "TravelApp.app"
-               BlueprintName = "TravelApp"
-               ReferencedContainer = "container:Course3-Day6.xcodeproj">
+               BlueprintIdentifier = "12B26FBE1C149A29004B2D01"
+               BuildableName = "MiniTravelApp.app"
+               BlueprintName = "MiniTravelApp"
+               ReferencedContainer = "container:MiniTravelApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,35 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "127B3B751C0B2A4100FD6E9F"
-               BuildableName = "Course3-Day6Tests.xctest"
-               BlueprintName = "Course3-Day6Tests"
-               ReferencedContainer = "container:Course3-Day6.xcodeproj">
+               BlueprintIdentifier = "12B26FD21C149A29004B2D01"
+               BuildableName = "MiniTravelAppTests.xctest"
+               BlueprintName = "MiniTravelAppTests"
+               ReferencedContainer = "container:MiniTravelApp.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "Course3_Day4Tests">
-               </Test>
-            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "12B26FA81C149945004B2D01"
-               BuildableName = "TravelAppTests.xctest"
-               BlueprintName = "TravelAppTests"
-               ReferencedContainer = "container:Course3-Day6.xcodeproj">
+               BlueprintIdentifier = "12B26FDD1C149A29004B2D01"
+               BuildableName = "MiniTravelAppUITests.xctest"
+               BlueprintName = "MiniTravelAppUITests"
+               ReferencedContainer = "container:MiniTravelApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
-            BuildableName = "TravelApp.app"
-            BlueprintName = "TravelApp"
-            ReferencedContainer = "container:Course3-Day6.xcodeproj">
+            BlueprintIdentifier = "12B26FBE1C149A29004B2D01"
+            BuildableName = "MiniTravelApp.app"
+            BlueprintName = "MiniTravelApp"
+            ReferencedContainer = "container:MiniTravelApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
-            BuildableName = "TravelApp.app"
-            BlueprintName = "TravelApp"
-            ReferencedContainer = "container:Course3-Day6.xcodeproj">
+            BlueprintIdentifier = "12B26FBE1C149A29004B2D01"
+            BuildableName = "MiniTravelApp.app"
+            BlueprintName = "MiniTravelApp"
+            ReferencedContainer = "container:MiniTravelApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "127B3B611C0B2A4100FD6E9F"
-            BuildableName = "TravelApp.app"
-            BlueprintName = "TravelApp"
-            ReferencedContainer = "container:Course3-Day6.xcodeproj">
+            BlueprintIdentifier = "12B26FBE1C149A29004B2D01"
+            BuildableName = "MiniTravelApp.app"
+            BlueprintName = "MiniTravelApp"
+            ReferencedContainer = "container:MiniTravelApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

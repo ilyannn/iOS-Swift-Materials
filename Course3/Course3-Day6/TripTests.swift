@@ -1,15 +1,14 @@
 //
-//  Course3_Day4Tests.swift
-//  Course3-Day4Tests
+//  TripTests.swift
+//  
 //
-//  Created by iOS Swift Course on 11/29/15.
-//  Copyright © 2015 iOS Swift Course. All rights reserved.
+//  Created by iOS Swift Course on 12/6/15.
+//
 //
 
 import XCTest
-@testable import TravelApp
 
-class Course3_Day4Tests: XCTestCase {
+class TripTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -22,6 +21,7 @@ class Course3_Day4Tests: XCTestCase {
     }
     
     func testExample() {
+        let trip = Trip(
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

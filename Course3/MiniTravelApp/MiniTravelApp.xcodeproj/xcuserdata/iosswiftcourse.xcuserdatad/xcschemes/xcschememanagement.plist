@@ -4,30 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TravelApp.xcscheme</key>
+		<key>MiniTravelApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>127B3B611C0B2A4100FD6E9F</key>
+		<key>12B26FBE1C149A29004B2D01</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>127B3B751C0B2A4100FD6E9F</key>
+		<key>12B26FD21C149A29004B2D01</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>127B3B801C0B2A4100FD6E9F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>12B26FA81C149945004B2D01</key>
+		<key>12B26FDD1C149A29004B2D01</key>
 		<dict>
 			<key>primary</key>
 			<true/>
