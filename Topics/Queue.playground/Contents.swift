@@ -71,20 +71,22 @@ extension Queue: CollectionType {
 extension Queue {
     
     func map<T>(@noescape transform: (Element) throws -> T) rethrows -> Queue<T> {
-        return Queue<T>(l: try l.map(transform),
+        return Queue<T>(
+            l: try l.map(transform),
             r: try r.map(transform)
         )
     }
     
     func filter(@noescape includeElement: (Element) throws -> Bool) rethrows -> Queue {
-        return Queue(l: try l.filter(includeElement),
+        return Queue(
+            l: try l.filter(includeElement),
             r: try r.filter(includeElement)
         )
     }
 }
 
 func ==<T:Equatable>(lhs:Queue<T>, rhs:Queue<T>) -> Bool {
-    return lhs.elementsEqual(rhs) // Array(lhs) == Array(rhs)
+    return lhs.count == rhs.count && lhs.l == rhs.l && lhs.r == rhs.r
 }
 
 extension Queue {
@@ -93,11 +95,31 @@ extension Queue {
     }
 }
 
+//: Operators
+
+func << <T>(inout q: Queue<T>, element: T) {
+    q.enqueue(element)
+}
+
+func >> <T>(inout q: Queue<T>, inout element: T?) {
+    element = q.dequeue()
+}
+
+func << <T>(inout element:T?, inout q: Queue<T>) {
+    element = q.dequeue()
+}
+
 //extension Queue: Equatable where Element:Equatable {
 //
 //}
 
 var qq = Queue<String>()
+
+qq << "xxxxxy"
+var x: String?
+qq >> x
+qq == []
+
 qq.enqueue("xx", "")
 qq.dequeue()
 Array(qq)
@@ -149,14 +171,21 @@ mutable.reverse().debugDescription
 mutable.reverse() as Array
 
 
-/* extension Queue: RangeReplaceableCollectionType {
+extension Queue: RangeReplaceableCollectionType {
     
     mutating func reserveCapacity(n: Int) {
         r.reserveCapacity(n)
     }
     
-    mutating func replaceRange<C : CollectionType where C.Generator.Element == Generator.Element>(subRange: Range<Int>, with newElements: C) {
+    mutating func replaceRange<C : CollectionType where C.Generator.Element == Element>(subRange: Range<Int>, with newElements: C) {
+        
+    }
 
+    mutating func replace__Range<C : CollectionType where C.Generator.Element == Generator.Element>(subRange: Range<Int>, with newElements: C) {
+
+        let positiveRange = Range(start: max(0, subRange.startIndex),
+            end: max(0, subRange.endIndex))
+            
         if subRange.startIndex >= 0 {
             r.replaceRange(subRange, with: newElements)
         } else {
@@ -169,7 +198,7 @@ mutable.reverse() as Array
             l.replaceRange(shifted, with: newElements.reverse())
         }
     }
-}*/
+}
 
 mutable
 let range = Range(start: mutable.endIndex.predecessor(), end: mutable.endIndex)
