@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ehk-pb-ZF6">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -19,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="obN-b5-T0e">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGa-Fb-EbX">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
@@ -102,7 +103,7 @@
                                         </connections>
                                     </pickerView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Vf-cw-nKP">
-                                        <rect key="frame" x="0.0" y="296" width="375" height="351"/>
+                                        <rect key="frame" x="0.0" y="296" width="375" height="302"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.11372549019607843" green="0.32156862745098042" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
@@ -181,6 +182,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="obN-b5-T0e" secondAttribute="bottom" id="uWh-1w-i69"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" badgeValue="⭐️" systemItem="search" id="mgy-LK-wop"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="desiredDays" destination="t1X-xn-iaq" id="INM-R1-mCY"/>
@@ -221,9 +223,6 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="1qk-Hw-ewy" appends="YES" id="rgu-6e-6QS"/>
-                                        </connections>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тянь-Шань + Узбекистан" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVb-hU-41j">
                                         <rect key="frame" x="0.0" y="264" width="303" height="80"/>
@@ -387,8 +386,227 @@
             </objects>
             <point key="canvasLocation" x="872.5" y="337.5"/>
         </scene>
+        <!--Профиль-->
+        <scene sceneID="Oag-A9-e3L">
+            <objects>
+                <viewController id="9VF-PZ-r89" customClass="ProfileViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BAR-5w-6ab"/>
+                        <viewControllerLayoutGuide type="bottom" id="zwN-qY-Th8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PG9-KF-ILJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unnamed.png" translatesAutoresizingMaskIntoConstraints="NO" id="XUq-X1-kag">
+                                <rect key="frame" x="40" y="40" width="240" height="240"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XUq-X1-kag" secondAttribute="height" multiplier="1:1" id="OtO-YK-Szi"/>
+                                    <constraint firstAttribute="width" constant="240" id="bBI-Dz-yaP"/>
+                                </constraints>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Yx-V0-yul">
+                                <rect key="frame" x="141" y="417" width="39" height="92"/>
+                                <animations/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDC-DC-Vfg">
+                                <rect key="frame" x="0.0" y="325" width="320" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="очень длинный текст " textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz1-o1-AXj">
+                                        <rect key="frame" x="0.0" y="0.0" width="558" height="72"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="60"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Iz1-o1-AXj" secondAttribute="trailing" id="3DW-ja-7rI"/>
+                                    <constraint firstItem="Iz1-o1-AXj" firstAttribute="height" secondItem="GDC-DC-Vfg" secondAttribute="height" id="94I-Ae-J3X"/>
+                                    <constraint firstItem="Iz1-o1-AXj" firstAttribute="top" secondItem="GDC-DC-Vfg" secondAttribute="top" id="Xih-dI-4Wn"/>
+                                    <constraint firstItem="Iz1-o1-AXj" firstAttribute="leading" secondItem="GDC-DC-Vfg" secondAttribute="leading" id="n1R-P2-n4v"/>
+                                    <constraint firstAttribute="bottom" secondItem="Iz1-o1-AXj" secondAttribute="bottom" id="v6C-zK-xVo"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="9VF-PZ-r89" id="4Zw-s0-CLy"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Yx-V0-yul" firstAttribute="top" secondItem="GDC-DC-Vfg" secondAttribute="bottom" constant="20" id="DIt-s4-N9p"/>
+                            <constraint firstItem="6Yx-V0-yul" firstAttribute="centerX" secondItem="PG9-KF-ILJ" secondAttribute="centerX" id="GEu-Uh-pQz"/>
+                            <constraint firstAttribute="trailing" secondItem="GDC-DC-Vfg" secondAttribute="trailing" id="Gyf-3d-6cz"/>
+                            <constraint firstItem="XUq-X1-kag" firstAttribute="centerX" secondItem="PG9-KF-ILJ" secondAttribute="centerX" id="Ysh-ey-2HY"/>
+                            <constraint firstItem="GDC-DC-Vfg" firstAttribute="top" secondItem="XUq-X1-kag" secondAttribute="bottom" constant="45" id="bUX-SX-l7J"/>
+                            <constraint firstItem="zwN-qY-Th8" firstAttribute="top" secondItem="6Yx-V0-yul" secondAttribute="bottom" constant="10" id="cue-XE-0zR"/>
+                            <constraint firstItem="GDC-DC-Vfg" firstAttribute="leading" secondItem="PG9-KF-ILJ" secondAttribute="leading" id="em1-ot-DPY"/>
+                            <constraint firstItem="XUq-X1-kag" firstAttribute="top" secondItem="BAR-5w-6ab" secondAttribute="bottom" constant="20" id="kMa-fQ-TOF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Профиль" badgeValue="😱" id="2qf-yk-t1r"/>
+                    <connections>
+                        <outlet property="pageControl" destination="6Yx-V0-yul" id="SuE-zX-0Mm"/>
+                        <outlet property="scrollVIew" destination="GDC-DC-Vfg" id="mz5-Qg-3am"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZhV-Za-ojh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-493" y="2057"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6VS-9g-s2O">
+            <objects>
+                <tabBarController id="Ehk-pb-ZF6" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="FgT-2g-0eW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9VF-PZ-r89" kind="relationship" relationship="viewControllers" id="qTV-lX-XMo"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fg5-Nb-Ruc"/>
+                        <segue destination="Oqw-Ch-gXV" kind="relationship" relationship="viewControllers" id="cW0-A5-Ee1"/>
+                        <segue destination="rAW-bF-ciO" kind="relationship" relationship="viewControllers" id="zdL-3H-fF6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P9h-4T-RL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-366" y="1077"/>
+        </scene>
+        <!--Тур-->
+        <scene sceneID="8jP-G8-PLl">
+            <objects>
+                <navigationController id="Oqw-Ch-gXV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Тур" id="N50-FL-Djj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PPt-uM-etO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="erp-KP-XL6" kind="relationship" relationship="rootViewController" id="Ycz-hF-0DM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0j-ZM-RkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317" y="1294"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="paj-Ck-89o">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="rAW-bF-ciO" customClass="PageViewController" customModule="TravelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="y02-SS-bYw"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QRU-f1-SSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="2105"/>
+        </scene>
+        <!--Тур-->
+        <scene sceneID="026-r9-oLd">
+            <objects>
+                <viewController id="erp-KP-XL6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pv5-Z6-XkN"/>
+                        <viewControllerLayoutGuide type="bottom" id="LSb-09-wcc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hv4-4Y-5tR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pex-Vm-PMw" customClass="CircleButton" customModule="TravelApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="64" width="288" height="455"/>
+                                <animations/>
+                                <state key="normal" title="дальше"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="arcColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="directionDown" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ohj-54-k0t" kind="show" id="OMA-kP-mNL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pex-Vm-PMw" secondAttribute="trailing" id="8Pa-kn-FRJ"/>
+                            <constraint firstItem="LSb-09-wcc" firstAttribute="top" secondItem="pex-Vm-PMw" secondAttribute="bottom" id="GY6-oM-FSl"/>
+                            <constraint firstItem="pex-Vm-PMw" firstAttribute="top" secondItem="pv5-Z6-XkN" secondAttribute="bottom" id="T7D-ur-5rJ"/>
+                            <constraint firstItem="pex-Vm-PMw" firstAttribute="leading" secondItem="hv4-4Y-5tR" secondAttribute="leadingMargin" id="eec-jU-elz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Тур" id="NsW-db-7DW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vq-sh-afp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="1294"/>
+        </scene>
+        <!--Сегменты-->
+        <scene sceneID="13P-ac-ldl">
+            <objects>
+                <viewController id="ohj-54-k0t" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tTq-T5-7Zy"/>
+                        <viewControllerLayoutGuide type="bottom" id="jIj-JL-bT3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="czq-j6-YmG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbP-dF-rIm">
+                                <rect key="frame" x="71" y="257" width="178" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Контактная информация"/>
+                                <connections>
+                                    <segue destination="DFc-dg-k6o" kind="show" id="zsd-G9-dU1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Сегменты" id="Ijc-7m-cgS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6z2-AS-YfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1464" y="1294"/>
+        </scene>
+        <!--Связаться-->
+        <scene sceneID="4br-80-5vT">
+            <objects>
+                <viewController id="DFc-dg-k6o" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vwZ-5E-O2U"/>
+                        <viewControllerLayoutGuide type="bottom" id="bZ5-a2-UMx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="84c-Cz-cG7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Связаться" id="mdI-Uz-cdU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X00-Bw-iHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2056" y="1294"/>
+        </scene>
     </scenes>
     <resources>
         <image name="mountains.jpg" width="1024" height="768"/>
+        <image name="unnamed.png" width="300" height="300"/>
     </resources>
 </document>
