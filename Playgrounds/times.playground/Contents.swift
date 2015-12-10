@@ -2,6 +2,7 @@
 
 infix operator ⨉ {}
 
+
 func ⨉<A:SequenceType, B:SequenceType>(lhs: A, rhs: B)
     -> [(A.Generator.Element, B.Generator.Element)] {
         
@@ -10,7 +11,7 @@ func ⨉<A:SequenceType, B:SequenceType>(lhs: A, rhs: B)
             .reduce([], combine: +)
 }
 
-[1, 2] ⨉ [3, 4]
+[1, 2] ⨉ [3, 4, 6]
 
 
 //: Test with the cards example.

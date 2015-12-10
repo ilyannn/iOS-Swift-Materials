@@ -2,6 +2,7 @@
 
 //: Here we define a *configuration operator*.
 //: I use `∙ BULLET OPERATOR` (Unicode: `U+2219`) as a symbol.
+infix operator +=+ {}
 
 infix operator ∙ {}
 
@@ -9,6 +10,10 @@ func ∙<T>(object: T, @noescape configurator: (inout T) -> ()) -> T {
     var copy = object
     configurator(&copy)
     return copy
+}
+
+func +=+<T>(object: T, @noescape configurator: (inout T) -> ()) -> T {
+    return object ∙ configurator
 }
 
 //: This operator can be applied to newly initialized instances.
