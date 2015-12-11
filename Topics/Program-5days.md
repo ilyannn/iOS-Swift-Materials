@@ -74,13 +74,8 @@
 * First-class functions, `@noescape` etc
 * Существительные и глаголы в S-V-O
 * Closures: синтаксис, семантика, внутреннее устройство
-* Использование монад, [по-русски](http://habrahabr.ru/post/272115/)
 * Пример: MapReduce
 * Материал: *[Functional Programming in Swift](https://www.objc.io/books/fpinswift/)*
-
-**Реактивный стиль разработки**
-
-* Пример: RxSwift
 
 
 ## День 4
@@ -95,14 +90,19 @@
 
 * `guard` как решение проблемы pyramid of doom
 * Новые возможности `switch`, `if`, `for`, `while`
-* Обработка ошибок: `NSError` vs `throws`
 * Обсуждение: создавать свой язык – хорошо или плохо
 * Примеры: SQLModel, Cartography
 
 
 ## День 5
 
-**Новые средства разработки**
+**Продвинутый flow control**
+
+* Использование *монад*:[статья](http://blogs.msdn.com/b/wesdyer/archive/2008/01/11/the-marvels-of-monads.aspx), [sigfpe](http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html), [хабр](http://habrahabr.ru/post/272115/)
+* Обработка ошибок: `NSError` vs `throws`
+* *Реактивный* стиль разработки, пример: RxSwift
+
+**Полезные вещи**
 
 * Создание frameworks
 * Designable views
@@ -113,6 +113,5 @@
 * Hard Mode: On
 * Локальные имена и encapsulation
 * Dependency Injection и синглетоны
-* Материалы: [VIPER](https://www.objc.io/issues/13-architecture/viper/)
-* Обсуждение: who controls View Controllers
-
+* Материалы: [VIPER](https://www.objc.io/issues/13-architecture/viper/), [Coordinators](http://khanlou.com/2015/10/coordinators-redux/) / [Activities](https://github.com/ilyannn/iOS-Swift-Materials/blob/master/Topics/Activities.md)
+* Обсуждение: who controls View Controllers 
