@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		121045861C1AB5CD0051096E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121045851C1AB5CD0051096E /* AppDelegate.swift */; };
+		121045881C1AB5CD0051096E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121045871C1AB5CD0051096E /* ViewController.swift */; };
+		1210458B1C1AB5CD0051096E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121045891C1AB5CD0051096E /* Main.storyboard */; };
+		1210458D1C1AB5CD0051096E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1210458C1C1AB5CD0051096E /* Assets.xcassets */; };
+		121045901C1AB5CD0051096E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1210458E1C1AB5CD0051096E /* LaunchScreen.storyboard */; };
+		1210459B1C1AB5CD0051096E /* ExampleReactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210459A1C1AB5CD0051096E /* ExampleReactTests.swift */; };
+		121045A61C1AB5CD0051096E /* ExampleReactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121045A51C1AB5CD0051096E /* ExampleReactUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		121045971C1AB5CD0051096E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1210457A1C1AB5CD0051096E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 121045811C1AB5CD0051096E;
+			remoteInfo = ExampleReact;
+		};
+		121045A21C1AB5CD0051096E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1210457A1C1AB5CD0051096E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 121045811C1AB5CD0051096E;
+			remoteInfo = ExampleReact;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		121045821C1AB5CD0051096E /* ExampleReact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleReact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		121045851C1AB5CD0051096E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		121045871C1AB5CD0051096E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1210458A1C1AB5CD0051096E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1210458C1C1AB5CD0051096E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1210458F1C1AB5CD0051096E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		121045911C1AB5CD0051096E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		121045961C1AB5CD0051096E /* ExampleReactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleReactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1210459A1C1AB5CD0051096E /* ExampleReactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleReactTests.swift; sourceTree = "<group>"; };
+		1210459C1C1AB5CD0051096E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		121045A11C1AB5CD0051096E /* ExampleReactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleReactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		121045A51C1AB5CD0051096E /* ExampleReactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleReactUITests.swift; sourceTree = "<group>"; };
+		121045A71C1AB5CD0051096E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1210457F1C1AB5CD0051096E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		121045931C1AB5CD0051096E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1210459E1C1AB5CD0051096E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		121045791C1AB5CD0051096E = {
+			isa = PBXGroup;
+			children = (
+				121045841C1AB5CD0051096E /* ExampleReact */,
+				121045991C1AB5CD0051096E /* ExampleReactTests */,
+				121045A41C1AB5CD0051096E /* ExampleReactUITests */,
+				121045831C1AB5CD0051096E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		121045831C1AB5CD0051096E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				121045821C1AB5CD0051096E /* ExampleReact.app */,
+				121045961C1AB5CD0051096E /* ExampleReactTests.xctest */,
+				121045A11C1AB5CD0051096E /* ExampleReactUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		121045841C1AB5CD0051096E /* ExampleReact */ = {
+			isa = PBXGroup;
+			children = (
+				121045851C1AB5CD0051096E /* AppDelegate.swift */,
+				121045871C1AB5CD0051096E /* ViewController.swift */,
+				121045891C1AB5CD0051096E /* Main.storyboard */,
+				1210458C1C1AB5CD0051096E /* Assets.xcassets */,
+				1210458E1C1AB5CD0051096E /* LaunchScreen.storyboard */,
+				121045911C1AB5CD0051096E /* Info.plist */,
+			);
+			path = ExampleReact;
+			sourceTree = "<group>";
+		};
+		121045991C1AB5CD0051096E /* ExampleReactTests */ = {
+			isa = PBXGroup;
+			children = (
+				1210459A1C1AB5CD0051096E /* ExampleReactTests.swift */,
+				1210459C1C1AB5CD0051096E /* Info.plist */,
+			);
+			path = ExampleReactTests;
+			sourceTree = "<group>";
+		};
+		121045A41C1AB5CD0051096E /* ExampleReactUITests */ = {
+			isa = PBXGroup;
+			children = (
+				121045A51C1AB5CD0051096E /* ExampleReactUITests.swift */,
+				121045A71C1AB5CD0051096E /* Info.plist */,
+			);
+			path = ExampleReactUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		121045811C1AB5CD0051096E /* ExampleReact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 121045AA1C1AB5CD0051096E /* Build configuration list for PBXNativeTarget "ExampleReact" */;
+			buildPhases = (
+				1210457E1C1AB5CD0051096E /* Sources */,
+				1210457F1C1AB5CD0051096E /* Frameworks */,
+				121045801C1AB5CD0051096E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleReact;
+			productName = ExampleReact;
+			productReference = 121045821C1AB5CD0051096E /* ExampleReact.app */;
+			productType = "com.apple.product-type.application";
+		};
+		121045951C1AB5CD0051096E /* ExampleReactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 121045AD1C1AB5CD0051096E /* Build configuration list for PBXNativeTarget "ExampleReactTests" */;
+			buildPhases = (
+				121045921C1AB5CD0051096E /* Sources */,
+				121045931C1AB5CD0051096E /* Frameworks */,
+				121045941C1AB5CD0051096E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				121045981C1AB5CD0051096E /* PBXTargetDependency */,
+			);
+			name = ExampleReactTests;
+			productName = ExampleReactTests;
+			productReference = 121045961C1AB5CD0051096E /* ExampleReactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		121045A01C1AB5CD0051096E /* ExampleReactUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 121045B01C1AB5CD0051096E /* Build configuration list for PBXNativeTarget "ExampleReactUITests" */;
+			buildPhases = (
+				1210459D1C1AB5CD0051096E /* Sources */,
+				1210459E1C1AB5CD0051096E /* Frameworks */,
+				1210459F1C1AB5CD0051096E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				121045A31C1AB5CD0051096E /* PBXTargetDependency */,
+			);
+			name = ExampleReactUITests;
+			productName = ExampleReactUITests;
+			productReference = 121045A11C1AB5CD0051096E /* ExampleReactUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1210457A1C1AB5CD0051096E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "iOS Swift Course";
+				TargetAttributes = {
+					121045811C1AB5CD0051096E = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = A8J6S3WP2B;
+					};
+					121045951C1AB5CD0051096E = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = A8J6S3WP2B;
+						TestTargetID = 121045811C1AB5CD0051096E;
+					};
+					121045A01C1AB5CD0051096E = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = A8J6S3WP2B;
+						TestTargetID = 121045811C1AB5CD0051096E;
+					};
+				};
+			};
+			buildConfigurationList = 1210457D1C1AB5CD0051096E /* Build configuration list for PBXProject "ExampleReact" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 121045791C1AB5CD0051096E;
+			productRefGroup = 121045831C1AB5CD0051096E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				121045811C1AB5CD0051096E /* ExampleReact */,
+				121045951C1AB5CD0051096E /* ExampleReactTests */,
+				121045A01C1AB5CD0051096E /* ExampleReactUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		121045801C1AB5CD0051096E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121045901C1AB5CD0051096E /* LaunchScreen.storyboard in Resources */,
+				1210458D1C1AB5CD0051096E /* Assets.xcassets in Resources */,
+				1210458B1C1AB5CD0051096E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		121045941C1AB5CD0051096E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1210459F1C1AB5CD0051096E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1210457E1C1AB5CD0051096E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121045881C1AB5CD0051096E /* ViewController.swift in Sources */,
+				121045861C1AB5CD0051096E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		121045921C1AB5CD0051096E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1210459B1C1AB5CD0051096E /* ExampleReactTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1210459D1C1AB5CD0051096E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121045A61C1AB5CD0051096E /* ExampleReactUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		121045981C1AB5CD0051096E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 121045811C1AB5CD0051096E /* ExampleReact */;
+			targetProxy = 121045971C1AB5CD0051096E /* PBXContainerItemProxy */;
+		};
+		121045A31C1AB5CD0051096E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 121045811C1AB5CD0051096E /* ExampleReact */;
+			targetProxy = 121045A21C1AB5CD0051096E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		121045891C1AB5CD0051096E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1210458A1C1AB5CD0051096E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1210458E1C1AB5CD0051096E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1210458F1C1AB5CD0051096E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		121045A81C1AB5CD0051096E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		121045A91C1AB5CD0051096E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		121045AB1C1AB5CD0051096E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExampleReact/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.ExampleReact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		121045AC1C1AB5CD0051096E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = ExampleReact/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.ExampleReact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		121045AE1C1AB5CD0051096E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExampleReactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.ExampleReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleReact.app/ExampleReact";
+			};
+			name = Debug;
+		};
+		121045AF1C1AB5CD0051096E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExampleReactTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.ExampleReactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleReact.app/ExampleReact";
+			};
+			name = Release;
+		};
+		121045B11C1AB5CD0051096E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ExampleReactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.ExampleReactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ExampleReact;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		121045B21C1AB5CD0051096E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ExampleReactUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.ExampleReactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ExampleReact;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1210457D1C1AB5CD0051096E /* Build configuration list for PBXProject "ExampleReact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				121045A81C1AB5CD0051096E /* Debug */,
+				121045A91C1AB5CD0051096E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		121045AA1C1AB5CD0051096E /* Build configuration list for PBXNativeTarget "ExampleReact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				121045AB1C1AB5CD0051096E /* Debug */,
+				121045AC1C1AB5CD0051096E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		121045AD1C1AB5CD0051096E /* Build configuration list for PBXNativeTarget "ExampleReactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				121045AE1C1AB5CD0051096E /* Debug */,
+				121045AF1C1AB5CD0051096E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		121045B01C1AB5CD0051096E /* Build configuration list for PBXNativeTarget "ExampleReactUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				121045B11C1AB5CD0051096E /* Debug */,
+				121045B21C1AB5CD0051096E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1210457A1C1AB5CD0051096E /* Project object */;
+}
