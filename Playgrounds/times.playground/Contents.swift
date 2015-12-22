@@ -5,9 +5,7 @@ infix operator ⨉ {}
 func ⨉<A:SequenceType, B:SequenceType>(lhs: A, rhs: B)
     -> [(A.Generator.Element, B.Generator.Element)] {
         
-        return lhs
-            .map{ left in rhs.map{ right in (left, right) }}
-            .reduce([], combine: +)
+        return lhs.flatMap{ left in rhs.map{ right in (left, right) }}
 }
 
 [1, 2] ⨉ [3, 4]
@@ -59,3 +57,17 @@ for (x, y) in range1 ⨉ range2 where x % 2 == 0 && y % 3 == 0 {
 }
 
 sum == (2 + 4) * (3 + 6)
+
+
+//: Use zip to iterate over both sequences simultaneously.
+
+var count = 0
+
+for (x, y) in zip(ranks, suits) {
+    count += 1
+}
+
+count == 4
+
+
+
