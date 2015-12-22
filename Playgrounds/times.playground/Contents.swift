@@ -2,13 +2,14 @@
 
 infix operator ⨉ {}
 
+
 func ⨉<A:SequenceType, B:SequenceType>(lhs: A, rhs: B)
     -> [(A.Generator.Element, B.Generator.Element)] {
         
         return lhs.flatMap{ left in rhs.map{ right in (left, right) }}
 }
 
-[1, 2] ⨉ [3, 4]
+[1, 2] ⨉ [3, 4, 6]
 
 
 //: Test with the cards example.
