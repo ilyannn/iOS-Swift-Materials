@@ -1,6 +1,8 @@
 //: Playground - noun: a place where people can play
 
 
+/*
+
 struct Item {
     var price: Int
     var count: Int
@@ -11,15 +13,19 @@ enum VendingMachineError: ErrorType {
     case InsufficientFunds(coinsNeeded: Int)
     case OutOfStock
 }
+*/
 
 class VendingMachine {
+
+    var coinsDeposited = 0
+
+    /*
     var inventory = [
         "Candy Bar": Item(price: 12, count: 7),
         "Chips": Item(price: 10, count: 4),
         "Pretzels": Item(price: 7, count: 11)
     ]
     
-    var coinsDeposited = 0
     
     func dispense(snack: String) {
         print("Dispensing \(snack)")
@@ -43,4 +49,12 @@ class VendingMachine {
         inventory[name] = item
         dispense(name)
     }
+
+*/
+
 }
+
+let machine = VendingMachine()
+machine.coinsDeposited
+
+
