@@ -196,11 +196,24 @@ stringFrom(url2)
 
 let json = NSURL(string: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/CourseI/courses-v1.json")
 
+func jsonFrom(maybe_url: NSURL?) -> AnyObject {
+    
+    guard let url = maybe_url
+        else { return "неправильный URL" }
+    
+    guard let data = NSData(contentsOfURL: url)
+        else { return "не получилось скачать" }
+    
+    guard let json = try? NSJSONSerialization.JSONObjectWithData(data, options: [])
+        else { return "неправильный JSON" }
+    
+    return json
+}
+
 stringFrom(json)
 
 
-
-
+jsonFrom(json)[0]["name"]
 
 
 
