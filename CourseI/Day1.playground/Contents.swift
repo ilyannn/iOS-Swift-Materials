@@ -218,6 +218,17 @@ jsonFrom(json)[0]["name"]
 
 
 
+let rates_url = NSURL(string: "http://api.fixer.io/latest")
+
+let rates = jsonFrom(rates_url)["rates"]
+    as! Dictionary<String, Double>
+
+rates.description
+
+
+
+
+
 
 
 
