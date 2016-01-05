@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     
     @IBOutlet weak var loginField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

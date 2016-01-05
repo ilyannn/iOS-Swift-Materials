@@ -155,7 +155,6 @@
                         <outlet property="greenButton" destination="iui-mU-rUB" id="BeQ-QY-1dN"/>
                         <outlet property="legalNotice" destination="Bqf-r7-O2A" id="Zsw-i7-1vK"/>
                         <outlet property="loginField" destination="pNO-TC-f0Y" id="3ac-va-q8a"/>
-                        <outlet property="passwordField" destination="GIR-IX-GDI" id="wE5-dZ-vc2"/>
                         <outlet property="redButton" destination="gW8-cn-Hbg" id="4XT-JY-Zqg"/>
                         <outlet property="titleLabel" destination="nMe-Nb-39k" id="CAK-E7-JMf"/>
                     </connections>
