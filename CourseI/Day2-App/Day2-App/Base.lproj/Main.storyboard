@@ -80,7 +80,7 @@
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqf-r7-O2A">
                                         <rect key="frame" x="3" y="223" width="554" height="40"/>
-                                        <mutableString key="text">Lega notice. Это сообщение, которое выходит за пределы экрана. Это сообщение, которое выходит за пределы экрана. Это сообщение, которое выходит за пределы экрана. Это сообщение, которое выходит за пределы экрана. Это сообщение, которое выходит за пределы экрана.  </mutableString>
+                                        <string key="text">Lega notice. Это сообщение, которое выходит за пределы экрана. Это сообщение, которое выходит за пределы экрана. Это сообщение, которое выходит за пределы экрана. Это сообщение, которое выходит за пределы экрана. Это сообщение, которое выходит за пределы экрана.  </string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
