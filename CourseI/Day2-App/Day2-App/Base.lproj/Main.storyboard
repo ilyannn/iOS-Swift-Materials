@@ -149,6 +149,16 @@
                             <constraint firstItem="0fF-IQ-weA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="y9v-cN-o1W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueButton" destination="xcO-4b-3l7" id="L6R-Ze-xsf"/>
+                        <outlet property="countLabel" destination="BLS-6s-1NN" id="wEU-Dc-W9S"/>
+                        <outlet property="greenButton" destination="iui-mU-rUB" id="BeQ-QY-1dN"/>
+                        <outlet property="legalNotice" destination="Bqf-r7-O2A" id="Zsw-i7-1vK"/>
+                        <outlet property="loginField" destination="pNO-TC-f0Y" id="3ac-va-q8a"/>
+                        <outlet property="passwordField" destination="GIR-IX-GDI" id="wE5-dZ-vc2"/>
+                        <outlet property="redButton" destination="gW8-cn-Hbg" id="4XT-JY-Zqg"/>
+                        <outlet property="titleLabel" destination="nMe-Nb-39k" id="CAK-E7-JMf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

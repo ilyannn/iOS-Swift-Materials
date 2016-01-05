@@ -10,16 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let myName = "ilya"
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var blueButton: UIButton!
+    @IBOutlet weak var redButton: UIButton!
+    @IBOutlet weak var greenButton: UIButton!
+    @IBOutlet weak var legalNotice: UILabel!
+    @IBOutlet weak var countLabel: UILabel!
+    
+    @IBOutlet weak var loginField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        loginField.text = myName
+        
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = .MediumStyle
+        formatter.timeStyle = .MediumStyle
+        countLabel.text = formatter.stringFromDate(NSDate())
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        countLabel.textColor = UIColor(white: 0.3, alpha: 1)
+        countLabel.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0.1)
+        
+        blueButton.layer.cornerRadius = 10
+        redButton.layer.cornerRadius = 30
+        greenButton.layer.cornerRadius = 60
     }
-
 
 }
 
