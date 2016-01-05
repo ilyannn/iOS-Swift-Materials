@@ -213,7 +213,7 @@ func jsonFrom(maybe_url: NSURL?) -> AnyObject {
 stringFrom(json)
 
 
-jsonFrom(json)[0]["name"]
+jsonFrom(json)[0]["logo"]
 
 
 
