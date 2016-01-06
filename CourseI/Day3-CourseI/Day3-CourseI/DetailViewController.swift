@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet var photoItem: UIView!
+    @IBOutlet weak var knightPicture: UIImageView!
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
 
@@ -33,6 +35,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+        knightPicture.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {

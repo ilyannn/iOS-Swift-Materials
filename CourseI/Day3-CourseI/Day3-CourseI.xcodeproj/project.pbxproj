@@ -15,6 +15,7 @@
 		126A18711C3D3D34005972FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126A186F1C3D3D34005972FF /* LaunchScreen.storyboard */; };
 		126A187C1C3D3D34005972FF /* Day3_CourseITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A187B1C3D3D34005972FF /* Day3_CourseITests.swift */; };
 		126A18871C3D3D34005972FF /* Day3_CourseIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A18861C3D3D34005972FF /* Day3_CourseIUITests.swift */; };
+		126A18951C3D41DA005972FF /* knight.png in Resources */ = {isa = PBXBuildFile; fileRef = 126A18941C3D41DA005972FF /* knight.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		126A18821C3D3D34005972FF /* Day3-CourseIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day3-CourseIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		126A18861C3D3D34005972FF /* Day3_CourseIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3_CourseIUITests.swift; sourceTree = "<group>"; };
 		126A18881C3D3D34005972FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		126A18941C3D41DA005972FF /* knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knight.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				126A18661C3D3D34005972FF /* MasterViewController.swift */,
 				126A18681C3D3D34005972FF /* DetailViewController.swift */,
 				126A186A1C3D3D34005972FF /* Main.storyboard */,
+				126A18941C3D41DA005972FF /* knight.png */,
 				126A186D1C3D3D34005972FF /* Assets.xcassets */,
 				126A186F1C3D3D34005972FF /* LaunchScreen.storyboard */,
 				126A18721C3D3D34005972FF /* Info.plist */,
@@ -237,6 +240,7 @@
 			files = (
 				126A18711C3D3D34005972FF /* LaunchScreen.storyboard in Resources */,
 				126A186E1C3D3D34005972FF /* Assets.xcassets in Resources */,
+				126A18951C3D41DA005972FF /* knight.png in Resources */,
 				126A186C1C3D3D34005972FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
