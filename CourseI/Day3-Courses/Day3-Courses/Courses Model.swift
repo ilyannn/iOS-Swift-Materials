@@ -21,9 +21,11 @@ private func jsonFrom(maybe_url: NSURL?) -> AnyObject {
 class Course {
 
     let courseName: String
+    let teacherName: String
     
     init(_ dict: [String: String]) {
         courseName = dict["name"] ?? "<unknown name>"
+        teacherName = dict["teacher"] ?? ""
     }
 
     convenience init?(_ dict: AnyObject) {

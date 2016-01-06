@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1245C1B81C3D777200D69E4D /* User Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1245C1B71C3D777200D69E4D /* User Interface.swift */; };
 		126A18A31C3D70C0005972FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A18A21C3D70C0005972FF /* AppDelegate.swift */; };
 		126A18A81C3D70C0005972FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126A18A61C3D70C0005972FF /* Main.storyboard */; };
 		126A18AA1C3D70C0005972FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126A18A91C3D70C0005972FF /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1245C1B71C3D777200D69E4D /* User Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User Interface.swift"; sourceTree = "<group>"; };
 		126A189F1C3D70C0005972FF /* Day3-Courses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day3-Courses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		126A18A21C3D70C0005972FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		126A18A71C3D70C0005972FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				126A18A21C3D70C0005972FF /* AppDelegate.swift */,
 				126A18D01C3D70FB005972FF /* Courses Model.swift */,
+				1245C1B71C3D777200D69E4D /* User Interface.swift */,
 				126A18A61C3D70C0005972FF /* Main.storyboard */,
 				126A18A91C3D70C0005972FF /* Assets.xcassets */,
 				126A18AB1C3D70C0005972FF /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				126A18D11C3D70FB005972FF /* Courses Model.swift in Sources */,
 				126A18A31C3D70C0005972FF /* AppDelegate.swift in Sources */,
+				1245C1B81C3D777200D69E4D /* User Interface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

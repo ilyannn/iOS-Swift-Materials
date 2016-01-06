@@ -1,8 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nc5-zK-2Pu">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Course List View Controller-->
+        <scene sceneID="pcJ-7A-vQh">
+            <objects>
+                <tableViewController id="Nc5-zK-2Pu" customClass="CourseListViewController" customModule="Day3_Courses" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="100" sectionFooterHeight="28" id="dqJ-5R-FKo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="Q4F-zB-u77" customClass="CourseCell" customModule="Day3_Courses" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="100" width="600" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q4F-zB-u77" id="FbG-Ng-JqF">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vuc-5z-oOZ">
+                                            <rect key="frame" x="10" y="10" width="560" height="80"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AkH-pT-Uww">
+                                                    <rect key="frame" x="0.0" y="0.0" width="460" height="80"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название курса " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dF-n2-Piv">
+                                                            <rect key="frame" x="0.0" y="0.0" width="460" height="56"/>
+                                                            <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.087494721283783786" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="500" text="Имя учителя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1n-ys-KyI">
+                                                            <rect key="frame" x="0.0" y="66" width="460" height="14"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                            <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p1E-1M-VEy">
+                                                    <rect key="frame" x="480" y="0.0" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="p1E-1M-VEy" secondAttribute="height" multiplier="1:1" id="5Hk-rQ-BH6"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Vuc-5z-oOZ" firstAttribute="top" secondItem="FbG-Ng-JqF" secondAttribute="top" constant="10" id="6na-fA-GhT"/>
+                                        <constraint firstAttribute="bottom" secondItem="Vuc-5z-oOZ" secondAttribute="bottom" constant="10" id="H9y-VQ-tQo"/>
+                                        <constraint firstItem="Vuc-5z-oOZ" firstAttribute="leading" secondItem="FbG-Ng-JqF" secondAttribute="leading" constant="20" id="vxn-wM-rhc"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vuc-5z-oOZ" secondAttribute="trailing" constant="20" id="yaW-Yc-hfa"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="courseNameLabel" destination="0dF-n2-Piv" id="MZS-4G-u7e"/>
+                                    <outlet property="teacherLabel" destination="h1n-ys-KyI" id="vTl-NM-UBU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Nc5-zK-2Pu" id="Alj-0Q-kf8"/>
+                            <outlet property="delegate" destination="Nc5-zK-2Pu" id="eGC-ZU-qxq"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YfH-ig-c0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="282"/>
+        </scene>
+    </scenes>
 </document>
