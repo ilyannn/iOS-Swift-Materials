@@ -9,7 +9,10 @@
 import UIKit
 import SpriteKit
 
-class DynamicImageView: UIImageView {
+class Ball: UIImageView {
+    override var collisionBoundsType: UIDynamicItemCollisionBoundsType {
+        return .Ellipse
+    }
 }
 
 class CourseListViewController: UITableViewController {
@@ -115,20 +118,23 @@ class DetailCourseViewController: UIViewController {
         ) { _ in
                 
                 source.removeFromSuperview()
-                let new_image = UIImageView(image: source.image)
+                let ball = Ball(image: source.image)
                 
-                new_image.center = center
-                new_image.bounds = CGRectMake(0, 0, size.width * scale, size.height * scale)
+                ball.center = center
+                ball.bounds = CGRectMake(0, 0, size.width * scale, size.height * scale)
                 
-                self.view.addSubview(new_image)
+                self.view.addSubview(ball)
                 
-                let collision = UICollisionBehavior(items: [new_image])
+                let collision = UICollisionBehavior(items: [ball])
                 collision.translatesReferenceBoundsIntoBoundary = true
 
-                let dynamic = UIDynamicItemBehavior(items:[new_image])
+                let dynamic = UIDynamicItemBehavior(items:[ball])
                 dynamic.elasticity = 0.9
-                
-                animator.addBehavior(UIGravityBehavior(items: [new_image]))
+            
+                let gravity = UIGravityBehavior(items: [ball])
+                gravity.gravityDirection = CGVector(dx:0.2, dy:1)
+            
+                animator.addBehavior(gravity)
                 animator.addBehavior(collision)
                 animator.addBehavior(dynamic)
         }
