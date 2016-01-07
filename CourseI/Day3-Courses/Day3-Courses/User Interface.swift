@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 class CourseListViewController: UITableViewController {
 
@@ -87,6 +88,24 @@ class DetailCourseViewController: UIViewController {
     @IBOutlet weak var startDateLabel: UILabel!
     @IBOutlet weak var teacherNameLabel: UILabel!
     @IBOutlet weak var courseNameLabel: UILabel!
+    
+    @IBAction func swipeToClose(sender: AnyObject) {        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func moveImage(sender: UITapGestureRecognizer) {
+        
+        UIView.animateWithDuration(0.5, animations: {
+            sender.view?.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        })
+
+/*        let radius = sender.view!.bounds.size.height / 2
+        let body = SKPhysicsBody(circleOfRadius: radius)
+        body.dynamic = true
+        body.mass = 1
+        body.affectedByGravity = true 
+*/
+    }
+    
 }
 
 class CourseCell: UITableViewCell {
