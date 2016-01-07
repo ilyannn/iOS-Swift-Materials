@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12893A3F1C3E8CB50000744C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12893A3E1C3E8CB50000744C /* AppDelegate.swift */; };
+		12893A411C3E8CB50000744C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12893A401C3E8CB50000744C /* ViewController.swift */; };
+		12893A441C3E8CB50000744C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12893A421C3E8CB50000744C /* Main.storyboard */; };
+		12893A461C3E8CB50000744C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12893A451C3E8CB50000744C /* Assets.xcassets */; };
+		12893A491C3E8CB50000744C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12893A471C3E8CB50000744C /* LaunchScreen.storyboard */; };
+		12893A541C3E8CB50000744C /* Day4_AudioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12893A531C3E8CB50000744C /* Day4_AudioPlayerTests.swift */; };
+		12893A5F1C3E8CB50000744C /* Day4_AudioPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12893A5E1C3E8CB50000744C /* Day4_AudioPlayerUITests.swift */; };
+		12893A6D1C3E8E840000744C /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12893A6C1C3E8E840000744C /* sample.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12893A501C3E8CB50000744C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12893A331C3E8CB50000744C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12893A3A1C3E8CB50000744C;
+			remoteInfo = "Day4-AudioPlayer";
+		};
+		12893A5B1C3E8CB50000744C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12893A331C3E8CB50000744C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12893A3A1C3E8CB50000744C;
+			remoteInfo = "Day4-AudioPlayer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12893A3B1C3E8CB50000744C /* Day4-AudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day4-AudioPlayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12893A3E1C3E8CB50000744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12893A401C3E8CB50000744C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12893A431C3E8CB50000744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12893A451C3E8CB50000744C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12893A481C3E8CB50000744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12893A4A1C3E8CB50000744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12893A4F1C3E8CB50000744C /* Day4-AudioPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day4-AudioPlayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12893A531C3E8CB50000744C /* Day4_AudioPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4_AudioPlayerTests.swift; sourceTree = "<group>"; };
+		12893A551C3E8CB50000744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12893A5A1C3E8CB50000744C /* Day4-AudioPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day4-AudioPlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12893A5E1C3E8CB50000744C /* Day4_AudioPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4_AudioPlayerUITests.swift; sourceTree = "<group>"; };
+		12893A601C3E8CB50000744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12893A6C1C3E8E840000744C /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12893A381C3E8CB50000744C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12893A4C1C3E8CB50000744C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12893A571C3E8CB50000744C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12893A321C3E8CB50000744C = {
+			isa = PBXGroup;
+			children = (
+				12893A3D1C3E8CB50000744C /* Day4-AudioPlayer */,
+				12893A521C3E8CB50000744C /* Day4-AudioPlayerTests */,
+				12893A5D1C3E8CB50000744C /* Day4-AudioPlayerUITests */,
+				12893A3C1C3E8CB50000744C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12893A3C1C3E8CB50000744C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12893A3B1C3E8CB50000744C /* Day4-AudioPlayer.app */,
+				12893A4F1C3E8CB50000744C /* Day4-AudioPlayerTests.xctest */,
+				12893A5A1C3E8CB50000744C /* Day4-AudioPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12893A3D1C3E8CB50000744C /* Day4-AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				12893A3E1C3E8CB50000744C /* AppDelegate.swift */,
+				12893A401C3E8CB50000744C /* ViewController.swift */,
+				12893A421C3E8CB50000744C /* Main.storyboard */,
+				12893A6C1C3E8E840000744C /* sample.mp3 */,
+				12893A451C3E8CB50000744C /* Assets.xcassets */,
+				12893A471C3E8CB50000744C /* LaunchScreen.storyboard */,
+				12893A4A1C3E8CB50000744C /* Info.plist */,
+			);
+			path = "Day4-AudioPlayer";
+			sourceTree = "<group>";
+		};
+		12893A521C3E8CB50000744C /* Day4-AudioPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				12893A531C3E8CB50000744C /* Day4_AudioPlayerTests.swift */,
+				12893A551C3E8CB50000744C /* Info.plist */,
+			);
+			path = "Day4-AudioPlayerTests";
+			sourceTree = "<group>";
+		};
+		12893A5D1C3E8CB50000744C /* Day4-AudioPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12893A5E1C3E8CB50000744C /* Day4_AudioPlayerUITests.swift */,
+				12893A601C3E8CB50000744C /* Info.plist */,
+			);
+			path = "Day4-AudioPlayerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12893A3A1C3E8CB50000744C /* Day4-AudioPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12893A631C3E8CB50000744C /* Build configuration list for PBXNativeTarget "Day4-AudioPlayer" */;
+			buildPhases = (
+				12893A371C3E8CB50000744C /* Sources */,
+				12893A381C3E8CB50000744C /* Frameworks */,
+				12893A391C3E8CB50000744C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Day4-AudioPlayer";
+			productName = "Day4-AudioPlayer";
+			productReference = 12893A3B1C3E8CB50000744C /* Day4-AudioPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12893A4E1C3E8CB50000744C /* Day4-AudioPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12893A661C3E8CB50000744C /* Build configuration list for PBXNativeTarget "Day4-AudioPlayerTests" */;
+			buildPhases = (
+				12893A4B1C3E8CB50000744C /* Sources */,
+				12893A4C1C3E8CB50000744C /* Frameworks */,
+				12893A4D1C3E8CB50000744C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12893A511C3E8CB50000744C /* PBXTargetDependency */,
+			);
+			name = "Day4-AudioPlayerTests";
+			productName = "Day4-AudioPlayerTests";
+			productReference = 12893A4F1C3E8CB50000744C /* Day4-AudioPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12893A591C3E8CB50000744C /* Day4-AudioPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12893A691C3E8CB50000744C /* Build configuration list for PBXNativeTarget "Day4-AudioPlayerUITests" */;
+			buildPhases = (
+				12893A561C3E8CB50000744C /* Sources */,
+				12893A571C3E8CB50000744C /* Frameworks */,
+				12893A581C3E8CB50000744C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12893A5C1C3E8CB50000744C /* PBXTargetDependency */,
+			);
+			name = "Day4-AudioPlayerUITests";
+			productName = "Day4-AudioPlayerUITests";
+			productReference = 12893A5A1C3E8CB50000744C /* Day4-AudioPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12893A331C3E8CB50000744C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "iOS Swift Course";
+				TargetAttributes = {
+					12893A3A1C3E8CB50000744C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = A8J6S3WP2B;
+					};
+					12893A4E1C3E8CB50000744C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = A8J6S3WP2B;
+						TestTargetID = 12893A3A1C3E8CB50000744C;
+					};
+					12893A591C3E8CB50000744C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = A8J6S3WP2B;
+						TestTargetID = 12893A3A1C3E8CB50000744C;
+					};
+				};
+			};
+			buildConfigurationList = 12893A361C3E8CB50000744C /* Build configuration list for PBXProject "Day4-AudioPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12893A321C3E8CB50000744C;
+			productRefGroup = 12893A3C1C3E8CB50000744C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12893A3A1C3E8CB50000744C /* Day4-AudioPlayer */,
+				12893A4E1C3E8CB50000744C /* Day4-AudioPlayerTests */,
+				12893A591C3E8CB50000744C /* Day4-AudioPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12893A391C3E8CB50000744C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12893A491C3E8CB50000744C /* LaunchScreen.storyboard in Resources */,
+				12893A6D1C3E8E840000744C /* sample.mp3 in Resources */,
+				12893A461C3E8CB50000744C /* Assets.xcassets in Resources */,
+				12893A441C3E8CB50000744C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12893A4D1C3E8CB50000744C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12893A581C3E8CB50000744C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12893A371C3E8CB50000744C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12893A411C3E8CB50000744C /* ViewController.swift in Sources */,
+				12893A3F1C3E8CB50000744C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12893A4B1C3E8CB50000744C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12893A541C3E8CB50000744C /* Day4_AudioPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12893A561C3E8CB50000744C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12893A5F1C3E8CB50000744C /* Day4_AudioPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12893A511C3E8CB50000744C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12893A3A1C3E8CB50000744C /* Day4-AudioPlayer */;
+			targetProxy = 12893A501C3E8CB50000744C /* PBXContainerItemProxy */;
+		};
+		12893A5C1C3E8CB50000744C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12893A3A1C3E8CB50000744C /* Day4-AudioPlayer */;
+			targetProxy = 12893A5B1C3E8CB50000744C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12893A421C3E8CB50000744C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12893A431C3E8CB50000744C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12893A471C3E8CB50000744C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12893A481C3E8CB50000744C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12893A611C3E8CB50000744C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12893A621C3E8CB50000744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12893A641C3E8CB50000744C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Day4-AudioPlayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Day4-AudioPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		12893A651C3E8CB50000744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Day4-AudioPlayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Day4-AudioPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		12893A671C3E8CB50000744C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Day4-AudioPlayerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Day4-AudioPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day4-AudioPlayer.app/Day4-AudioPlayer";
+			};
+			name = Debug;
+		};
+		12893A681C3E8CB50000744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Day4-AudioPlayerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Day4-AudioPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day4-AudioPlayer.app/Day4-AudioPlayer";
+			};
+			name = Release;
+		};
+		12893A6A1C3E8CB50000744C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Day4-AudioPlayerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Day4-AudioPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Day4-AudioPlayer";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		12893A6B1C3E8CB50000744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Day4-AudioPlayerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ilyan.test.Day4-AudioPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Day4-AudioPlayer";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12893A361C3E8CB50000744C /* Build configuration list for PBXProject "Day4-AudioPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12893A611C3E8CB50000744C /* Debug */,
+				12893A621C3E8CB50000744C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12893A631C3E8CB50000744C /* Build configuration list for PBXNativeTarget "Day4-AudioPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12893A641C3E8CB50000744C /* Debug */,
+				12893A651C3E8CB50000744C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12893A661C3E8CB50000744C /* Build configuration list for PBXNativeTarget "Day4-AudioPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12893A671C3E8CB50000744C /* Debug */,
+				12893A681C3E8CB50000744C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12893A691C3E8CB50000744C /* Build configuration list for PBXNativeTarget "Day4-AudioPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12893A6A1C3E8CB50000744C /* Debug */,
+				12893A6B1C3E8CB50000744C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12893A331C3E8CB50000744C /* Project object */;
+}
