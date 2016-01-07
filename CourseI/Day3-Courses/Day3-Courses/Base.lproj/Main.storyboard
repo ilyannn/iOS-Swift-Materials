@@ -97,6 +97,9 @@
                             <outlet property="delegate" destination="Nc5-zK-2Pu" id="eGC-ZU-qxq"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="pTZ-Mf-wT4" kind="presentation" identifier="profile" id="bVq-es-V4d"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YfH-ig-c0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -196,6 +199,24 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1072" y="282"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nwB-Iv-MpY">
+            <objects>
+                <viewController id="pTZ-Mf-wT4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="saO-hj-w0B"/>
+                        <viewControllerLayoutGuide type="bottom" id="3ZV-Um-Eka"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RJM-RM-UHc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTX-EY-zUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544" y="1223"/>
         </scene>
     </scenes>
 </document>

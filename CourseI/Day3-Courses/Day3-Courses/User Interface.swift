@@ -24,8 +24,6 @@ class CourseListViewController: UITableViewController {
         super.viewDidLoad()
         
         dateFormatter.dateStyle = .MediumStyle
-        
-        tableView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,9 +31,22 @@ class CourseListViewController: UITableViewController {
         return courseList.count
     }
     
-//    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        return UIView()
-//    }
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let button = UIButton(type: .Custom)
+        
+        button.titleLabel?.font = UIFont.systemFontOfSize(40)
+        button.setTitle("Профиль", forState: .Normal)
+        button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        button.backgroundColor = UIColor.brownColor()
+        button.addTarget(self, action: "editProfile", forControlEvents: .TouchUpInside)
+        
+        return button
+    }
+    
+    func editProfile() {
+        performSegueWithIdentifier("profile", sender: self)
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
