@@ -18,10 +18,15 @@ private func jsonFrom(maybe_url: NSURL?) -> AnyObject {
     return json
 }
 
+// https://developer.apple.com/library/ios/qa/qa1480/_index.html
+
 class JSONIncomingDateFormatter : NSDateFormatter {
     
     override init() {
+        
         super.init()
+        
+        locale = NSLocale(localeIdentifier: "en_US_POSIX")
         dateFormat = "dd-MM-yy"
     }
 
