@@ -19,11 +19,15 @@ class CourseListViewController: UITableViewController {
 
     let dateFormatter = NSDateFormatter()
     let courseList = getCourses()
+
+    var userName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dateFormatter.dateStyle = .MediumStyle
+
+        userName = NSUserDefaults.standardUserDefaults().stringForKey("name")
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
