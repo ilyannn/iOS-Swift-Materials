@@ -9,6 +9,9 @@
 import UIKit
 import SpriteKit
 
+class DynamicImageView: UIImageView {
+}
+
 class CourseListViewController: UITableViewController {
 
     let courseList = getCourses()
@@ -92,18 +95,44 @@ class DetailCourseViewController: UIViewController {
     @IBAction func swipeToClose(sender: AnyObject) {        dismissViewControllerAnimated(true, completion: nil)
     }
     
-    @IBAction func moveImage(sender: UITapGestureRecognizer) {
-        
-        UIView.animateWithDuration(0.5, animations: {
-            sender.view?.transform = CGAffineTransformMakeScale(0.1, 0.1)
-        })
+    var gravityAnimator: UIDynamicAnimator?
 
-/*        let radius = sender.view!.bounds.size.height / 2
-        let body = SKPhysicsBody(circleOfRadius: radius)
-        body.dynamic = true
-        body.mass = 1
-        body.affectedByGravity = true 
-*/
+    @IBAction func moveImage(sender: UITapGestureRecognizer) {
+
+        guard let source = sender.view as? UIImageView else {return}
+        let center = source.center
+        let size = source.bounds.size
+        
+        let animator = UIDynamicAnimator(referenceView: view)
+        gravityAnimator = animator
+        
+        let scale = CGFloat(1) / 3
+
+        UIView.animateWithDuration(0.5,
+            delay: 0,
+            options: [],
+            animations: { source.transform = CGAffineTransformMakeScale(scale, scale) }
+        ) { _ in
+                
+                source.removeFromSuperview()
+                let new_image = UIImageView(image: source.image)
+                
+                new_image.center = center
+                new_image.bounds = CGRectMake(0, 0, size.width * scale, size.height * scale)
+                
+                self.view.addSubview(new_image)
+                
+                let collision = UICollisionBehavior(items: [new_image])
+                collision.translatesReferenceBoundsIntoBoundary = true
+
+                let dynamic = UIDynamicItemBehavior(items:[new_image])
+                dynamic.elasticity = 0.9
+                
+                animator.addBehavior(UIGravityBehavior(items: [new_image]))
+                animator.addBehavior(collision)
+                animator.addBehavior(dynamic)
+        }
+        
     }
     
 }
