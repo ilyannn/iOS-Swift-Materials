@@ -17,10 +17,14 @@ class Ball: UIImageView {
 
 class CourseListViewController: UITableViewController {
 
+    let dateFormatter = NSDateFormatter()
     let courseList = getCourses()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dateFormatter.dateStyle = .MediumStyle
+        
         tableView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
     }
     
@@ -67,7 +71,7 @@ class CourseListViewController: UITableViewController {
             }
         }
     }
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if let vc = segue.destinationViewController
@@ -82,8 +86,10 @@ class CourseListViewController: UITableViewController {
             vc.courseNameLabel.text = course.courseName
 
             vc.logoImage.image = cell.logoImage.image
-
-            //            vc.startDateLabel =
+            
+            if let date = course.startDate {
+                vc.startDateLabel.text = dateFormatter.stringFromDate(date)
+            }
         }
     }
 }

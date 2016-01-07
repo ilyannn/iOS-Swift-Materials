@@ -18,16 +18,34 @@ private func jsonFrom(maybe_url: NSURL?) -> AnyObject {
     return json
 }
 
+class JSONIncomingDateFormatter : NSDateFormatter {
+    
+    override init() {
+        super.init()
+        dateFormat = "dd-MM-yy"
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+private let jsonIncomingFormatter = JSONIncomingDateFormatter()
+
 class Course {
 
     let courseName: String
     let teacherName: String
     let logoURL: NSURL?
+    let startDate: NSDate?
     
     init(_ dict: [String: String]) {
         courseName = dict["name"] ?? "<unknown name>"
         teacherName = dict["teacher"] ?? ""
         logoURL = NSURL(string: dict["logo"] ?? "")
+
+        let startDateString = dict["starts"] ?? ""
+        startDate = jsonIncomingFormatter.dateFromString(startDateString)
     }
 
     convenience init?(_ dict: AnyObject) {
