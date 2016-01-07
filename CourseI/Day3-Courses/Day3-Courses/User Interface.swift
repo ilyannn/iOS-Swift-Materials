@@ -31,6 +31,10 @@ class CourseListViewController: UITableViewController {
         return courseList.count
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+    
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let button = UIButton(type: .Custom)
