@@ -46,8 +46,9 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p1E-1M-VEy">
+                                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p1E-1M-VEy">
                                                             <rect key="frame" x="464" y="0.0" width="67" height="67"/>
+                                                            <gestureRecognizers/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="p1E-1M-VEy" secondAttribute="height" multiplier="1:1" id="5Hk-rQ-BH6"/>
                                                             </constraints>
@@ -64,18 +65,30 @@
                                                 <constraint firstItem="Vuc-5z-oOZ" firstAttribute="top" secondItem="9jg-Gp-Tq7" secondAttribute="top" constant="5" id="uRt-4n-6SF"/>
                                             </constraints>
                                         </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaZ-Id-lkN">
+                                            <rect key="frame" x="496" y="15" width="67" height="67"/>
+                                            <connections>
+                                                <action selector="buttonPressed:" destination="Q4F-zB-u77" eventType="touchUpInside" id="EE7-pW-VQl"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="9jg-Gp-Tq7" firstAttribute="leading" secondItem="FbG-Ng-JqF" secondAttribute="leading" constant="20" id="F6z-CY-jTR"/>
+                                        <constraint firstItem="CaZ-Id-lkN" firstAttribute="leading" secondItem="p1E-1M-VEy" secondAttribute="leading" id="GXi-4y-LOQ"/>
+                                        <constraint firstItem="CaZ-Id-lkN" firstAttribute="top" secondItem="p1E-1M-VEy" secondAttribute="top" id="RdC-VR-Nhk"/>
                                         <constraint firstAttribute="trailing" secondItem="9jg-Gp-Tq7" secondAttribute="trailing" constant="20" id="ULT-eJ-ddR"/>
+                                        <constraint firstItem="CaZ-Id-lkN" firstAttribute="bottom" secondItem="p1E-1M-VEy" secondAttribute="bottom" id="Yle-9G-dtU"/>
+                                        <constraint firstItem="CaZ-Id-lkN" firstAttribute="trailing" secondItem="p1E-1M-VEy" secondAttribute="trailing" id="crQ-dX-kFI"/>
                                         <constraint firstItem="9jg-Gp-Tq7" firstAttribute="top" secondItem="FbG-Ng-JqF" secondAttribute="top" constant="10" id="iar-vb-ozS"/>
                                         <constraint firstAttribute="bottom" secondItem="9jg-Gp-Tq7" secondAttribute="bottom" constant="10" id="rtA-8n-Har"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="courseNameLabel" destination="0dF-n2-Piv" id="MZS-4G-u7e"/>
                                     <outlet property="logoImage" destination="p1E-1M-VEy" id="4Rv-kM-ucb"/>
                                     <outlet property="teacherLabel" destination="h1n-ys-KyI" id="vTl-NM-UBU"/>
+                                    <segue destination="2T8-Cc-zwf" kind="presentation" modalTransitionStyle="crossDissolve" id="C6v-1u-6g8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -88,6 +101,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YfH-ig-c0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="204" y="282"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QMn-nQ-alZ">
+            <objects>
+                <viewController id="2T8-Cc-zwf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5dJ-N8-aiw"/>
+                        <viewControllerLayoutGuide type="bottom" id="aZ8-6i-X9m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BnM-C8-buJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="luH-gB-CIp">
+                                <rect key="frame" x="68" y="136" width="464" height="464"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.2470703125" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="luH-gB-CIp" secondAttribute="height" multiplier="1:1" id="ej0-n0-yQd"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FER-Z5-sJT">
+                                <rect key="frame" x="30" y="30" width="540" height="86"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" translatesAutoresizingMaskIntoConstraints="NO" id="pWc-7y-NEY">
+                                        <rect key="frame" x="0.0" y="0.0" width="540" height="27"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" verticalCompressionResistancePriority="950" text="Преподаватель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YO-fr-Mh0">
+                                                <rect key="frame" x="0.0" y="0.0" width="124" height="27"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="950" text="11.22.3333" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ9-M1-9BD">
+                                                <rect key="frame" x="124" y="0.0" width="416" height="27"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="950" text="Название курса " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85A-6e-3Aa">
+                                        <rect key="frame" x="0.0" y="57" width="540" height="29"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                        <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FER-Z5-sJT" secondAttribute="trailing" constant="30" id="BZh-is-Rij"/>
+                            <constraint firstItem="FER-Z5-sJT" firstAttribute="centerX" secondItem="BnM-C8-buJ" secondAttribute="centerX" id="Lwo-Ib-8KG"/>
+                            <constraint firstItem="luH-gB-CIp" firstAttribute="leading" secondItem="BnM-C8-buJ" secondAttribute="leading" priority="900" id="Va5-Mg-WD3"/>
+                            <constraint firstItem="aZ8-6i-X9m" firstAttribute="top" secondItem="luH-gB-CIp" secondAttribute="bottom" id="e4J-HO-8wO"/>
+                            <constraint firstItem="luH-gB-CIp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FER-Z5-sJT" secondAttribute="bottom" constant="20" id="lym-EP-e7g"/>
+                            <constraint firstItem="FER-Z5-sJT" firstAttribute="top" secondItem="5dJ-N8-aiw" secondAttribute="bottom" constant="10" id="n9T-2w-EiP"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="luH-gB-CIp" secondAttribute="trailing" id="pbM-Tw-7vO"/>
+                            <constraint firstAttribute="trailing" secondItem="luH-gB-CIp" secondAttribute="trailing" priority="900" id="qep-Zv-zty"/>
+                            <constraint firstItem="FER-Z5-sJT" firstAttribute="leading" secondItem="BnM-C8-buJ" secondAttribute="leading" constant="30" id="sRm-Iv-xLF"/>
+                            <constraint firstItem="luH-gB-CIp" firstAttribute="centerX" secondItem="BnM-C8-buJ" secondAttribute="centerX" id="tpl-y4-6gw"/>
+                            <constraint firstItem="luH-gB-CIp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BnM-C8-buJ" secondAttribute="leading" id="vzE-Jb-Ea2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kG-kZ-9T5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072" y="282"/>
         </scene>
     </scenes>
 </document>

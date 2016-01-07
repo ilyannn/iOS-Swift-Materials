@@ -60,6 +60,7 @@ class CourseListViewController: UITableViewController {
             }
         }
     }
+
 }
 
 class CourseCell: UITableViewCell {
@@ -67,6 +68,15 @@ class CourseCell: UITableViewCell {
     @IBOutlet weak var courseNameLabel: UILabel!
     @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var teacherLabel: UILabel!
+    
+    @IBAction func buttonPressed(sender: AnyObject) {
+        
+        let logo = logoImage
+        guard let superview = logoImage.superview as? UIStackView else { return }
+
+        logo.removeFromSuperview()
+        superview.insertArrangedSubview(logo, atIndex: 0)
+    }
     
     override func awakeFromNib() {
         
