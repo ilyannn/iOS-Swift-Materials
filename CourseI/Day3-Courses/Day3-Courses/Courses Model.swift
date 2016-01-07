@@ -22,10 +22,12 @@ class Course {
 
     let courseName: String
     let teacherName: String
+    let logoURL: NSURL?
     
     init(_ dict: [String: String]) {
         courseName = dict["name"] ?? "<unknown name>"
         teacherName = dict["teacher"] ?? ""
+        logoURL = NSURL(string: dict["logo"] ?? "")
     }
 
     convenience init?(_ dict: AnyObject) {
