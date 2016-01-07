@@ -61,6 +61,32 @@ class CourseListViewController: UITableViewController {
         }
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if let vc = segue.destinationViewController
+            as? DetailCourseViewController,
+           let cell = sender as? CourseCell
+        {
+            vc.loadViewIfNeeded()
+            
+            let index = tableView.indexPathForCell(cell)!.row
+            let course = courseList[index]
+            vc.teacherNameLabel.text = course.teacherName
+            vc.courseNameLabel.text = course.courseName
+
+            vc.logoImage.image = cell.logoImage.image
+
+            //            vc.startDateLabel =
+        }
+    }
+}
+
+class DetailCourseViewController: UIViewController {
+    
+    @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var startDateLabel: UILabel!
+    @IBOutlet weak var teacherNameLabel: UILabel!
+    @IBOutlet weak var courseNameLabel: UILabel!
 }
 
 class CourseCell: UITableViewCell {

@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="204" y="282"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Course View Controller-->
         <scene sceneID="QMn-nQ-alZ">
             <objects>
-                <viewController id="2T8-Cc-zwf" sceneMemberID="viewController">
+                <viewController id="2T8-Cc-zwf" customClass="DetailCourseViewController" customModule="Day3_Courses" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5dJ-N8-aiw"/>
                         <viewControllerLayoutGuide type="bottom" id="aZ8-6i-X9m"/>
@@ -168,6 +168,12 @@
                             <constraint firstItem="luH-gB-CIp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BnM-C8-buJ" secondAttribute="leading" id="vzE-Jb-Ea2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="courseNameLabel" destination="85A-6e-3Aa" id="klz-G9-joj"/>
+                        <outlet property="logoImage" destination="luH-gB-CIp" id="e2D-11-IuI"/>
+                        <outlet property="startDateLabel" destination="ZZ9-M1-9BD" id="ElW-1Q-YU3"/>
+                        <outlet property="teacherNameLabel" destination="7YO-fr-Mh0" id="Y4v-Sz-4lQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kG-kZ-9T5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
