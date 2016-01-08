@@ -11,6 +11,8 @@ import UIKit
 @IBDesignable
 class RoundPhotoView: UIImageView {
     
+    @IBInspectable var rotateAngle: CGFloat = 0
+
     @IBInspectable var borderWidth: CGFloat = 0
     
     @IBInspectable var borderColor: UIColor = UIColor.clearColor()
@@ -24,5 +26,7 @@ class RoundPhotoView: UIImageView {
         
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.CGColor
+        
+        transform = CGAffineTransformMakeRotation(rotateAngle)
     }
 }
