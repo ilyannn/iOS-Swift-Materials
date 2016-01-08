@@ -13,13 +13,6 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var pictureImageView: UIImageView!
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-
-        let radius = 0.5 * pictureImageView.bounds.size.height
-        pictureImageView.layer.cornerRadius = radius
-        pictureImageView.clipsToBounds = true
-    }
     
     @IBAction func editPicture(sender: AnyObject) {
         
