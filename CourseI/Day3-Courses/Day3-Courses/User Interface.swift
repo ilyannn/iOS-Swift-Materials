@@ -15,6 +15,33 @@ class Ball: UIImageView {
     }
 }
 
+class PersonHeader:UIView {
+
+    let headerButton = UIButton(type: .Custom)
+    let pictureView = UIImageView()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addSubview(headerButton)
+        addSubview(pictureView)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        let size = bounds.height
+        pictureView.bounds = CGRect(x: 0, y: 0, width: size, height: size)
+        pictureView.center = CGPoint(x: size/2, y: size/2)
+        
+        headerButton.bounds = CGRect(x: 0, y: 0, width: bounds.width - size, height: size)
+        headerButton.center = CGPoint(x: bounds.midX + size / 2, y: bounds.midY)
+    }
+}
+
 class CourseListViewController: UITableViewController {
     
     let dateFormatter = NSDateFormatter()
@@ -38,8 +65,10 @@ class CourseListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let button = UIButton(type: .Custom)
-        
+        let header = PersonHeader()
+
+        let button = header.headerButton
+
         button.titleLabel?.font = UIFont.systemFontOfSize(40)
         button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         button.backgroundColor = UIColor.brownColor()
@@ -47,8 +76,9 @@ class CourseListViewController: UITableViewController {
         
         let name = currentPerson.name ?? "Профиль"
         button.setTitle(name, forState: .Normal)
-
-        return button
+        
+        header.pictureView.image = currentPerson.picture
+        return header
     }
     
     func editProfile() {

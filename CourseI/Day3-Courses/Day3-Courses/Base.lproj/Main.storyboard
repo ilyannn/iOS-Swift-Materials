@@ -273,7 +273,7 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="150" misplaced="YES" image="alps" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-Nx-4M3" customClass="RoundPhotoView" customModule="Day3_Courses" customModuleProvider="target">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="150" image="alps" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-Nx-4M3" customClass="RoundPhotoView" customModule="Day3_Courses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="102" width="580" height="580"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
