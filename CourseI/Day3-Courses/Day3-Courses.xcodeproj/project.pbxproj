@@ -15,6 +15,7 @@
 		126A18B81C3D70C0005972FF /* Day3_CoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A18B71C3D70C0005972FF /* Day3_CoursesTests.swift */; };
 		126A18C31C3D70C0005972FF /* Day3_CoursesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A18C21C3D70C0005972FF /* Day3_CoursesUITests.swift */; };
 		126A18D11C3D70FB005972FF /* Courses Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A18D01C3D70FB005972FF /* Courses Model.swift */; };
+		12A279141C3FDFF20088B125 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A279131C3FDFF20088B125 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		126A18C21C3D70C0005972FF /* Day3_CoursesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3_CoursesUITests.swift; sourceTree = "<group>"; };
 		126A18C41C3D70C0005972FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		126A18D01C3D70FB005972FF /* Courses Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Courses Model.swift"; sourceTree = "<group>"; };
+		12A279131C3FDFF20088B125 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				126A18A21C3D70C0005972FF /* AppDelegate.swift */,
 				126A18D01C3D70FB005972FF /* Courses Model.swift */,
 				1245C1B71C3D777200D69E4D /* User Interface.swift */,
+				12A279131C3FDFF20088B125 /* Profile.swift */,
 				126A18A61C3D70C0005972FF /* Main.storyboard */,
 				126A18A91C3D70C0005972FF /* Assets.xcassets */,
 				126A18AB1C3D70C0005972FF /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				126A18D11C3D70FB005972FF /* Courses Model.swift in Sources */,
+				12A279141C3FDFF20088B125 /* Profile.swift in Sources */,
 				126A18A31C3D70C0005972FF /* AppDelegate.swift in Sources */,
 				1245C1B81C3D777200D69E4D /* User Interface.swift in Sources */,
 			);

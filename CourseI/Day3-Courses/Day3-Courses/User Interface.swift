@@ -16,18 +16,15 @@ class Ball: UIImageView {
 }
 
 class CourseListViewController: UITableViewController {
-
+    
     let dateFormatter = NSDateFormatter()
     let courseList = getCourses()
-
-    var userName: String?
+    var currentPerson = Person()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dateFormatter.dateStyle = .MediumStyle
-
-        userName = NSUserDefaults.standardUserDefaults().stringForKey("name")
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,11 +41,13 @@ class CourseListViewController: UITableViewController {
         let button = UIButton(type: .Custom)
         
         button.titleLabel?.font = UIFont.systemFontOfSize(40)
-        button.setTitle("Профиль", forState: .Normal)
         button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         button.backgroundColor = UIColor.brownColor()
         button.addTarget(self, action: "editProfile", forControlEvents: .TouchUpInside)
         
+        let name = currentPerson.name ?? "Профиль"
+        button.setTitle(name, forState: .Normal)
+
         return button
     }
     
