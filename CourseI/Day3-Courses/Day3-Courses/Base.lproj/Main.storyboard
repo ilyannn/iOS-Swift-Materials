@@ -226,28 +226,28 @@
                                             <segue destination="hDh-9z-ebC" kind="unwind" unwindAction="unwindToSaveProfile:" id="bzh-ug-iAd"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-lD-9KM">
-                                        <rect key="frame" x="0.0" y="70" width="580" height="32"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="lastBaseline" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-lD-9KM">
+                                        <rect key="frame" x="0.0" y="70" width="580" height="36"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ваше имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAZ-r9-sSM">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваше имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAZ-r9-sSM">
+                                                <rect key="frame" x="0.0" y="10" width="75" height="18"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.74770375844594594" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="петя иванов" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xwt-5B-K9M">
-                                                <rect key="frame" x="80" y="0.0" width="500" height="32"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="петя иванов" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xwt-5B-K9M">
+                                                <rect key="frame" x="80" y="0.0" width="500" height="30"/>
                                                 <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pqh-g6-vFq">
-                                        <rect key="frame" x="0.0" y="112" width="580" height="28"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="lastBaseline" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pqh-g6-vFq">
+                                        <rect key="frame" x="0.0" y="116" width="580" height="24"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш e-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oq-Sb-HWn">
-                                                <rect key="frame" x="0.0" y="0.0" width="82" height="28"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ваш e-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oq-Sb-HWn">
+                                                <rect key="frame" x="0.0" y="6" width="82" height="18"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.74770375844594594" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>

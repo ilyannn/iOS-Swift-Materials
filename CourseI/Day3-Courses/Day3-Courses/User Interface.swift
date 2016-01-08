@@ -92,12 +92,12 @@ class CourseListViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        segue.destinationViewController.loadViewIfNeeded()
+        
         if let vc = segue.destinationViewController
             as? DetailCourseViewController,
            let cell = sender as? CourseCell
         {
-            vc.loadViewIfNeeded()
-            
             let index = tableView.indexPathForCell(cell)!.row
             let course = courseList[index]
             vc.teacherNameLabel.text = course.teacherName
@@ -108,6 +108,14 @@ class CourseListViewController: UITableViewController {
             if let date = course.startDate {
                 vc.startDateLabel.text = dateFormatter.stringFromDate(date)
             }
+        }
+        
+        if let vc = segue.destinationViewController
+             as? ProfileViewController
+        {            
+            vc.nameField.text = currentPerson.name
+            vc.emailField.text = currentPerson.email
+            vc.pictureImageVIew.image = currentPerson.picture
         }
     }
 }

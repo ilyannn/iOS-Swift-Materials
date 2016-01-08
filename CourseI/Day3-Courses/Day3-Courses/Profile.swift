@@ -43,6 +43,8 @@ extension CourseListViewController {
         currentPerson.email = profile?.emailField.text
         currentPerson.picture = profile?.pictureImageVIew.image
         
+        currentPerson.save()
+        
         tableView.reloadData()
     }
 }
