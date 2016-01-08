@@ -212,13 +212,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MGc-8C-of0">
-                                <rect key="frame" x="10" y="28" width="580" height="572"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MGc-8C-of0">
+                                <rect key="frame" x="10" y="28" width="580" height="682"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3j-WH-eBq">
-                                        <rect key="frame" x="0.0" y="0.0" width="580" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="149" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3j-WH-eBq">
+                                        <rect key="frame" x="0.0" y="0.0" width="580" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Vqo-oQ-o9j"/>
+                                            <constraint firstAttribute="height" priority="900" constant="60" id="Vqo-oQ-o9j"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
                                         <state key="normal" title="сохранить "/>
@@ -226,25 +226,25 @@
                                             <segue destination="hDh-9z-ebC" kind="unwind" unwindAction="unwindToSaveProfile:" id="bzh-ug-iAd"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="lastBaseline" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-lD-9KM">
-                                        <rect key="frame" x="0.0" y="70" width="580" height="36"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="550" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-lD-9KM">
+                                        <rect key="frame" x="0.0" y="58" width="580" height="0.0"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваше имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAZ-r9-sSM">
-                                                <rect key="frame" x="0.0" y="10" width="75" height="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ваше имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAZ-r9-sSM">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="0.0"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.74770375844594594" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="петя иванов" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xwt-5B-K9M">
-                                                <rect key="frame" x="80" y="0.0" width="500" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="петя иванов" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xwt-5B-K9M">
+                                                <rect key="frame" x="80" y="0.0" width="500" height="0.0"/>
                                                 <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="lastBaseline" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pqh-g6-vFq">
-                                        <rect key="frame" x="0.0" y="116" width="580" height="24"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="550" misplaced="YES" alignment="lastBaseline" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pqh-g6-vFq">
+                                        <rect key="frame" x="0.0" y="68" width="580" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш e-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oq-Sb-HWn">
                                                 <rect key="frame" x="0.0" y="6" width="82" height="18"/>
@@ -259,10 +259,13 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-Nx-4M3">
-                                        <rect key="frame" x="0.0" y="150" width="580" height="422"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="150" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-Nx-4M3">
+                                        <rect key="frame" x="0.0" y="102" width="580" height="580"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Quu-Nx-4M3" secondAttribute="height" multiplier="1:1" id="rZA-dq-xUX"/>
+                                        </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="bRs-aO-gyf" appends="YES" id="99P-FR-H4q"/>
                                         </connections>
@@ -272,7 +275,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3ZV-Um-Eka" firstAttribute="top" secondItem="MGc-8C-of0" secondAttribute="bottom" id="1Cy-8x-3AQ"/>
+                            <constraint firstItem="3ZV-Um-Eka" firstAttribute="top" secondItem="MGc-8C-of0" secondAttribute="bottom" priority="900" id="1Cy-8x-3AQ"/>
                             <constraint firstItem="MGc-8C-of0" firstAttribute="leading" secondItem="RJM-RM-UHc" secondAttribute="leading" constant="10" id="Oiy-oq-tnC"/>
                             <constraint firstAttribute="trailing" secondItem="MGc-8C-of0" secondAttribute="trailing" constant="10" id="amr-Rm-gys"/>
                             <constraint firstItem="MGc-8C-of0" firstAttribute="top" secondItem="saO-hj-w0B" secondAttribute="bottom" constant="8" symbolic="YES" id="g4g-X4-G7G"/>
@@ -281,7 +284,7 @@
                     <connections>
                         <outlet property="emailField" destination="MCq-ag-r9w" id="UHe-AI-GG7"/>
                         <outlet property="nameField" destination="Xwt-5B-K9M" id="1hy-bu-Vad"/>
-                        <outlet property="pictureImageVIew" destination="Quu-Nx-4M3" id="2UE-vO-1MG"/>
+                        <outlet property="pictureImageView" destination="Quu-Nx-4M3" id="xMV-pB-OO4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTX-EY-zUp" userLabel="First Responder" sceneMemberID="firstResponder"/>

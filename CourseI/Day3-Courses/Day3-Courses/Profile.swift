@@ -11,7 +11,15 @@ import UIKit
 class ProfileViewController: UIViewController {
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var pictureImageVIew: UIImageView!
+    @IBOutlet weak var pictureImageView: UIImageView!
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        let radius = 0.5 * pictureImageView.bounds.size.height
+        pictureImageView.layer.cornerRadius = radius
+        pictureImageView.clipsToBounds = true
+    }
     
     @IBAction func editPicture(sender: AnyObject) {
         
@@ -36,7 +44,7 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage
               else { return }
         
-        pictureImageVIew.image = image
+        pictureImageView.image = image
     }
 }
 
@@ -76,7 +84,7 @@ extension CourseListViewController {
         
         currentPerson.name = profile?.nameField.text
         currentPerson.email = profile?.emailField.text
-        currentPerson.picture = profile?.pictureImageVIew.image
+        currentPerson.picture = profile?.pictureImageView.image
         
         currentPerson.save()
         

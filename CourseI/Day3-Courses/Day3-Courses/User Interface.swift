@@ -115,7 +115,7 @@ class CourseListViewController: UITableViewController {
         {            
             vc.nameField.text = currentPerson.name
             vc.emailField.text = currentPerson.email
-            vc.pictureImageVIew.image = currentPerson.picture
+            vc.pictureImageView.image = currentPerson.picture
         }
     }
 }
