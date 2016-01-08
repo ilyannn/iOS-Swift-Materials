@@ -12,6 +12,32 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var pictureImageVIew: UIImageView!
+    
+    @IBAction func editPicture(sender: AnyObject) {
+        
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+}
+
+extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate
+{
+
+    func imagePickerControllerDidCancel(picker: UIImagePickerController)
+    {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+        
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
+        dismissViewControllerAnimated(true, completion: nil)
+        
+        guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage
+              else { return }
+        
+        pictureImageVIew.image = image
+    }
 }
 
 extension CourseListViewController {
@@ -26,12 +52,21 @@ extension CourseListViewController {
             let defaults = NSUserDefaults.standardUserDefaults()
             name = defaults.stringForKey("name")
             email = defaults.stringForKey("email")
+
+            if let data = defaults.dataForKey("pictureData") {
+                picture = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? UIImage
+            }
         }
         
         func save() {
             let defaults = NSUserDefaults.standardUserDefaults()
             defaults.setValue(name, forKey: "name")
             defaults.setValue(email, forKey: "email")
+
+            if let picture_ = picture {
+                let data = NSKeyedArchiver.archivedDataWithRootObject(picture_)
+                defaults.setValue(data, forKey: "pictureData")
+            }
         }
     }
 

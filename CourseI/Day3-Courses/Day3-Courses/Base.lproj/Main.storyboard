@@ -246,7 +246,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="lastBaseline" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pqh-g6-vFq">
                                         <rect key="frame" x="0.0" y="116" width="580" height="24"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ваш e-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oq-Sb-HWn">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш e-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oq-Sb-HWn">
                                                 <rect key="frame" x="0.0" y="6" width="82" height="18"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.74770375844594594" colorSpace="calibratedRGB"/>
@@ -259,8 +259,13 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-Nx-4M3">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-Nx-4M3">
                                         <rect key="frame" x="0.0" y="150" width="580" height="422"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="bRs-aO-gyf" appends="YES" id="99P-FR-H4q"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -281,6 +286,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTX-EY-zUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hDh-9z-ebC" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="bRs-aO-gyf">
+                    <connections>
+                        <action selector="editPicture:" destination="pTZ-Mf-wT4" id="WAo-MQ-DNg"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="204" y="1229"/>
         </scene>
