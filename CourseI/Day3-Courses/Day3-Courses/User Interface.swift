@@ -72,6 +72,8 @@ class CourseListViewController: UITableViewController {
 
         let button = header.headerButton
 
+        button.accessibilityIdentifier = "HeaderButton"
+        
         button.titleLabel?.font = UIFont.systemFontOfSize(40)
         button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         button.backgroundColor = UIColor.brownColor()
@@ -104,7 +106,7 @@ class CourseListViewController: UITableViewController {
         return cell
     }
     
-    let imageLoadingQueue = NSOperationQueue()
+    let imageLoadingQueue = NSOperationQueue.mainQueue()
     
     func loadImage(from course:Course, into imageView: UIImageView) {
         

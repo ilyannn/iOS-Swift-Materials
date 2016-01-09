@@ -31,6 +31,17 @@ class Day3_CoursesUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        app.tables.buttons["HeaderButton"].tap()
+        
+        let namefieldTextField = app.textFields["NameField"]
+        namefieldTextField.tap()
+
+        let testString = "TEST"
+        namefieldTextField.typeText(testString)
+        app.buttons["SaveButton"].tap()
+
     }
     
 }
