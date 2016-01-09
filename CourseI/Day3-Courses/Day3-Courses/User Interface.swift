@@ -35,10 +35,12 @@ class PersonHeader:UIView {
 
         let size = bounds.height
         pictureView.bounds = CGRect(x: 0, y: 0, width: size, height: size)
-        pictureView.center = CGPoint(x: size/2, y: size/2)
+        pictureView.center = CGPoint(x: bounds.width - size/2, y: size/2)
         
+        let π = CGFloat(M_PI)
+        pictureView.transform = CGAffineTransformMakeRotation(π/2)
         headerButton.bounds = CGRect(x: 0, y: 0, width: bounds.width - size, height: size)
-        headerButton.center = CGPoint(x: bounds.midX + size / 2, y: bounds.midY)
+        headerButton.center = CGPoint(x: bounds.midX - size / 2, y: bounds.midY)
     }
 }
 
@@ -63,6 +65,7 @@ class CourseListViewController: UITableViewController {
         return .LightContent
     }
     
+    // tableView(_:viewForHeaderInSection:)
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let header = PersonHeader()
@@ -85,6 +88,7 @@ class CourseListViewController: UITableViewController {
         performSegueWithIdentifier("profile", sender: self)
     }
     
+    // tableView:cellForRowAtIndexPath:
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! CourseCell
