@@ -35,25 +35,26 @@ class JSONIncomingDateFormatter : NSDateFormatter {
     }
 }
 
-private let jsonIncomingFormatter = JSONIncomingDateFormatter()
 
 class Course {
+
+    private static let jsonIncomingFormatter = JSONIncomingDateFormatter()
 
     let courseName: String
     let teacherName: String
     let logoURL: NSURL?
     let startDate: NSDate?
     
-    init(_ dict: [String: String]) {
+    private init(_ dict: [String: String]) {
         courseName = dict["name"] ?? "<unknown name>"
         teacherName = dict["teacher"] ?? ""
         logoURL = NSURL(string: dict["logo"] ?? "")
 
         let startDateString = dict["starts"] ?? ""
-        startDate = jsonIncomingFormatter.dateFromString(startDateString)
+        startDate = Course.jsonIncomingFormatter.dateFromString(startDateString)
     }
 
-    convenience init?(_ dict: AnyObject) {
+    private convenience init?(_ dict: AnyObject) {
         
         guard let strings_strings = dict as? [String: String] else {
             return nil

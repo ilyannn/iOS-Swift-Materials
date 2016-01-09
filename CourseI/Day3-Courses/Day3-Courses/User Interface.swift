@@ -9,8 +9,8 @@
 import UIKit
 import SpriteKit
 
-class Ball: UIImageView {
-    override var collisionBoundsType: UIDynamicItemCollisionBoundsType {
+public class Ball: UIImageView {
+    public override var collisionBoundsType: UIDynamicItemCollisionBoundsType {
         return .Ellipse
     }
 }
@@ -32,7 +32,7 @@ class PersonHeader:UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-
+        
         let size = bounds.height
         pictureView.bounds = CGRect(x: 0, y: 0, width: size, height: size)
         pictureView.center = CGPoint(x: bounds.width - size/2, y: size/2)
