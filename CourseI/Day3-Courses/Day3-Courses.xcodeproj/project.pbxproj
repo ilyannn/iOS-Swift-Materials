@@ -38,11 +38,13 @@
 
 /* Begin PBXFileReference section */
 		1245C1B71C3D777200D69E4D /* User Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User Interface.swift"; sourceTree = "<group>"; };
+		124906EB1C41734B00BED6AE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		124906EC1C41734B00BED6AE /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		124906ED1C41742300BED6AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		126A189F1C3D70C0005972FF /* Day3-Courses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day3-Courses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		126A18A21C3D70C0005972FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		126A18A71C3D70C0005972FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		126A18A91C3D70C0005972FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		126A18AC1C3D70C0005972FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		126A18AE1C3D70C0005972FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		126A18B31C3D70C0005972FF /* Day3-CoursesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day3-CoursesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		126A18B71C3D70C0005972FF /* Day3_CoursesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3_CoursesTests.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 126A18961C3D70C0005972FF;
 			productRefGroup = 126A18A01C3D70C0005972FF /* Products */;
@@ -312,6 +315,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				126A18A71C3D70C0005972FF /* Base */,
+				124906EB1C41734B00BED6AE /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -319,7 +323,8 @@
 		126A18AB1C3D70C0005972FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				126A18AC1C3D70C0005972FF /* Base */,
+				124906EC1C41734B00BED6AE /* ru */,
+				124906ED1C41742300BED6AE /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
