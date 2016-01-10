@@ -107,7 +107,7 @@ class CourseListViewController: UITableViewController {
         return cell
     }
     
-    let imageLoadingQueue = NSOperationQueue.mainQueue()
+    let imageLoadingQueue = NSOperationQueue()
     
     func loadImage(from course:Course, into imageView: UIImageView) {
         

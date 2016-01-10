@@ -1,0 +1,94 @@
+[
+ {
+	"name": "Корейская кухня",
+	"teacher": "Шеф",
+	"starts": "04.02.2016",
+	"logo" : "http://weknowyourdreams.com/images/dog/dog-07.jpg"
+ }
+ ,
+ {
+	"name": "Корейская кухня",
+	"teacher": "Шеф",
+	"starts": "04.03.2016",
+	"logo" : "http://weknowyourdreams.com/images/dog/dog-07.jpg"
+ }
+ ,
+ {
+	"name": "Корейская кухня",
+	"teacher": "Шеф",
+	"starts": "04.04.2016",
+	"logo" : "http://weknowyourdreams.com/images/dog/dog-07.jpg"
+ }
+ ,{
+	"name": "Основы мобильной разработки на Swift",
+	"teacher": "Илья Никокошев",
+	"starts": "04.01.2016",	
+	"logo" : "http://moscoding.ru/wp-content/uploads/2015/06/knight.png"
+},
+{ 
+	"name": "Программирование для детей",
+	"teacher": "Влад Кяуне",
+	"starts": "04.01.2016",
+	"logo" : "http://moscoding.ru/wp-content/uploads/2015/01/codingkids.png"
+},
+{ 
+	"name": "Основы HTML и CSS и веб-анимации",
+	"teacher": "Василика Климова",
+	"starts": "16.01.2016", 
+	"logo": "http://moscoding.ru/wp-content/uploads/2015/06/web.png"
+},
+{ 
+	"name": "Основы мобильной разработки на Swift",
+	"teacher": "Илья Никокошев",
+	"starts": "04.01.2016",	
+	"logo" : "http://moscoding.ru/wp-content/uploads/2015/06/knight.png"
+},
+{ 
+	"name": "Программирование для детей",
+	"teacher": "Влад Кяуне",
+	"starts": "04.01.2016",
+	"logo" : "http://moscoding.ru/wp-content/uploads/2015/01/codingkids.png"
+},
+{ 
+	"name": "Основы HTML и CSS и веб-анимации",
+	"teacher": "Василика Климова",
+	"starts": "16.01.2016", 
+	"logo": "http://moscoding.ru/wp-content/uploads/2015/06/web.png"
+},
+{ 
+	"name": "Основы мобильной разработки на Swift",
+	"teacher": "Илья Никокошев",
+	"starts": "04.01.2016",	
+	"logo" : "http://moscoding.ru/wp-content/uploads/2015/06/knight.png"
+},
+{ 
+	"name": "Программирование для детей",
+	"teacher": "Влад Кяуне",
+	"starts": "04.01.2016",
+	"logo" : "http://moscoding.ru/wp-content/uploads/2015/01/codingkids.png"
+},
+{ 
+	"name": "Основы HTML и CSS и веб-анимации",
+	"teacher": "Василика Климова",
+	"starts": "16.01.2016", 
+	"logo": "http://moscoding.ru/wp-content/uploads/2015/06/web.png"
+},
+{ 
+	"name": "Основы мобильной разработки на Swift",
+	"teacher": "Илья Никокошев",
+	"starts": "04.01.2016",	
+	"logo" : "http://moscoding.ru/wp-content/uploads/2015/06/knight.png"
+},
+{ 
+	"name": "Программирование для детей",
+	"teacher": "Влад Кяуне",
+	"starts": "04.01.2016",
+	"logo" : "http://moscoding.ru/wp-content/uploads/2015/01/codingkids.png"
+},
+{ 
+	"name": "Основы HTML и CSS и веб-анимации",
+	"teacher": "Василика Климова",
+	"starts": "16.01.2016", 
+	"logo": "http://moscoding.ru/wp-content/uploads/2015/06/web.png"
+}
+]
