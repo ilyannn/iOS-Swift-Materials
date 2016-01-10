@@ -4,18 +4,15 @@ import Foundation
 
 private let json = NSURL(string: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/CourseI/courses-v4.json")
 
-private func jsonFrom(maybe_url: NSURL?) -> AnyObject {
+class IncorrectURLError: ErrorType {
     
-    guard let url = maybe_url
-        else { return "неправильный URL" }
-    
-    guard let data = NSData(contentsOfURL: url)
-        else { return "не получилось скачать" }
-    
-    guard let json = try? NSJSONSerialization.JSONObjectWithData(data, options: [])
-        else { return "неправильный JSON" }
-    
-    return json
+}
+
+private func jsonFrom(maybe_url: NSURL?) throws -> AnyObject  {
+ 
+    guard let url = maybe_url else { throw IncorrectURLError() }
+    let data = try NSData(contentsOfURL: url, options: [])
+    return try NSJSONSerialization.JSONObjectWithData(data, options: [])
 }
 
 // https://developer.apple.com/library/ios/qa/qa1480/_index.html
@@ -66,7 +63,9 @@ class Course {
 
 func getCourses() -> [Course] {
     
-    guard let json_array = jsonFrom(json) as? [AnyObject] else {
+    let maybe_json = try? jsonFrom(json)
+    
+    guard let json_array = maybe_json as? [AnyObject] else {
         return []
     }
     

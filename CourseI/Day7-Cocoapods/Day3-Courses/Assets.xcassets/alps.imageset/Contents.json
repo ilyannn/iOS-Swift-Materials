@@ -2,7 +2,6 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "alps.jpg",
       "scale" : "1x"
     },
     {
@@ -12,6 +11,13 @@
     {
       "idiom" : "universal",
       "scale" : "3x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "alps.jpg",
+      "graphics-feature-set" : "metal1v2",
+      "unassigned" : true,
+      "scale" : "1x"
     }
   ],
   "info" : {
