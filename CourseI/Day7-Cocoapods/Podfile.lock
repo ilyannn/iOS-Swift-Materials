@@ -1,0 +1,10 @@
+PODS:
+  - PASImageView (1.0.2)
+
+DEPENDENCIES:
+  - PASImageView
+
+SPEC CHECKSUMS:
+  PASImageView: 3834ab78ea5613f50b5393e0b03edd4fdef407ee
+
+COCOAPODS: 0.38.2
