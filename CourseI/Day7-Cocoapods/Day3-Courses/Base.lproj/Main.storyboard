@@ -46,22 +46,19 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p1E-1M-VEy" customClass="RoundPhotoView" customModule="Day7_Cocoapods" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" verticalHuggingPriority="255" translatesAutoresizingMaskIntoConstraints="NO" id="Kck-nf-XOB" customClass="PASImageView" customModule="PASImageView">
                                                             <rect key="frame" x="464" y="0.0" width="67" height="67"/>
-                                                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <gestureRecognizers/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" secondItem="p1E-1M-VEy" secondAttribute="height" multiplier="1:1" id="5Hk-rQ-BH6"/>
+                                                                <constraint firstAttribute="width" secondItem="Kck-nf-XOB" secondAttribute="height" multiplier="1:1" id="NaK-Ih-SXj"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                    <real key="value" value="1.5"/>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                                    <color key="value" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                    <color key="value" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="image" keyPath="placeHolderImage" value="alps"/>
                                                             </userDefinedRuntimeAttributes>
-                                                        </imageView>
+                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                                 </stackView>
@@ -74,20 +71,10 @@
                                                 <constraint firstItem="Vuc-5z-oOZ" firstAttribute="top" secondItem="9jg-Gp-Tq7" secondAttribute="top" constant="5" id="uRt-4n-6SF"/>
                                             </constraints>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaZ-Id-lkN">
-                                            <rect key="frame" x="496" y="15" width="67" height="67"/>
-                                            <connections>
-                                                <action selector="buttonPressed:" destination="Q4F-zB-u77" eventType="touchUpInside" id="EE7-pW-VQl"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="9jg-Gp-Tq7" firstAttribute="leading" secondItem="FbG-Ng-JqF" secondAttribute="leading" constant="20" id="F6z-CY-jTR"/>
-                                        <constraint firstItem="CaZ-Id-lkN" firstAttribute="leading" secondItem="p1E-1M-VEy" secondAttribute="leading" id="GXi-4y-LOQ"/>
-                                        <constraint firstItem="CaZ-Id-lkN" firstAttribute="top" secondItem="p1E-1M-VEy" secondAttribute="top" id="RdC-VR-Nhk"/>
                                         <constraint firstAttribute="trailing" secondItem="9jg-Gp-Tq7" secondAttribute="trailing" constant="20" id="ULT-eJ-ddR"/>
-                                        <constraint firstItem="CaZ-Id-lkN" firstAttribute="bottom" secondItem="p1E-1M-VEy" secondAttribute="bottom" id="Yle-9G-dtU"/>
-                                        <constraint firstItem="CaZ-Id-lkN" firstAttribute="trailing" secondItem="p1E-1M-VEy" secondAttribute="trailing" id="crQ-dX-kFI"/>
                                         <constraint firstItem="9jg-Gp-Tq7" firstAttribute="top" secondItem="FbG-Ng-JqF" secondAttribute="top" constant="10" id="iar-vb-ozS"/>
                                         <constraint firstAttribute="bottom" secondItem="9jg-Gp-Tq7" secondAttribute="bottom" constant="10" id="rtA-8n-Har"/>
                                     </constraints>
@@ -95,7 +82,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outlet property="courseNameLabel" destination="0dF-n2-Piv" id="MZS-4G-u7e"/>
-                                    <outlet property="logoImage" destination="p1E-1M-VEy" id="4Rv-kM-ucb"/>
+                                    <outlet property="logoImage" destination="Kck-nf-XOB" id="TSX-YK-QGV"/>
                                     <outlet property="teacherLabel" destination="h1n-ys-KyI" id="vTl-NM-UBU"/>
                                     <segue destination="2T8-Cc-zwf" kind="presentation" modalTransitionStyle="flipHorizontal" id="C6v-1u-6g8"/>
                                 </connections>

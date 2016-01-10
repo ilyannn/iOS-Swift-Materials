@@ -102,30 +102,14 @@ class CourseListViewController: UITableViewController {
         cell.courseNameLabel.text = course.courseName
         cell.teacherLabel.text = course.teacherName
     
-        loadImage(from: course, into: cell.logoImage)
-
+        if let url = course.logoURL {
+            cell.logoImage.imageURL(url)
+            cell.logoImage.delegate = self
+        }
+        
         return cell
     }
-    
-    let imageLoadingQueue = NSOperationQueue()
-    
-    func loadImage(from course:Course, into imageView: UIImageView) {
-        
-        guard let url = course.logoURL
-            else { return }
-        
-        imageLoadingQueue.addOperationWithBlock {
-            
-            guard let data = NSData(contentsOfURL: url)
-                else { return }
-      
-            NSOperationQueue.mainQueue().addOperationWithBlock {
-                
-                imageView.image = UIImage(data: data)
-                
-            }
-        }
-    }
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -154,6 +138,17 @@ class CourseListViewController: UITableViewController {
             vc.emailField.text = currentPerson.email
             vc.pictureImageView.image = currentPerson.picture
         }
+    }
+}
+
+extension CourseListViewController: PASImageViewDelegate {
+    func PAImageView(didTapped imageView: PASImageView) {
+        
+        let logo = imageView
+        guard let superview = logo.superview as? UIStackView else { return }
+        
+        logo.removeFromSuperview()
+        superview.insertArrangedSubview(logo, atIndex: 0)
     }
 }
 
@@ -215,21 +210,6 @@ class DetailCourseViewController: UIViewController {
 class CourseCell: UITableViewCell {
     
     @IBOutlet weak var courseNameLabel: UILabel!
-    @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var logoImage: PASImageView!
     @IBOutlet weak var teacherLabel: UILabel!
-    
-    @IBAction func buttonPressed(sender: AnyObject) {
-        
-        let logo = logoImage
-        guard let superview = logoImage.superview as? UIStackView else { return }
-
-        logo.removeFromSuperview()
-        superview.insertArrangedSubview(logo, atIndex: 0)
-    }
-    
-    override func awakeFromNib() {
-        
-        super.awakeFromNib()
-        
-    }
 }
