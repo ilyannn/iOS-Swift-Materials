@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import PASImageView
 
 public class Ball: UIImageView {
     public override var collisionBoundsType: UIDynamicItemCollisionBoundsType {
@@ -139,7 +140,7 @@ class CourseListViewController: UITableViewController {
             vc.teacherNameLabel.text = course.teacherName
             vc.courseNameLabel.text = course.courseName
 
-            vc.logoImage.image = cell.logoImage.image
+            _ = course.logoURL.flatMap(vc.logoImage.imageURL)
             
             if let date = course.startDate {
                 vc.startDateLabel.text = dateFormatter.stringFromDate(date)
@@ -158,7 +159,7 @@ class CourseListViewController: UITableViewController {
 
 class DetailCourseViewController: UIViewController {
     
-    @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var logoImage: PASImageView!
     @IBOutlet weak var startDateLabel: UILabel!
     @IBOutlet weak var teacherNameLabel: UILabel!
     @IBOutlet weak var courseNameLabel: UILabel!

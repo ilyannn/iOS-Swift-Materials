@@ -9,13 +9,13 @@
         <!--Course List View Controller-->
         <scene sceneID="pcJ-7A-vQh">
             <objects>
-                <tableViewController id="Nc5-zK-2Pu" customClass="CourseListViewController" customModule="Day3_Courses" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Nc5-zK-2Pu" customClass="CourseListViewController" customModule="Day7_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="100" sectionFooterHeight="28" id="dqJ-5R-FKo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="Q4F-zB-u77" customClass="CourseCell" customModule="Day3_Courses" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="Q4F-zB-u77" customClass="CourseCell" customModule="Day7_Cocoapods" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="100" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q4F-zB-u77" id="FbG-Ng-JqF">
@@ -46,7 +46,7 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p1E-1M-VEy" customClass="RoundPhotoView" customModule="Day3_Courses" customModuleProvider="target">
+                                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p1E-1M-VEy" customClass="RoundPhotoView" customModule="Day7_Cocoapods" customModuleProvider="target">
                                                             <rect key="frame" x="464" y="0.0" width="67" height="67"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <gestureRecognizers/>
@@ -117,7 +117,7 @@
         <!--Detail Course View Controller-->
         <scene sceneID="QMn-nQ-alZ">
             <objects>
-                <viewController id="2T8-Cc-zwf" customClass="DetailCourseViewController" customModule="Day3_Courses" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2T8-Cc-zwf" customClass="DetailCourseViewController" customModule="Day7_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5dJ-N8-aiw"/>
                         <viewControllerLayoutGuide type="bottom" id="aZ8-6i-X9m"/>
@@ -126,22 +126,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="luH-gB-CIp" customClass="RoundPhotoView" customModule="Day3_Courses" customModuleProvider="target">
-                                <rect key="frame" x="68" y="136" width="464" height="464"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.2470703125" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="luH-gB-CIp" secondAttribute="height" multiplier="1:1" id="ej0-n0-yQd"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="rotateAngle">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="1Kp-LE-JrM" appends="YES" id="vsr-hP-5O3"/>
-                                </connections>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FER-Z5-sJT">
                                 <rect key="frame" x="30" y="30" width="540" height="86"/>
                                 <subviews>
@@ -173,29 +157,41 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXh-XJ-pVm" customClass="PASImageView" customModule="PASImageView">
+                                <rect key="frame" x="0.0" y="598" width="600" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JXh-XJ-pVm" secondAttribute="height" multiplier="1:1" id="LIN-3I-l2J"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="JXh-XJ-pVm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FER-Z5-sJT" secondAttribute="bottom" priority="900" id="4aC-ho-nO5"/>
                             <constraint firstAttribute="trailing" secondItem="FER-Z5-sJT" secondAttribute="trailing" constant="30" id="BZh-is-Rij"/>
+                            <constraint firstItem="aZ8-6i-X9m" firstAttribute="top" secondItem="JXh-XJ-pVm" secondAttribute="bottom" id="BoL-bR-a7y"/>
+                            <constraint firstItem="JXh-XJ-pVm" firstAttribute="top" secondItem="FER-Z5-sJT" secondAttribute="bottom" priority="900" id="K0o-zt-Nwi"/>
                             <constraint firstItem="FER-Z5-sJT" firstAttribute="centerX" secondItem="BnM-C8-buJ" secondAttribute="centerX" id="Lwo-Ib-8KG"/>
-                            <constraint firstItem="luH-gB-CIp" firstAttribute="leading" secondItem="BnM-C8-buJ" secondAttribute="leading" priority="900" id="Va5-Mg-WD3"/>
-                            <constraint firstItem="aZ8-6i-X9m" firstAttribute="top" secondItem="luH-gB-CIp" secondAttribute="bottom" id="e4J-HO-8wO"/>
-                            <constraint firstItem="luH-gB-CIp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FER-Z5-sJT" secondAttribute="bottom" constant="20" id="lym-EP-e7g"/>
+                            <constraint firstItem="JXh-XJ-pVm" firstAttribute="leading" secondItem="BnM-C8-buJ" secondAttribute="leading" id="XOd-zx-tMe"/>
+                            <constraint firstAttribute="trailing" secondItem="JXh-XJ-pVm" secondAttribute="trailing" id="jll-bj-g7j"/>
                             <constraint firstItem="FER-Z5-sJT" firstAttribute="top" secondItem="5dJ-N8-aiw" secondAttribute="bottom" constant="10" id="n9T-2w-EiP"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="luH-gB-CIp" secondAttribute="trailing" id="pbM-Tw-7vO"/>
-                            <constraint firstAttribute="trailing" secondItem="luH-gB-CIp" secondAttribute="trailing" priority="900" id="qep-Zv-zty"/>
                             <constraint firstItem="FER-Z5-sJT" firstAttribute="leading" secondItem="BnM-C8-buJ" secondAttribute="leading" constant="30" id="sRm-Iv-xLF"/>
-                            <constraint firstItem="luH-gB-CIp" firstAttribute="centerX" secondItem="BnM-C8-buJ" secondAttribute="centerX" id="tpl-y4-6gw"/>
-                            <constraint firstItem="luH-gB-CIp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BnM-C8-buJ" secondAttribute="leading" id="vzE-Jb-Ea2"/>
+                            <constraint firstItem="JXh-XJ-pVm" firstAttribute="centerY" secondItem="BnM-C8-buJ" secondAttribute="centerY" id="u4R-2r-dFU"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="K0o-zt-Nwi"/>
+                                <exclude reference="u4R-2r-dFU"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="iOM-yd-qzC" appends="YES" id="Dws-fL-iOV"/>
                         </connections>
                     </view>
                     <connections>
                         <outlet property="courseNameLabel" destination="85A-6e-3Aa" id="klz-G9-joj"/>
-                        <outlet property="logoImage" destination="luH-gB-CIp" id="e2D-11-IuI"/>
+                        <outlet property="logoImage" destination="JXh-XJ-pVm" id="CN1-qr-pYo"/>
                         <outlet property="startDateLabel" destination="ZZ9-M1-9BD" id="ElW-1Q-YU3"/>
                         <outlet property="teacherNameLabel" destination="7YO-fr-Mh0" id="Y4v-Sz-4lQ"/>
                     </connections>
@@ -217,7 +213,7 @@
         <!--Profile View Controller-->
         <scene sceneID="nwB-Iv-MpY">
             <objects>
-                <viewController id="pTZ-Mf-wT4" customClass="ProfileViewController" customModule="Day3_Courses" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pTZ-Mf-wT4" customClass="ProfileViewController" customModule="Day7_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="saO-hj-w0B"/>
                         <viewControllerLayoutGuide type="bottom" id="3ZV-Um-Eka"/>
@@ -275,7 +271,7 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="150" image="alps" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-Nx-4M3" customClass="RoundPhotoView" customModule="Day3_Courses" customModuleProvider="target">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="150" image="alps" translatesAutoresizingMaskIntoConstraints="NO" id="Quu-Nx-4M3" customClass="RoundPhotoView" customModule="Day7_Cocoapods" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="102" width="580" height="580"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
