@@ -86,7 +86,7 @@ public class PASImageView : UIView, NSURLSessionDownloadDelegate {
     }
     
     public var cacheEnabled                = true
-    public var delegate                    :PASImageViewDelegate?
+    public weak var delegate                    :PASImageViewDelegate?
     
     private var backgroundLayer             = CAShapeLayer()
     private var progressLayer               = CAShapeLayer()
@@ -268,6 +268,6 @@ public class PASImageView : UIView, NSURLSessionDownloadDelegate {
 
 //MARK:- PASImageViewDelegate
 
-public protocol PASImageViewDelegate {
+public protocol PASImageViewDelegate: class {
     func PAImageView(didTapped imageView: PASImageView)
 }
