@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Название курса "; ObjectID = "0dF-n2-Piv"; */
+"0dF-n2-Piv.text" = "Название курса ";
+
+/* Class = "UILabel"; text = "Ваш e-mail:"; ObjectID = "2oq-Sb-HWn"; */
+"2oq-Sb-HWn.text" = "Ваш e-mail:";
+
+/* Class = "UILabel"; text = "Преподаватель"; ObjectID = "7YO-fr-Mh0"; */
+"7YO-fr-Mh0.text" = "Преподаватель";
+
+/* Class = "UILabel"; text = "Название курса "; ObjectID = "85A-6e-3Aa"; */
+"85A-6e-3Aa.text" = "Название курса ";
+
+/* Class = "UIButton"; accessibilityIdentifier = "SaveButton"; ObjectID = "D3j-WH-eBq"; */
+"D3j-WH-eBq.accessibilityIdentifier" = "SaveButton";
+
+/* Class = "UIButton"; normalTitle = "сохранить "; ObjectID = "D3j-WH-eBq"; */
+"D3j-WH-eBq.normalTitle" = "сохранить ";
+
+/* Class = "UITextField"; placeholder = "name@example.com"; ObjectID = "MCq-ag-r9w"; */
+"MCq-ag-r9w.placeholder" = "name@example.com";
+
+/* Class = "UITextField"; accessibilityIdentifier = "NameField"; ObjectID = "Xwt-5B-K9M"; */
+"Xwt-5B-K9M.accessibilityIdentifier" = "NameField";
+
+/* Class = "UITextField"; placeholder = "петя иванов"; ObjectID = "Xwt-5B-K9M"; */
+"Xwt-5B-K9M.placeholder" = "петя иванов";
+
+/* Class = "UILabel"; text = "11.22.3333"; ObjectID = "ZZ9-M1-9BD"; */
+"ZZ9-M1-9BD.text" = "11.22.3333";
+
+/* Class = "UILabel"; text = "Имя учителя"; ObjectID = "h1n-ys-KyI"; */
+"h1n-ys-KyI.text" = "Имя учителя";
+
+/* Class = "UILabel"; text = "Ваше имя:"; ObjectID = "hAZ-r9-sSM"; */
+"hAZ-r9-sSM.text" = "Ваше имя:";
