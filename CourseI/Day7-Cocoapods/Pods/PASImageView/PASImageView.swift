@@ -122,7 +122,7 @@ public class PASImageView : UIView, NSURLSessionDownloadDelegate {
     
     //MARK:- Private methods
     
-    @objc func handleSingleTap(gesture: UIGestureRecognizer) {
+    func handleSingleTap(gesture: UIGestureRecognizer) {
         delegate?.PAImageView(didTapped: self)
     }
     
