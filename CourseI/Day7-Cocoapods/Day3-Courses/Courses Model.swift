@@ -2,7 +2,7 @@
 
 import Foundation
 
-private let json = NSURL(string: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/CourseI/courses-v2.json")
+private let json = NSURL(string: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/CourseI/courses-v3.json")
 
 private func jsonFrom(maybe_url: NSURL?) -> AnyObject {
     
