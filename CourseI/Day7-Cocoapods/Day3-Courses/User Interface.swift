@@ -78,7 +78,7 @@ class CourseListViewController: UITableViewController {
         button.titleLabel?.font = UIFont.systemFontOfSize(40)
         button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         button.backgroundColor = UIColor.brownColor()
-        button.addTarget(self, action: "editProfile", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: "editProfile:", forControlEvents: .TouchUpInside)
         
         let name = currentPerson.name ?? "Профиль"
         button.setTitle(name, forState: .Normal)
@@ -87,7 +87,7 @@ class CourseListViewController: UITableViewController {
         return header
     }
     
-    func editProfile() {
+    func editProfile(sender:AnyObject) {
         performSegueWithIdentifier("profile", sender: self)
     }
     
