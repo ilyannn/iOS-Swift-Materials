@@ -8,7 +8,8 @@ git:
 2. Лучше много маленьких коммитов чем один большой
 2. Build number приложения = количество коммитов в dev (обновляется перед релизом автоматически или запуском скрипта). Достоинство этого подходв: гарантированно монотонно возрастает.
 1. [`.gitignore`](https://www.gitignore.io)
-
+1. Pods должны быть внутри git-репозитория
+ 
 Код:
 
 1. [Мы не используем style guides](http://faq.sealedabstract.com/styleguides/). Но надо настроить форматирование кода с помощью [BBUncrustify](https://github.com/benoitsan/BBUncrustifyPlugin-Xcode).
