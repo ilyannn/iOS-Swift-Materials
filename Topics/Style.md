@@ -7,7 +7,7 @@ git:
 1. [Именование коммитов](http://chris.beams.io/posts/git-commit/#seven-rules): in English, imperative mood, short. [И еще тут](http://faq.sealedabstract.com/commit%20messages/)
 2. Лучше много маленьких коммитов чем один большой
 2. Build number приложения = количество коммитов в dev (обновляется перед релизом автоматически или запуском скрипта). Достоинство этого подходв: гарантированно монотонно возрастает.
-1.[`.gitignore`](https://www.gitignore.io)
+1. [`.gitignore`](https://www.gitignore.io)
 
 Код:
 
