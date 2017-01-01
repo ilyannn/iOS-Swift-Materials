@@ -4,5 +4,6 @@
         <page name='Calculator'/>
         <page name='Procedural'/>
         <page name='Speech'/>
+        <page name='Encoding'/>
     </pages>
 </playground>
