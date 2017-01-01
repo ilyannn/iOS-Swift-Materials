@@ -1,6 +1,6 @@
-//: Playground - noun: a place where people can play
-
 //: ## Xcode, playgrounds
+
+//: Playground - noun: a place where people can play
 
 //: *Если вы видите слева от этой надписи символы слэша и двоеточия, то можно выбрать в меню Editor -> Show Rendered Markup и увидеть красивый текст.*
 

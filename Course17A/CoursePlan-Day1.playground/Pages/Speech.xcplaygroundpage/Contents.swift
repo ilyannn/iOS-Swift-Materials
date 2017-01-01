@@ -2,10 +2,6 @@
 
 import Foundation
 
-var str = "Hello, playground"
-
-str = str.replacingOccurrences(of: "playground", with: "everyone")
-
 //: ## Speech
 
 let year = 2017
@@ -16,7 +12,7 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 
 import AVFoundation
 
-let greet = AVSpeechUtterance(string: str)
+let greet = AVSpeechUtterance(string: "Hello, everyone!")
 let what  = AVSpeechUtterance(string: welcome)
 let who   = AVSpeechSynthesizer()
 
