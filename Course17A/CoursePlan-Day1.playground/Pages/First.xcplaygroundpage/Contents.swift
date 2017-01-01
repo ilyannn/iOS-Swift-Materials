@@ -101,7 +101,6 @@ func sum_sq(input: [Int]) -> Int {
 }
 
 let year = 2017
-let welcome = "Happy \(year)! Let's celebrate in a café!"
 
 sum_sq(input: [6, 7, 8, 9])
 sum_sq(input: [44, 9].sorted())
@@ -113,19 +112,4 @@ sum_sq(input: [44, 9].sorted())
 //: *Вы можете перейти на другую страницу в playground, выбрав ее слева в навигаторе. Если навигатора не видно, нажмите `cmd + 1`, а для скрытия `cmd + 0`*
 
 
-// Speech
 
-//import PlaygroundSupport
-//PlaygroundPage.current.needsIndefiniteExecution = true
-//
-//import AVFoundation
-//
-//let what  = AVSpeechUtterance(string: welcome)
-//let who   = AVSpeechSynthesizer()
-//
-//let greet = AVSpeechUtterance(string: greeting)
-//greet.pitchMultiplier    = 2.1
-//greet.postUtteranceDelay = 0.4
-//
-//who.speak(greet)
-//who.speak(what)
