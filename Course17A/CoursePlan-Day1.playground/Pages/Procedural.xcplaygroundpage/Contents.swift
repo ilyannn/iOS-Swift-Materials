@@ -16,13 +16,29 @@ let greeting = str.replacingOccurrences(of: "playground",
 
 let emoji = "😎"
 emoji.characters.count
-(emoji as NSString).length
+(emoji as NSString).length // <- это в Objective-C
 
 // let, var
 
 str.append("!")
 str
 str.characters.count
+
+// даты, еще о let
+
+let things = NSMutableArray()
+things.add(5)
+things.add("wow")
+things
+
+let now = Date()
+let formatter = DateFormatter()
+formatter.string(from: now)
+formatter.dateStyle = .full
+formatter.string(from: now)
+formatter.timeStyle = .medium
+formatter.string(from: now)
+
 
 // for, if, процедурный стиль
 // более оптимальный вариант решета Эратосфена

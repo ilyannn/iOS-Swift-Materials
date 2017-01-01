@@ -1,7 +1,5 @@
 //: [Previous](@previous)
 
-import Foundation
-
 //: ## Speech
 
 let year = 2017
