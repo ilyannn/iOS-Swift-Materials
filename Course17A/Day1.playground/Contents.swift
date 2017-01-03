@@ -147,3 +147,33 @@ data.enumerated().map { index, тройка in
 }
 
 
+
+
+
+
+
+
+
+
+
+func describe (index: Int, line: (Double, Int, String) ) -> (String, Double) {
+    
+    let (price, quantity, name) = line
+    let amount = price * Double(quantity) / €
+    let item   = (index + 1).description + ") "
+    let text   = item + name + " – \(quantity)шт, сумма € \(amount)"
+    
+    return (text + "\n", amount)
+}
+
+func adds(lhs:(String, Double), rhs:(String, Double)) -> (String, Double) {
+    return (lhs.0 + rhs.0, lhs.1 + rhs.1)
+}
+
+let r = data
+    .enumerated()
+    .map(describe)
+    .reduce(("", 0), adds)
+
+print("ОТЧЁТ\n\(r.0)ИТОГО: €\(r.1)")
+
