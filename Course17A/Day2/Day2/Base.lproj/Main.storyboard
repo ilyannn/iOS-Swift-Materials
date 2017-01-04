@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -43,6 +44,19 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRf-CX-jBS">
+                                <rect key="frame" x="0.0" y="593" width="375" height="74"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Uwq-Sq-kqh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <color key="tintColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Посмотреть актеров"/>
+                                <connections>
+                                    <segue destination="Va0-zL-XR1" kind="presentation" modalTransitionStyle="partialCurl" id="srG-cA-rq8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -53,10 +67,13 @@
                             <constraint firstItem="8Lu-oq-0MM" firstAttribute="top" secondItem="g2h-8R-k5c" secondAttribute="bottom" constant="20" id="M0W-Am-EEb"/>
                             <constraint firstItem="i19-8j-2rS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NB2-e0-nBz"/>
                             <constraint firstItem="8Lu-oq-0MM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NT3-rU-Tg9"/>
+                            <constraint firstAttribute="trailing" secondItem="vRf-CX-jBS" secondAttribute="trailing" id="SFa-uw-fdK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i19-8j-2rS" secondAttribute="bottom" id="aY2-xk-CNW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vRf-CX-jBS" secondAttribute="bottom" id="cBq-4L-nSf"/>
                             <constraint firstItem="g2h-8R-k5c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lgt-IP-N1L"/>
                             <constraint firstItem="knX-SR-KcZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="45" id="o0c-kP-pFu"/>
                             <constraint firstItem="g2h-8R-k5c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ol7-Io-lgN"/>
+                            <constraint firstItem="vRf-CX-jBS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pw4-te-VZI"/>
                             <constraint firstItem="knX-SR-KcZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="qRO-oU-ea5"/>
                         </constraints>
                     </view>
@@ -65,9 +82,56 @@
             </objects>
             <point key="canvasLocation" x="228" y="104.7976011994003"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="U6D-Ss-GL6">
+            <objects>
+                <viewController id="Va0-zL-XR1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BNr-58-QYV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jgr-Fn-T0K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rbA-KE-Bm8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freeman.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RPs-Ba-wlr">
+                                <rect key="frame" x="36" y="20" width="304" height="304"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RPs-Ba-wlr" secondAttribute="height" multiplier="1:1" id="JK3-0b-gJF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Martin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evt-IA-kRF">
+                                <rect key="frame" x="150" y="373" width="76.5" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Freeman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAL-i7-NBR">
+                                <rect key="frame" x="150" y="414" width="76.5" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NAL-i7-NBR" firstAttribute="top" secondItem="Evt-IA-kRF" secondAttribute="bottom" constant="7.5" id="0XF-te-dnh"/>
+                            <constraint firstItem="RPs-Ba-wlr" firstAttribute="top" secondItem="BNr-58-QYV" secondAttribute="bottom" id="0gJ-g3-wli"/>
+                            <constraint firstItem="RPs-Ba-wlr" firstAttribute="leading" secondItem="rbA-KE-Bm8" secondAttribute="leadingMargin" constant="20" id="Chy-Iw-IUZ"/>
+                            <constraint firstItem="Evt-IA-kRF" firstAttribute="centerX" secondItem="rbA-KE-Bm8" secondAttribute="centerX" id="Ytu-tK-day"/>
+                            <constraint firstItem="Evt-IA-kRF" firstAttribute="top" secondItem="RPs-Ba-wlr" secondAttribute="bottom" constant="49" id="h56-Y5-jFA"/>
+                            <constraint firstItem="NAL-i7-NBR" firstAttribute="centerX" secondItem="rbA-KE-Bm8" secondAttribute="centerX" id="y2L-IA-wGw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xr4-0b-hFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.60000000000002" y="105.69715142428787"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cumberbach.jpg" width="1373" height="2059"/>
+        <image name="freeman.jpg" width="220" height="304"/>
         <image name="six-thatchers" width="1000" height="1000"/>
     </resources>
 </document>

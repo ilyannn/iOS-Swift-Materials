@@ -16,6 +16,7 @@
 		1294A9EF1E1D2543008EC54B /* Day2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1294A9EE1E1D2543008EC54B /* Day2UITests.swift */; };
 		1294A9FD1E1D2CEB008EC54B /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1294A9FC1E1D2CEB008EC54B /* photo.jpg */; };
 		1294A9FF1E1D3B4B008EC54B /* cumberbach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1294A9FE1E1D3B4B008EC54B /* cumberbach.jpg */; };
+		1294AA011E1D49FE008EC54B /* freeman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1294AA001E1D49FE008EC54B /* freeman.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1294A9F01E1D2543008EC54B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1294A9FC1E1D2CEB008EC54B /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
 		1294A9FE1E1D3B4B008EC54B /* cumberbach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cumberbach.jpg; sourceTree = "<group>"; };
+		1294AA001E1D49FE008EC54B /* freeman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = freeman.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				1294A9CE1E1D2543008EC54B /* AppDelegate.swift */,
 				1294A9D01E1D2543008EC54B /* ViewController.swift */,
 				1294A9D21E1D2543008EC54B /* Main.storyboard */,
+				1294AA001E1D49FE008EC54B /* freeman.jpg */,
 				1294A9FC1E1D2CEB008EC54B /* photo.jpg */,
 				1294A9FE1E1D3B4B008EC54B /* cumberbach.jpg */,
 				1294A9D51E1D2543008EC54B /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 			files = (
 				1294A9D91E1D2543008EC54B /* LaunchScreen.storyboard in Resources */,
 				1294A9D61E1D2543008EC54B /* Assets.xcassets in Resources */,
+				1294AA011E1D49FE008EC54B /* freeman.jpg in Resources */,
 				1294A9FF1E1D3B4B008EC54B /* cumberbach.jpg in Resources */,
 				1294A9FD1E1D2CEB008EC54B /* photo.jpg in Resources */,
 				1294A9D41E1D2543008EC54B /* Main.storyboard in Resources */,
