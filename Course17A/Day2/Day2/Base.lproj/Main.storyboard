@@ -77,6 +77,11 @@
                             <constraint firstItem="knX-SR-KcZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="qRO-oU-ea5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="charactersButton" destination="vRf-CX-jBS" id="USn-nQ-OxZ"/>
+                        <outlet property="episodeLabel" destination="8Lu-oq-0MM" id="WGH-jS-hQy"/>
+                        <outlet property="seasonPhoto" destination="g2h-8R-k5c" id="wtr-of-Yqx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
