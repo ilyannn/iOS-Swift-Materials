@@ -8,6 +8,30 @@
 
 import UIKit
 
+let π = CGFloat(M_PI)
+
+class PersonViewController: UIViewController {
+    @IBOutlet weak var personPicture: UIImageView!
+    @IBOutlet weak var personName: UILabel!
+    @IBOutlet weak var personLastName: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        personPicture.clipsToBounds      = true
+        personPicture.layer.cornerRadius = 100
+        
+        let pl = personLastName.layer
+        pl.shadowOffset  = CGSize(width: 3, height: 3)
+        pl.shadowOpacity = 1
+        
+        personPicture.image = UIImage(named: "cumberbach.jpg")
+        personName.text     = "Benedict"
+        personLastName.text = "Cumberbach"
+        
+    }
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var seasonPhoto: UIImageView!
@@ -20,27 +44,22 @@ class ViewController: UIViewController {
         charactersButton.backgroundColor = UIColor.red
         charactersButton.layer.cornerRadius = 20
         
-//        seasonPhoto.transform = CGAffineTransform(rotationAngle: 3.14/12)
-     
-        UIView.animate(withDuration: 5) {
-            self.seasonPhoto.layer.transform = CATransform3DMakeRotation(3.14/4, 1, -1, 1)
+        episodeLabel.alpha = 0.1
+        
+        UIView.animate(withDuration: 8) {
+            self.seasonPhoto.transform = CGAffineTransform(rotationAngle: π/6)
+            self.seasonPhoto.alpha  = 0.4
+            self.episodeLabel.alpha = 1
+            self.episodeLabel.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
         }
         
-        UIView.animate(withDuration: 1,
-                       delay: 0,
-                       options: [.autoreverse, .repeat, .allowUserInteraction],
-                       animations:
-        {
-            self.charactersButton.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-            
-        }, completion: {_ in })
-        
-        seasonPhoto.layer.cornerRadius = 20
+        seasonPhoto.layer.cornerRadius = 25
         seasonPhoto.clipsToBounds = true
         
         episodeLabel.text = episodeLabel.text?.uppercased()
+        
         episodeLabel.layer.shadowColor = UIColor.black.cgColor
-        episodeLabel.layer.shadowOpacity = 1
+        episodeLabel.layer.shadowOpacity = 0.5
         episodeLabel.layer.shadowOffset = CGSize(width: 3, height: 3)
     }
 
