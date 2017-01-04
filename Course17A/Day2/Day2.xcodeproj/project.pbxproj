@@ -14,6 +14,8 @@
 		1294A9D91E1D2543008EC54B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1294A9D71E1D2543008EC54B /* LaunchScreen.storyboard */; };
 		1294A9E41E1D2543008EC54B /* Day2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1294A9E31E1D2543008EC54B /* Day2Tests.swift */; };
 		1294A9EF1E1D2543008EC54B /* Day2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1294A9EE1E1D2543008EC54B /* Day2UITests.swift */; };
+		1294A9FD1E1D2CEB008EC54B /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1294A9FC1E1D2CEB008EC54B /* photo.jpg */; };
+		1294A9FF1E1D3B4B008EC54B /* cumberbach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1294A9FE1E1D3B4B008EC54B /* cumberbach.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1294A9EA1E1D2543008EC54B /* Day2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1294A9EE1E1D2543008EC54B /* Day2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2UITests.swift; sourceTree = "<group>"; };
 		1294A9F01E1D2543008EC54B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1294A9FC1E1D2CEB008EC54B /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
+		1294A9FE1E1D3B4B008EC54B /* cumberbach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cumberbach.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				1294A9CE1E1D2543008EC54B /* AppDelegate.swift */,
 				1294A9D01E1D2543008EC54B /* ViewController.swift */,
 				1294A9D21E1D2543008EC54B /* Main.storyboard */,
+				1294A9FC1E1D2CEB008EC54B /* photo.jpg */,
+				1294A9FE1E1D3B4B008EC54B /* cumberbach.jpg */,
 				1294A9D51E1D2543008EC54B /* Assets.xcassets */,
 				1294A9D71E1D2543008EC54B /* LaunchScreen.storyboard */,
 				1294A9DA1E1D2543008EC54B /* Info.plist */,
@@ -234,6 +240,8 @@
 			files = (
 				1294A9D91E1D2543008EC54B /* LaunchScreen.storyboard in Resources */,
 				1294A9D61E1D2543008EC54B /* Assets.xcassets in Resources */,
+				1294A9FF1E1D3B4B008EC54B /* cumberbach.jpg in Resources */,
+				1294A9FD1E1D2CEB008EC54B /* photo.jpg in Resources */,
 				1294A9D41E1D2543008EC54B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
