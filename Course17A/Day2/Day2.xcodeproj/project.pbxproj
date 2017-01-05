@@ -202,6 +202,7 @@
 				TargetAttributes = {
 					1294A9CA1E1D2543008EC54B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A8J6S3WP2B;
 						ProvisioningStyle = Automatic;
 					};
 					1294A9DE1E1D2543008EC54B = {
@@ -424,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A8J6S3WP2B;
 				INFOPLIST_FILE = Day2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.day2.Day2;
@@ -436,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A8J6S3WP2B;
 				INFOPLIST_FILE = Day2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.day2.Day2;
@@ -517,6 +520,7 @@
 				1294A9F51E1D2543008EC54B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1294A9F61E1D2543008EC54B /* Build configuration list for PBXNativeTarget "Day2Tests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +529,7 @@
 				1294A9F81E1D2543008EC54B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1294A9F91E1D2543008EC54B /* Build configuration list for PBXNativeTarget "Day2UITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +538,7 @@
 				1294A9FB1E1D2543008EC54B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
