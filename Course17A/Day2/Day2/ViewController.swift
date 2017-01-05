@@ -12,9 +12,9 @@ struct Person {
     let firstName: String
     let lastName:  String
     let role:      String
-    let alsoKnown:  String
+    let alsoKnown: String?
     let born:      Int
-    let photoResource: String
+    let photoResource: String? // Optional<String>
 }
 
 let persons = [
@@ -27,12 +27,12 @@ let persons = [
            born: 1971, photoResource: "freeman.jpg"
     ),
     Person(firstName: "Andrew",   lastName: "Stubbs",
-           role:"Jim Moriarty",  alsoKnown: "",
-           born: 1976, photoResource: ""
+           role:"Jim Moriarty",  alsoKnown: nil,
+           born: 1976, photoResource: nil
     ),
     Person(firstName: "Una",   lastName: "Stubbs",
-           role:"Mrs. Hudson",  alsoKnown: "",
-           born: 1937, photoResource: ""
+           role:"Mrs. Hudson",  alsoKnown: nil,
+           born: 1937, photoResource: nil
     ),
 ]
 
@@ -42,7 +42,11 @@ class CharacterCell: UITableViewCell {
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var lastNameLabel: UILabel!
     @IBOutlet weak var nicknameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var alsoKnownLabel: UILabel!
+    @IBOutlet weak var personPicture: UIImageView!
     
+    @IBOutlet weak var borderedView: UIView!
 }
 
 class CharactersViewController: UITableViewController {
@@ -60,11 +64,51 @@ class CharactersViewController: UITableViewController {
         
         cell.firstNameLabel.text = person.firstName
         cell.lastNameLabel.text  = person.lastName
+        
         cell.nicknameLabel.text  = "AS \(person.role)"
-
+        
+        let age = 2017 - person.born
+        cell.ageLabel.text = "age \(age)"
+        
+        if let known = person.alsoKnown {
+            cell.alsoKnownLabel.text = "'\(known)'"
+            cell.alsoKnownLabel.isHidden = false
+        } else {
+            cell.alsoKnownLabel.isHidden = true
+        }
+        
+        cell.borderedView.layer.cornerRadius = 20
+        cell.borderedView.clipsToBounds = true
+        
+        if let photo = person.photoResource {
+            let image = UIImage(named: photo)
+            cell.personPicture.image = image
+        }
+        
         return cell
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        let vc = segue.destination as! PersonViewController
+
+        vc.loadViewIfNeeded()
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+
+            let index  = indexPath.row
+            let person = persons[index]
+            
+            vc.personName.text = person.firstName
+            vc.personLastName.text  = person.lastName
+            
+            if let photo = person.photoResource {
+                let image = UIImage(named: photo)
+                vc.personPicture.image = image
+            }
+        }
+    }
 }
 
 let π = CGFloat(M_PI)
