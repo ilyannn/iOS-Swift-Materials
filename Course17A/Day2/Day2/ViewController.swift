@@ -8,6 +8,24 @@
 
 import UIKit
 
+
+class CharactersViewController: UITableViewController {
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Actor", for: indexPath)
+        
+        cell.contentView.backgroundColor = UIColor.yellow
+        
+        return cell
+    }
+    
+}
+
 let π = CGFloat(M_PI)
 
 class PersonViewController: UIViewController {
