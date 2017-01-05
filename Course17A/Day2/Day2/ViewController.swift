@@ -8,19 +8,60 @@
 
 import UIKit
 
+struct Person {
+    let firstName: String
+    let lastName:  String
+    let role:      String
+    let alsoKnown:  String
+    let born:      Int
+    let photoResource: String
+}
+
+let persons = [
+    Person(firstName: "Benedict", lastName: "Cumberbach",
+           role:"Sherlock", alsoKnown : "Smaug",
+           born: 1976, photoResource: "cumberbach.jpg"
+    ),
+    Person(firstName: "Martin",   lastName: "Freeman",
+           role:"Dr. Watson",  alsoKnown: "Bilbo Baggins",
+           born: 1971, photoResource: "freeman.jpg"
+    ),
+    Person(firstName: "Andrew",   lastName: "Stubbs",
+           role:"Jim Moriarty",  alsoKnown: "",
+           born: 1976, photoResource: ""
+    ),
+    Person(firstName: "Una",   lastName: "Stubbs",
+           role:"Mrs. Hudson",  alsoKnown: "",
+           born: 1937, photoResource: ""
+    ),
+]
+
+
+class CharacterCell: UITableViewCell {
+    
+    @IBOutlet weak var firstNameLabel: UILabel!
+    @IBOutlet weak var lastNameLabel: UILabel!
+    @IBOutlet weak var nicknameLabel: UILabel!
+    
+}
 
 class CharactersViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return persons.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Actor", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Actor", for: indexPath) as! CharacterCell
         
-        cell.contentView.backgroundColor = UIColor.yellow
+        let index  = indexPath.row
+        let person = persons[index]
         
+        cell.firstNameLabel.text = person.firstName
+        cell.lastNameLabel.text  = person.lastName
+        cell.nicknameLabel.text  = "AS \(person.role)"
+
         return cell
     }
     
