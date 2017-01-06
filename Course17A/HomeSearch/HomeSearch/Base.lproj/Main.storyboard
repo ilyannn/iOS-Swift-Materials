@@ -6,6 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,7 +55,7 @@
         <!--Profile-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="HomeSearch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="ProfileViewController" customModule="HomeSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -61,33 +64,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="83" y="313" width="209.5" height="41.5"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fjg-Ik-iBv">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fjg-Ik-iBv" secondAttribute="height" multiplier="1:1" id="ysN-6N-S9R"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажмите здесь чтобы добавить картинку профиля" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDx-Ak-uZS">
+                                <rect key="frame" x="85" y="315.5" width="206" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="80" y="362.5" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr7-Ub-PZh">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <connections>
+                                    <action selector="addPhoto:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="hvV-De-A5N"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="yDx-Ak-uZS" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="1r2-BG-uhw"/>
+                            <constraint firstItem="nr7-Ub-PZh" firstAttribute="trailing" secondItem="fjg-Ik-iBv" secondAttribute="trailing" id="5wO-Bh-2Lg"/>
+                            <constraint firstItem="yDx-Ak-uZS" firstAttribute="width" secondItem="fjg-Ik-iBv" secondAttribute="width" multiplier="0.6" id="9c3-Pj-xaK"/>
+                            <constraint firstItem="yDx-Ak-uZS" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="Bq4-pQ-HvF"/>
+                            <constraint firstItem="fjg-Ik-iBv" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="F98-Sd-3v4"/>
+                            <constraint firstItem="fjg-Ik-iBv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="V8K-co-JAx"/>
+                            <constraint firstItem="fjg-Ik-iBv" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="YGl-Oe-wjZ"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fjg-Ik-iBv" secondAttribute="bottom" id="Yv5-Tm-hdc"/>
+                            <constraint firstItem="nr7-Ub-PZh" firstAttribute="top" secondItem="fjg-Ik-iBv" secondAttribute="top" id="gys-IP-4fA"/>
+                            <constraint firstItem="nr7-Ub-PZh" firstAttribute="leading" secondItem="fjg-Ik-iBv" secondAttribute="leading" id="hKp-CV-4Yn"/>
+                            <constraint firstItem="fjg-Ik-iBv" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" priority="900" id="n4a-la-iRs"/>
+                            <constraint firstItem="nr7-Ub-PZh" firstAttribute="bottom" secondItem="fjg-Ik-iBv" secondAttribute="bottom" id="tDX-eT-ONk"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="explanationText" destination="yDx-Ak-uZS" id="rWs-UZ-oJD"/>
+                        <outlet property="profilePicture" destination="fjg-Ik-iBv" id="Hh3-T1-uVR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="548"/>
+            <point key="canvasLocation" x="925.60000000000002" y="547.37631184407803"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

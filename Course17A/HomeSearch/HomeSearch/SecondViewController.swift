@@ -8,18 +8,47 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ProfileViewController: UIViewController
+    , UIImagePickerControllerDelegate
+    , UINavigationControllerDelegate
+{
+    
+    @IBOutlet weak var explanationText: UILabel!
+    
+    @IBOutlet weak var profilePicture: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let layer = profilePicture.layer
+        layer.borderWidth = 3
+        layer.borderColor = UIColor.red.cgColor
+    }
+    
+    @IBAction func addPhoto(_ sender: Any) {
+        let vc = UIImagePickerController()
+        vc.sourceType = .camera
+        vc.delegate   = self
+        present(vc, animated: true, completion: nil)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        let layer = profilePicture.layer
+        layer.cornerRadius = layer.bounds.size.width / 2
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        
     }
-
-
+    
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String : Any]
+    ) {
+        
+    }
 }
+
+
 
