@@ -6,6 +6,7 @@
 //  Copyright © 2017 iOS Swift Course. All rights reserved.
 //
 
+import AVFoundation
 import UIKit
 
 struct Person {
@@ -125,8 +126,6 @@ class CharactersViewController: UITableViewController {
 }
 
 let π = CGFloat(M_PI)
-
-import AVFoundation
 
 class PersonViewController: UIViewController {
     @IBOutlet weak var personPicture: UIImageView!
