@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		126629C61E1FDFDD00039DD9 /* andrew-stubbs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 126629C51E1FDFDD00039DD9 /* andrew-stubbs.jpg */; };
+		126629C81E1FE02700039DD9 /* una-stubbs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 126629C71E1FE02700039DD9 /* una-stubbs.jpg */; };
+		126629CA1E1FE11E00039DD9 /* benedict-cumberbatch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 126629C91E1FE11E00039DD9 /* benedict-cumberbatch.jpg */; };
 		1294A9CF1E1D2543008EC54B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1294A9CE1E1D2543008EC54B /* AppDelegate.swift */; };
 		1294A9D11E1D2543008EC54B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1294A9D01E1D2543008EC54B /* ViewController.swift */; };
 		1294A9D41E1D2543008EC54B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1294A9D21E1D2543008EC54B /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		126629C51E1FDFDD00039DD9 /* andrew-stubbs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "andrew-stubbs.jpg"; sourceTree = "<group>"; };
+		126629C71E1FE02700039DD9 /* una-stubbs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "una-stubbs.jpg"; sourceTree = "<group>"; };
+		126629C91E1FE11E00039DD9 /* benedict-cumberbatch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "benedict-cumberbatch.jpg"; sourceTree = "<group>"; };
 		1294A9CB1E1D2543008EC54B /* Day2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1294A9CE1E1D2543008EC54B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1294A9D01E1D2543008EC54B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,9 +112,12 @@
 				1294A9CE1E1D2543008EC54B /* AppDelegate.swift */,
 				1294A9D01E1D2543008EC54B /* ViewController.swift */,
 				1294A9D21E1D2543008EC54B /* Main.storyboard */,
+				126629C71E1FE02700039DD9 /* una-stubbs.jpg */,
+				126629C51E1FDFDD00039DD9 /* andrew-stubbs.jpg */,
 				1294AA001E1D49FE008EC54B /* freeman.jpg */,
 				1294A9FC1E1D2CEB008EC54B /* photo.jpg */,
 				1294A9FE1E1D3B4B008EC54B /* cumberbach.jpg */,
+				126629C91E1FE11E00039DD9 /* benedict-cumberbatch.jpg */,
 				1294A9D51E1D2543008EC54B /* Assets.xcassets */,
 				1294A9D71E1D2543008EC54B /* LaunchScreen.storyboard */,
 				1294A9DA1E1D2543008EC54B /* Info.plist */,
@@ -242,7 +251,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1294A9D91E1D2543008EC54B /* LaunchScreen.storyboard in Resources */,
+				126629C81E1FE02700039DD9 /* una-stubbs.jpg in Resources */,
 				1294A9D61E1D2543008EC54B /* Assets.xcassets in Resources */,
+				126629CA1E1FE11E00039DD9 /* benedict-cumberbatch.jpg in Resources */,
+				126629C61E1FDFDD00039DD9 /* andrew-stubbs.jpg in Resources */,
 				1294AA011E1D49FE008EC54B /* freeman.jpg in Resources */,
 				1294A9FF1E1D3B4B008EC54B /* cumberbach.jpg in Resources */,
 				1294A9FD1E1D2CEB008EC54B /* photo.jpg in Resources */,

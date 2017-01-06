@@ -32,7 +32,7 @@ struct Person {
 let persons = [
     Person(firstName: "Benedict", lastName: "Cumberbach",
            role:"Sherlock", alsoKnown : "Smaug",
-           born: 1976, photoResource: "cumberbach.jpg"
+           born: 1976, photoResource: "benedict-cumberbatch.jpg"
     ),
     Person(firstName: "Martin",   lastName: "Freeman",
            role:"Dr. Watson",  alsoKnown: "Bilbo Baggins",
@@ -40,11 +40,11 @@ let persons = [
     ),
     Person(firstName: "Andrew",   lastName: "Stubbs",
            role:"Jim Moriarty",  alsoKnown: nil,
-           born: 1976, photoResource: nil
+           born: 1976, photoResource: "andrew-stubbs.jpg"
     ),
     Person(firstName: "Una",   lastName: "Stubbs",
            role:"Mrs. Hudson",  alsoKnown: nil,
-           born: 1937, photoResource: nil
+           born: 1937, photoResource: "una-stubbs.jpg"
     ),
 ]
 
@@ -89,7 +89,17 @@ class CharactersViewController: UITableViewController {
             cell.alsoKnownLabel.isHidden = true
         }
         
-        cell.borderedView.layer.cornerRadius = 20
+        let layer = cell.borderedView.layer
+        
+        layer.cornerRadius = 20
+        
+        layer.borderColor  = UIColor.gray.cgColor
+        layer.borderWidth  = 1
+        
+        cell.contentView.layer.shadowColor  = UIColor.black.cgColor
+        cell.contentView.layer.shadowOpacity = 0.75
+        cell.contentView.layer.shadowOffset  = CGSize(width: 3, height: 3)
+        
         cell.borderedView.clipsToBounds = true
         
         if let photo = person.photoResource {
@@ -138,6 +148,8 @@ class PersonViewController: UIViewController {
         
         personPicture.clipsToBounds      = true
         personPicture.layer.cornerRadius = 100
+        personPicture.layer.borderWidth  = 3
+        personPicture.layer.borderColor  = UIColor.red.cgColor
         
         let pl = personLastName.layer
         pl.shadowOffset  = CGSize(width: 3, height: 3)
