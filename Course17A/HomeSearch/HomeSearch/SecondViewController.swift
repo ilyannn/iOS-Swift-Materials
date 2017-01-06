@@ -27,7 +27,11 @@ class ProfileViewController: UIViewController
     
     @IBAction func addPhoto(_ sender: Any) {
         let vc = UIImagePickerController()
-        vc.sourceType = .camera
+
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            vc.sourceType = .camera
+        }
+        
         vc.delegate   = self
         present(vc, animated: true, completion: nil)
     }
@@ -46,7 +50,12 @@ class ProfileViewController: UIViewController
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [String : Any]
     ) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            profilePicture.image     = image
+            explanationText.isHidden = true
+        }
         
+        dismiss(animated: false, completion: {})
     }
 }
 
