@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ProfileViewController: UIViewController
     , UIImagePickerControllerDelegate
@@ -17,12 +18,24 @@ class ProfileViewController: UIViewController
     
     @IBOutlet weak var profilePicture: UIImageView!
 
+    let container = NSPersistentContainer(name: "HomeSearch")
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let layer = profilePicture.layer
         layer.borderWidth = 3
         layer.borderColor = UIColor.red.cgColor
+        
+        let request =  NSFetchRequest<Profile>(entityName: "Profile")
+        
+        container.loadPersistentStores { _ in }
+        
+        if let profile = try! container.viewContext.fetch(request).first {
+            if let image = UIImage(data: profile.pictureData as! Data) {
+                profilePicture.image = image
+            }
+        }
     }
     
     @IBAction func addPhoto(_ sender: Any) {
@@ -53,6 +66,12 @@ class ProfileViewController: UIViewController
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             profilePicture.image     = image
             explanationText.isHidden = true
+            
+            let context = container.viewContext
+            let descr = container.managedObjectModel.entities[0]
+            let profile = Profile(entity: descr, insertInto: context)
+            profile.pictureData = UIImageJPEGRepresentation(image, 0.8) as NSData?
+            try? context.save()
         }
         
         dismiss(animated: false, completion: {})

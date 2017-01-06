@@ -15,6 +15,7 @@
 		126629E41E1FEE8900039DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126629E21E1FEE8900039DD9 /* LaunchScreen.storyboard */; };
 		126629EF1E1FEE8900039DD9 /* HomeSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126629EE1E1FEE8900039DD9 /* HomeSearchTests.swift */; };
 		126629FA1E1FEE8900039DD9 /* HomeSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126629F91E1FEE8900039DD9 /* HomeSearchUITests.swift */; };
+		12662A091E2007A600039DD9 /* HomeSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12662A071E2007A600039DD9 /* HomeSearch.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		126629F51E1FEE8900039DD9 /* HomeSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		126629F91E1FEE8900039DD9 /* HomeSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchUITests.swift; sourceTree = "<group>"; };
 		126629FB1E1FEE8900039DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12662A081E2007A600039DD9 /* HomeSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeSearch.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				126629D91E1FEE8900039DD9 /* FirstViewController.swift */,
 				126629DB1E1FEE8900039DD9 /* SecondViewController.swift */,
 				126629DD1E1FEE8900039DD9 /* Main.storyboard */,
+				12662A071E2007A600039DD9 /* HomeSearch.xcdatamodeld */,
 				126629E01E1FEE8900039DD9 /* Assets.xcassets */,
 				126629E21E1FEE8900039DD9 /* LaunchScreen.storyboard */,
 				126629E51E1FEE8900039DD9 /* Info.plist */,
@@ -268,6 +271,7 @@
 				126629DC1E1FEE8900039DD9 /* SecondViewController.swift in Sources */,
 				126629D81E1FEE8900039DD9 /* AppDelegate.swift in Sources */,
 				126629DA1E1FEE8900039DD9 /* FirstViewController.swift in Sources */,
+				12662A091E2007A600039DD9 /* HomeSearch.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +540,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		12662A071E2007A600039DD9 /* HomeSearch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				12662A081E2007A600039DD9 /* HomeSearch.xcdatamodel */,
+			);
+			currentVersion = 12662A081E2007A600039DD9 /* HomeSearch.xcdatamodel */;
+			path = HomeSearch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 126629CC1E1FEE8900039DD9 /* Project object */;
 }
