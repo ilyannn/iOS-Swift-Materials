@@ -9,12 +9,23 @@
 import UIKit
 
 struct Person {
+    
     let firstName: String
     let lastName:  String
     let role:      String
     let alsoKnown: String?
     let born:      Int
     let photoResource: String? // Optional<String>
+    
+    func greet() {
+        
+        let synthesizer = AVSpeechSynthesizer()
+        let text = "Hello, \(firstName) \(lastName)"
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.Daniel-compact")
+        synthesizer.speak(utterance)
+    }
+    
 }
 
 let persons = [
@@ -100,6 +111,8 @@ class CharactersViewController: UITableViewController {
             let index  = indexPath.row
             let person = persons[index]
             
+            person.greet()
+            
             vc.personName.text = person.firstName
             vc.personLastName.text  = person.lastName
             
@@ -113,11 +126,14 @@ class CharactersViewController: UITableViewController {
 
 let π = CGFloat(M_PI)
 
+import AVFoundation
+
 class PersonViewController: UIViewController {
     @IBOutlet weak var personPicture: UIImageView!
     @IBOutlet weak var personName: UILabel!
     @IBOutlet weak var personLastName: UILabel!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -131,7 +147,6 @@ class PersonViewController: UIViewController {
         personPicture.image = UIImage(named: "cumberbach.jpg")
         personName.text     = "Benedict"
         personLastName.text = "Cumberbach"
-        
     }
 }
 
