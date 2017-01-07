@@ -155,9 +155,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="D7X-KY-dzX">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="rJ1-K9-NVx" id="rpT-db-O0e"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="House" id="t5o-Kx-KUQ" customClass="HouseCell" customModule="HomeSearch" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t5o-Kx-KUQ" id="N2S-bu-c3i">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
@@ -195,6 +203,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
+                                    <outlet property="betweenLabelsConstraint" destination="F3k-cS-eF5" id="Tsa-IL-GC2"/>
                                     <outlet property="houseDescription" destination="2BY-93-MOf" id="sYO-xS-PTy"/>
                                     <outlet property="housePicture" destination="Hb5-02-fFF" id="nbE-48-OXD"/>
                                     <outlet property="placeLabel" destination="C9C-JF-k5U" id="qNF-DG-tQK"/>

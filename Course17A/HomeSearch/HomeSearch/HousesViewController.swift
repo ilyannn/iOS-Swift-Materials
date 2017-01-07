@@ -44,11 +44,24 @@ class HouseCell: UITableViewCell {
     @IBOutlet weak var houseDescription: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var housePicture: UIImageView!
+    @IBOutlet weak var betweenLabelsConstraint: NSLayoutConstraint!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        betweenLabelsConstraint.constant = 30
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        housePicture.image = nil
+    }
 }
 
-class HousesViewController: UITableViewController {
+
+class HousesViewController: UITableViewController, UISearchBarDelegate {
     
-    let houses = LoadHouses()
+    private let allHouses = LoadHouses()
+    private var houses: [House] = []
     
 //    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
 //    {
@@ -61,6 +74,30 @@ class HousesViewController: UITableViewController {
 //        return 50
 //    }
 //    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        houses = allHouses
+        
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        let search = searchText.localizedLowercase
+        
+        if search == "" {
+            houses = allHouses
+        } else {
+            houses = allHouses
+                .filter { house in
+                    house.place.localizedLowercase.contains(search)
+                        ||  house.text.localizedLowercase.contains(search)
+            }
+        }
+        
+        tableView.reloadData()
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return houses.count
     }
@@ -89,4 +126,6 @@ class HousesViewController: UITableViewController {
         cell.placeLabel.text = "→ " + house.place
         return cell
     }
+    
+    
 }

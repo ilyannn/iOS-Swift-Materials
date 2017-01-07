@@ -83,12 +83,28 @@ func LoadHouses() -> [House] {
 }
 
 let houses = LoadHouses()
-let search = "Small"
+let search = "a"
 
-houses
+let found_houses = houses
     .filter { house in
         house.place.contains(search) || house.text.contains(search)
     }
+
+func joiner(result:String , string:String) -> String  {
+    if result == "" { return string }
+    return result + ", " + string
+}
+
+let house_places = found_houses.map { house in house.place }
+let house_places_joined = house_places.reduce("", joiner)
+
+house_places.joined(separator: "; ")
+
+let house_sizes_sum = found_houses
+                            .map { house in house.size }
+                            .reduce(0, +)
+
+let found = "I found \(found_houses.count) houses in \(house_places_joined) with total size \(house_sizes_sum)"
 
 
 
