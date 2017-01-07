@@ -10,7 +10,7 @@
   {
 		"text": "Live in a van",
 		"picture": "https://simplelivingover50.files.wordpress.com/2016/08/7f64f34390dc8a2efdc6d3f8537f835d.jpg",
-		"size": 10
+		"size": 10,
         "place": "Mobile, Alabama"
   },
 
@@ -24,7 +24,7 @@
   {
 		"text": "Ready for something big?",
 		"picture": "https://s-media-cache-ak0.pinimg.com/originals/10/f0/ec/10f0ec20c5265b3cf563369baa7a7c4a.jpg",
-		"size": 300
+		"size": 300,
         "place": "Long Island, NY"
   }
   
