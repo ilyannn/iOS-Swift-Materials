@@ -121,16 +121,33 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="rJ1-K9-NVx" kind="relationship" relationship="viewControllers" id="wyx-Zu-iBY"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="5RZ-yh-juS" kind="relationship" relationship="viewControllers" id="8Lc-EH-1ir"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Houses View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="a7I-ZC-GyE">
+            <objects>
+                <navigationController id="5RZ-yh-juS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="Tf0-cD-iB3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eaj-o2-qbx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rJ1-K9-NVx" kind="relationship" relationship="rootViewController" id="pga-Yu-bkv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSG-Xa-1X3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="-631"/>
+        </scene>
+        <!--Houses-->
         <scene sceneID="pBj-gh-zgF">
             <objects>
                 <tableViewController id="rJ1-K9-NVx" customClass="HousesViewController" customModule="HomeSearch" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,20 +163,42 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hb5-02-fFF">
-                                            <rect key="frame" x="67" y="-37" width="240" height="128"/>
+                                        <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hb5-02-fFF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9C-JF-k5U">
+                                            <rect key="frame" x="0.0" y="167" width="375" height="32"/>
+                                            <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.29354551174496646" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="23"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BY-93-MOf">
+                                            <rect key="frame" x="249" y="126" width="118" height="32"/>
+                                            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.28961304530201343" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="C9C-JF-k5U" secondAttribute="bottom" id="1rF-40-AQ3"/>
+                                        <constraint firstAttribute="trailing" secondItem="C9C-JF-k5U" secondAttribute="trailing" id="4Uw-1l-psr"/>
+                                        <constraint firstItem="2BY-93-MOf" firstAttribute="trailing" secondItem="N2S-bu-c3i" secondAttribute="trailingMargin" id="6o6-33-8pX"/>
+                                        <constraint firstItem="C9C-JF-k5U" firstAttribute="top" secondItem="2BY-93-MOf" secondAttribute="bottom" constant="9" id="F3k-cS-eF5"/>
                                         <constraint firstItem="Hb5-02-fFF" firstAttribute="top" secondItem="N2S-bu-c3i" secondAttribute="top" id="J1h-tv-ePh"/>
                                         <constraint firstItem="Hb5-02-fFF" firstAttribute="leading" secondItem="N2S-bu-c3i" secondAttribute="leading" id="U3B-e1-DWr"/>
+                                        <constraint firstItem="C9C-JF-k5U" firstAttribute="leading" secondItem="N2S-bu-c3i" secondAttribute="leading" id="aC5-Di-Xbe"/>
                                         <constraint firstAttribute="trailing" secondItem="Hb5-02-fFF" secondAttribute="trailing" id="jR6-ny-PtO"/>
                                         <constraint firstAttribute="bottom" secondItem="Hb5-02-fFF" secondAttribute="bottom" id="r0S-QA-814"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
+                                    <outlet property="houseDescription" destination="2BY-93-MOf" id="sYO-xS-PTy"/>
                                     <outlet property="housePicture" destination="Hb5-02-fFF" id="nbE-48-OXD"/>
+                                    <outlet property="placeLabel" destination="C9C-JF-k5U" id="qNF-DG-tQK"/>
+                                    <segue destination="Obs-h4-S97" kind="show" id="naY-OI-RPh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -169,10 +208,29 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="search" id="DoM-ac-vaG"/>
+                    <navigationItem key="navigationItem" title="Houses" id="oR8-ka-64I"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUD-3C-gY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757.60000000000002" y="-284.70764617691157"/>
+            <point key="canvasLocation" x="1622" y="-631"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VlU-Xn-XJA">
+            <objects>
+                <viewController id="Obs-h4-S97" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M7I-RV-TuA"/>
+                        <viewControllerLayoutGuide type="bottom" id="HFh-8q-BXy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2QS-aW-2GM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6d-VV-Fed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2518" y="-631"/>
         </scene>
     </scenes>
 </document>
