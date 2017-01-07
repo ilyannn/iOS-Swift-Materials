@@ -21,7 +21,7 @@ struct House {
 }
 
 func LoadHouses() -> [House] {
-    if let url = URL(string: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/Course17A/HomeSearch/data.json")
+    if let url = URL(string: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/Course17A/HomeSearch/houses.json")
     {
         do {
             let data  = try Data(contentsOf: url)
