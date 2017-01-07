@@ -51,4 +51,9 @@ if let url = URL(string: "http://2.bp.blogspot.com/-6XOF7UWwTpY/UFyAnCSLjGI/AAAA
     UIImage(data: data)
 }
 
+if let url = URL(string: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/Course17A/HomeSearch/data.json")
+{
+    let data = try Data(contentsOf: url)
+    let json = try JSONSerialization.jsonObject(with: data, options: [])
+}
 
