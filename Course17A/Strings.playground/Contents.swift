@@ -51,9 +51,29 @@ if let url = URL(string: "http://2.bp.blogspot.com/-6XOF7UWwTpY/UFyAnCSLjGI/AAAA
     UIImage(data: data)
 }
 
+struct House {
+    let pictureURL: String
+    let text: String
+    let size: Int
+    
+    init(dict: NSDictionary) {
+        pictureURL = dict["picture"] as! String
+        text = dict["text"] as! String
+        size = dict["size"] as! Int
+    }
+}
+
 if let url = URL(string: "https://raw.githubusercontent.com/ilyannn/iOS-Swift-Materials/master/Course17A/HomeSearch/data.json")
 {
-    let data = try Data(contentsOf: url)
-    let json = try JSONSerialization.jsonObject(with: data, options: [])
+    let data  = try Data(contentsOf: url)
+    let json  = try JSONSerialization.jsonObject(with: data, options: [])
+
+    let array = json as! [NSDictionary]
+    let house = House(dict: array[0])
+    
+    array.map { dict in
+        House(dict: dict)
+    }
 }
+
 

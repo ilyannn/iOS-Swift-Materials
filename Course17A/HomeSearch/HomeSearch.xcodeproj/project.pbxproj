@@ -16,6 +16,7 @@
 		126629EF1E1FEE8900039DD9 /* HomeSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126629EE1E1FEE8900039DD9 /* HomeSearchTests.swift */; };
 		126629FA1E1FEE8900039DD9 /* HomeSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126629F91E1FEE8900039DD9 /* HomeSearchUITests.swift */; };
 		12662A091E2007A600039DD9 /* HomeSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12662A071E2007A600039DD9 /* HomeSearch.xcdatamodeld */; };
+		12976F611E212D9E00134E47 /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12976F601E212D9E00134E47 /* HousesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		126629F91E1FEE8900039DD9 /* HomeSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchUITests.swift; sourceTree = "<group>"; };
 		126629FB1E1FEE8900039DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12662A081E2007A600039DD9 /* HomeSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeSearch.xcdatamodel; sourceTree = "<group>"; };
+		12976F601E212D9E00134E47 /* HousesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				126629D91E1FEE8900039DD9 /* FirstViewController.swift */,
 				126629DB1E1FEE8900039DD9 /* SecondViewController.swift */,
 				126629DD1E1FEE8900039DD9 /* Main.storyboard */,
+				12976F601E212D9E00134E47 /* HousesViewController.swift */,
 				12662A071E2007A600039DD9 /* HomeSearch.xcdatamodeld */,
 				126629E01E1FEE8900039DD9 /* Assets.xcassets */,
 				126629E21E1FEE8900039DD9 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12976F611E212D9E00134E47 /* HousesViewController.swift in Sources */,
 				126629DC1E1FEE8900039DD9 /* SecondViewController.swift in Sources */,
 				126629D81E1FEE8900039DD9 /* AppDelegate.swift in Sources */,
 				126629DA1E1FEE8900039DD9 /* FirstViewController.swift in Sources */,
@@ -522,6 +526,7 @@
 				12662A001E1FEE8900039DD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12662A011E1FEE8900039DD9 /* Build configuration list for PBXNativeTarget "HomeSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +535,7 @@
 				12662A031E1FEE8900039DD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12662A041E1FEE8900039DD9 /* Build configuration list for PBXNativeTarget "HomeSearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +544,7 @@
 				12662A061E1FEE8900039DD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
