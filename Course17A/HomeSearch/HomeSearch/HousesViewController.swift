@@ -46,11 +46,13 @@ class HouseCell: UITableViewCell {
     @IBOutlet weak var housePicture: UIImageView!
     @IBOutlet weak var betweenLabelsConstraint: NSLayoutConstraint!
 
+    // создание ячейки
     override func awakeFromNib() {
         super.awakeFromNib()
         betweenLabelsConstraint.constant = 30
     }
     
+    // переиспользование ячейки
     override func prepareForReuse() {
         super.prepareForReuse()
         housePicture.image = nil
@@ -75,12 +77,14 @@ class HousesViewController: UITableViewController, UISearchBarDelegate {
 //    }
 //    
     
+    // создание экрана
     override func viewDidLoad() {
         super.viewDidLoad()
         houses = allHouses
         
     }
     
+    // пользователь ввел данные в строку поиска
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         let search = searchText.localizedLowercase
@@ -98,12 +102,14 @@ class HousesViewController: UITableViewController, UISearchBarDelegate {
         tableView.reloadData()
     }
     
+    // количество ячеек
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return houses.count
     }
     
     let queue = DispatchQueue(label: "com.ilyan.course.houses.images")
     
+    // ячейка номер indexPath
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "House", for: indexPath) as! HouseCell

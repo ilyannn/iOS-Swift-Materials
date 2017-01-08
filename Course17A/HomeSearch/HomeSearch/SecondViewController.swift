@@ -10,8 +10,6 @@ import UIKit
 import CoreData
 
 class ProfileViewController: UIViewController
-    , UIImagePickerControllerDelegate
-    , UINavigationControllerDelegate
 {
     
     @IBOutlet weak var explanationText: UILabel!
@@ -56,6 +54,12 @@ class ProfileViewController: UIViewController
         layer.cornerRadius = layer.bounds.size.width / 2
     }
 
+}
+
+extension ProfileViewController
+    : UIImagePickerControllerDelegate
+    , UINavigationControllerDelegate
+{
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         
     }
