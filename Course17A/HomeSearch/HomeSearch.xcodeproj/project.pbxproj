@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122BCDAF1E22963E00AE4729 /* ExampleObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 122BCDAE1E22963E00AE4729 /* ExampleObjCViewController.m */; };
 		126629D81E1FEE8900039DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126629D71E1FEE8900039DD9 /* AppDelegate.swift */; };
 		126629DA1E1FEE8900039DD9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126629D91E1FEE8900039DD9 /* FirstViewController.swift */; };
 		126629DC1E1FEE8900039DD9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126629DB1E1FEE8900039DD9 /* SecondViewController.swift */; };
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		122BCDAC1E22963D00AE4729 /* HomeSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomeSearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		122BCDAD1E22963E00AE4729 /* ExampleObjCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleObjCViewController.h; sourceTree = "<group>"; };
+		122BCDAE1E22963E00AE4729 /* ExampleObjCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleObjCViewController.m; sourceTree = "<group>"; };
 		126629D41E1FEE8900039DD9 /* HomeSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		126629D71E1FEE8900039DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		126629D91E1FEE8900039DD9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -107,11 +111,14 @@
 				126629D91E1FEE8900039DD9 /* FirstViewController.swift */,
 				126629DB1E1FEE8900039DD9 /* SecondViewController.swift */,
 				126629DD1E1FEE8900039DD9 /* Main.storyboard */,
+				122BCDAD1E22963E00AE4729 /* ExampleObjCViewController.h */,
+				122BCDAE1E22963E00AE4729 /* ExampleObjCViewController.m */,
 				12976F601E212D9E00134E47 /* HousesViewController.swift */,
 				12662A071E2007A600039DD9 /* HomeSearch.xcdatamodeld */,
 				126629E01E1FEE8900039DD9 /* Assets.xcassets */,
 				126629E21E1FEE8900039DD9 /* LaunchScreen.storyboard */,
 				126629E51E1FEE8900039DD9 /* Info.plist */,
+				122BCDAC1E22963D00AE4729 /* HomeSearch-Bridging-Header.h */,
 			);
 			path = HomeSearch;
 			sourceTree = "<group>";
@@ -202,7 +209,8 @@
 				TargetAttributes = {
 					126629D31E1FEE8900039DD9 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = A8J6S3WP2B;
+						DevelopmentTeam = QM2R683QZ8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					126629E91E1FEE8900039DD9 = {
@@ -274,6 +282,7 @@
 				12976F611E212D9E00134E47 /* HousesViewController.swift in Sources */,
 				126629DC1E1FEE8900039DD9 /* SecondViewController.swift in Sources */,
 				126629D81E1FEE8900039DD9 /* AppDelegate.swift in Sources */,
+				122BCDAF1E22963E00AE4729 /* ExampleObjCViewController.m in Sources */,
 				126629DA1E1FEE8900039DD9 /* FirstViewController.swift in Sources */,
 				12662A091E2007A600039DD9 /* HomeSearch.xcdatamodeld in Sources */,
 			);
@@ -427,11 +436,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A8J6S3WP2B;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = QM2R683QZ8;
 				INFOPLIST_FILE = HomeSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.day4.HomeSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilya.n.course.home;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeSearch/HomeSearch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -440,11 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A8J6S3WP2B;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = QM2R683QZ8;
 				INFOPLIST_FILE = HomeSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ilyan.test.day4.HomeSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilya.n.course.home;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeSearch/HomeSearch-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
