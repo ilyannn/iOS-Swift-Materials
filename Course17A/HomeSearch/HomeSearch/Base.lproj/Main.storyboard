@@ -168,22 +168,26 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t5o-Kx-KUQ" id="N2S-bu-c3i">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hb5-02-fFF">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hb5-02-fFF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="st2-AG-fGn" userLabel="Gradient View" customClass="GradientView" customModule="HomeSearch" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9C-JF-k5U">
                                             <rect key="frame" x="0.0" y="167" width="375" height="32"/>
-                                            <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.29354551174496646" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="23"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BY-93-MOf">
-                                            <rect key="frame" x="249" y="126" width="118" height="32"/>
-                                            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.28961304530201343" colorSpace="calibratedRGB"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BY-93-MOf">
+                                            <rect key="frame" x="302" y="140.5" width="65" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -193,12 +197,16 @@
                                         <constraint firstAttribute="bottom" secondItem="C9C-JF-k5U" secondAttribute="bottom" id="1rF-40-AQ3"/>
                                         <constraint firstAttribute="trailing" secondItem="C9C-JF-k5U" secondAttribute="trailing" id="4Uw-1l-psr"/>
                                         <constraint firstItem="2BY-93-MOf" firstAttribute="trailing" secondItem="N2S-bu-c3i" secondAttribute="trailingMargin" id="6o6-33-8pX"/>
-                                        <constraint firstItem="C9C-JF-k5U" firstAttribute="top" secondItem="2BY-93-MOf" secondAttribute="bottom" constant="9" id="F3k-cS-eF5"/>
+                                        <constraint firstItem="st2-AG-fGn" firstAttribute="leading" secondItem="Hb5-02-fFF" secondAttribute="leading" id="775-m4-4JG"/>
+                                        <constraint firstItem="C9C-JF-k5U" firstAttribute="top" secondItem="2BY-93-MOf" secondAttribute="bottom" id="F3k-cS-eF5"/>
                                         <constraint firstItem="Hb5-02-fFF" firstAttribute="top" secondItem="N2S-bu-c3i" secondAttribute="top" id="J1h-tv-ePh"/>
+                                        <constraint firstItem="st2-AG-fGn" firstAttribute="bottom" secondItem="Hb5-02-fFF" secondAttribute="bottom" id="OsS-Gr-q8l"/>
                                         <constraint firstItem="Hb5-02-fFF" firstAttribute="leading" secondItem="N2S-bu-c3i" secondAttribute="leading" id="U3B-e1-DWr"/>
                                         <constraint firstItem="C9C-JF-k5U" firstAttribute="leading" secondItem="N2S-bu-c3i" secondAttribute="leading" id="aC5-Di-Xbe"/>
                                         <constraint firstAttribute="trailing" secondItem="Hb5-02-fFF" secondAttribute="trailing" id="jR6-ny-PtO"/>
                                         <constraint firstAttribute="bottom" secondItem="Hb5-02-fFF" secondAttribute="bottom" id="r0S-QA-814"/>
+                                        <constraint firstItem="st2-AG-fGn" firstAttribute="top" secondItem="Hb5-02-fFF" secondAttribute="top" id="xqy-PV-scc"/>
+                                        <constraint firstItem="st2-AG-fGn" firstAttribute="trailing" secondItem="Hb5-02-fFF" secondAttribute="trailing" id="yiX-x6-rKx"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -221,7 +229,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUD-3C-gY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1622" y="-631"/>
+            <point key="canvasLocation" x="1621.5999999999999" y="-631.0344827586207"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VlU-Xn-XJA">

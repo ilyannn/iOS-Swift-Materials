@@ -39,19 +39,47 @@ func LoadHouses() -> [House] {
     return []
 }
 
+class GradientView: UIView {
+    
+    let gradient = CAGradientLayer()
+    let circle = CAShapeLayer()
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        let rect = CGRect(x: 100, y: 100, width: 70, height: 70)
+        circle.path = UIBezierPath(ovalIn: rect).cgPath
+
+        circle.lineWidth = 4
+        circle.lineDashPattern = [5, 10]
+        circle.fillColor = UIColor.clear.cgColor
+        circle.strokeColor = UIColor.red.cgColor
+        
+        let clear = UIColor.white.withAlphaComponent(0)
+        let kind_of_black = UIColor.black.withAlphaComponent(0.5)
+
+        gradient.colors = [clear.cgColor, clear.cgColor, kind_of_black.cgColor]
+        
+        layer.addSublayer(gradient)
+        layer.addSublayer(circle)
+    }
+    
+    override func layoutSublayers(of layer: CALayer)
+    {
+        super.layoutSublayers(of: layer)
+
+        if layer == self.layer {
+            gradient.frame = layer.bounds
+        }
+    }
+}
 
 class HouseCell: UITableViewCell {
     @IBOutlet weak var houseDescription: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var housePicture: UIImageView!
     @IBOutlet weak var betweenLabelsConstraint: NSLayoutConstraint!
-
-    // создание ячейки
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        betweenLabelsConstraint.constant = 30
-    }
-    
+        
     // переиспользование ячейки
     override func prepareForReuse() {
         super.prepareForReuse()
