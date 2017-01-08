@@ -231,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="1621.5999999999999" y="-631.0344827586207"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="VlU-Xn-XJA">
             <objects>
-                <viewController id="Obs-h4-S97" sceneMemberID="viewController">
+                <viewController id="Obs-h4-S97" customClass="DetailViewController" customModule="HomeSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M7I-RV-TuA"/>
                         <viewControllerLayoutGuide type="bottom" id="HFh-8q-BXy"/>
@@ -242,8 +242,24 @@
                     <view key="view" contentMode="scaleToFill" id="2QS-aW-2GM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EI4-hH-xfO">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="FBZ-wf-FNW"/>
+                                    <constraint firstAttribute="width" constant="300" id="M6I-bm-Tuw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EI4-hH-xfO" firstAttribute="centerY" secondItem="2QS-aW-2GM" secondAttribute="centerY" id="GAS-qX-cRX"/>
+                            <constraint firstItem="EI4-hH-xfO" firstAttribute="centerX" secondItem="2QS-aW-2GM" secondAttribute="centerX" id="Ruh-h2-HYx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bigHousePicture" destination="EI4-hH-xfO" id="OjA-Vs-ugJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6d-VV-Fed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

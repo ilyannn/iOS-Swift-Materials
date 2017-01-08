@@ -47,13 +47,23 @@ class GradientView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        let rect = CGRect(x: 100, y: 100, width: 70, height: 70)
+        let rect = CGRect(x: -35, y: -35, width: 70, height: 70)
         circle.path = UIBezierPath(ovalIn: rect).cgPath
 
         circle.lineWidth = 4
-        circle.lineDashPattern = [5, 10]
+        circle.lineDashPattern = [10, 5]
         circle.fillColor = UIColor.clear.cgColor
         circle.strokeColor = UIColor.red.cgColor
+        circle.position = CGPoint(x: 100, y: 100)
+        circle.strokeEnd = 0.7
+        
+        let rotation = CABasicAnimation(keyPath: "transform.rotation")
+        rotation.fromValue = 0
+        rotation.toValue   = 2 * M_PI
+        rotation.duration  = 5
+        rotation.repeatCount = HUGE
+        
+        circle.add(rotation, forKey: "rotate")
         
         let clear = UIColor.white.withAlphaComponent(0)
         let kind_of_black = UIColor.black.withAlphaComponent(0.5)
@@ -79,7 +89,7 @@ class HouseCell: UITableViewCell {
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var housePicture: UIImageView!
     @IBOutlet weak var betweenLabelsConstraint: NSLayoutConstraint!
-        
+    
     // переиспользование ячейки
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -87,6 +97,17 @@ class HouseCell: UITableViewCell {
     }
 }
 
+class DetailViewController: UIViewController
+{
+    @IBOutlet weak var bigHousePicture: UIImageView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        bigHousePicture.clipsToBounds = true
+        bigHousePicture.layer.cornerRadius = 50
+    }
+}
 
 class HousesViewController: UITableViewController, UISearchBarDelegate {
     
@@ -110,6 +131,18 @@ class HousesViewController: UITableViewController, UISearchBarDelegate {
         super.viewDidLoad()
         houses = allHouses
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? DetailViewController
+        {
+            if let selected = tableView.indexPathForSelectedRow
+            {
+                let cell = tableView.cellForRow(at: selected) as! HouseCell
+                vc.loadViewIfNeeded()
+                vc.bigHousePicture.image = cell.housePicture.image
+            }
+        }
     }
     
     // пользователь ввел данные в строку поиска
