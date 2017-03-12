@@ -1,0 +1,31 @@
+ [
+  
+  {
+		"text": "Model home",
+		"picture": "https://2.bp.blogspot.com/-6XOF7UWwTpY/UFyAnCSLjGI/AAAAAAAATbY/uMpq-Cvwvqg/s1600/kerala-model-home.jpg",
+		"size": 100,
+        "place": "Melburn, Australia"
+  },
+
+  {
+		"text": "Live in a van",
+		"picture": "https://simplelivingover50.files.wordpress.com/2016/08/7f64f34390dc8a2efdc6d3f8537f835d.jpg",
+		"size": 10,
+        "place": "Mobile, Alabama"
+  },
+
+  {
+		"text": "Small, but cozy home",
+		"picture": "https://decor.slimrandles.com/wp-content/uploads/2014/09/Modern-Cozy-Home-Decor.jpg",
+		"size": 50,
+        "place": "Somewhere in Alaska"
+  },
+
+  {
+		"text": "Ready for something big?",
+		"picture": "https://s-media-cache-ak0.pinimg.com/originals/10/f0/ec/10f0ec20c5265b3cf563369baa7a7c4a.jpg",
+		"size": 300,
+        "place": "Long Island, NY"
+  }
+  
+]

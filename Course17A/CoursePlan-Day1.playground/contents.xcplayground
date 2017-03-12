@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Calculator'/>
+        <page name='Procedural'/>
+        <page name='Speech'/>
+        <page name='Encoding'/>
+    </pages>
+</playground>

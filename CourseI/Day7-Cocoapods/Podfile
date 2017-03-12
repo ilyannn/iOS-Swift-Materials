@@ -1,0 +1,3 @@
+use_frameworks!
+
+pod 'PASImageView', :git => 'https://github.com/ilyannn/PASImageView.git'

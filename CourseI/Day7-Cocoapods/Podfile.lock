@@ -1,0 +1,19 @@
+PODS:
+  - PASImageView (1.0.2)
+
+DEPENDENCIES:
+  - PASImageView (from `https://github.com/ilyannn/PASImageView.git`)
+
+EXTERNAL SOURCES:
+  PASImageView:
+    :git: https://github.com/ilyannn/PASImageView.git
+
+CHECKOUT OPTIONS:
+  PASImageView:
+    :commit: c3b7a1817edf8c043e69fc842901e9f03d2a956d
+    :git: https://github.com/ilyannn/PASImageView.git
+
+SPEC CHECKSUMS:
+  PASImageView: 3834ab78ea5613f50b5393e0b03edd4fdef407ee
+
+COCOAPODS: 0.38.2

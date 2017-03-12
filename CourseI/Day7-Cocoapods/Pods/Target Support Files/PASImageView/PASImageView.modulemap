@@ -1,0 +1,6 @@
+framework module PASImageView {
+  umbrella header "PASImageView-umbrella.h"
+
+  export *
+  module * { export * }
+}
